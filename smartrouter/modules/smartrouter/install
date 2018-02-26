@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+SOURCES_DIR=/tmp/artifacts
+ROUTER_DIR=/opt/${JBOSS_PRODUCT}
+
+unzip -q ${SOURCES_DIR}/${ADD_ONS_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
+
+mkdir -p ${ROUTER_DIR}
+cp -f ${SOURCES_DIR}/${KIE_ROUTER_DISTRIBUTION_JAR} ${ROUTER_DIR}
+
+chown -R jboss:root ${ROUTER_DIR}
+chmod -R ug+x ${ROUTER_DIR}

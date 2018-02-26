@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+
+SOURCES_DIR=/tmp/artifacts
+
+DISTRIBUTION_ZIP=${KIE_SERVER_DISTRIBUTION_ZIP}
+DISTRIBUTION_WAR_DIR=kie-server.war
+
+unzip -q ${SOURCES_DIR}/${DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
+
+cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${JBOSS_HOME}/standalone/deployments/ROOT.war
+touch ${JBOSS_HOME}/standalone/deployments/ROOT.war.dodeploy
+cp -rf ${SOURCES_DIR}/SecurityPolicy/* ${JBOSS_HOME}/bin/
+
+chown -R jboss:root ${JBOSS_HOME}
+chmod 0755 ${JBOSS_HOME}
+chmod -R g+rwX ${JBOSS_HOME}

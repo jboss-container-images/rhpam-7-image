@@ -1,0 +1,44 @@
+schema_version: 1
+
+name: "rhba-7/rhba70-controller"
+description: "Red Hat Business Automation Standalone Controller 7.0 container image"
+version: "7.0.0"
+from: "jboss-eap-7/eap71:latest"
+labels:
+    - name: "org.jboss.product"
+      value: "rhba-controller"
+    - name: "org.jboss.product.version"
+      value: "7.0.0"
+    - name: "org.jboss.product.rhba-controller.version"
+      value: "7.0.0"
+envs:
+    - name: "JBOSS_PRODUCT"
+      value: "rhba-controller"
+    - name: "JBOSS_RHBA_CONTROLLER_VERSION"
+      value: "7.0.0"
+    - name: "PRODUCT_VERSION"
+      value: "7.0.0"
+    - name: "ADD_ONS_DISTRIBUTION_ZIP"
+      value: "rhbas-7.0.0.ER1-add-ons.zip"
+    - name: "CONTROLLER_DISTRIBUTION_ZIP"
+      value: "rhbas-7.0-controller-ee7.zip"
+modules:
+      repositories:
+          - path: modules
+      install:
+          - name: controller
+artifacts:
+    - path: rhbas-7.0.0.ER1-add-ons.zip
+      md5:  ce055eed217a72628d2156dc6ef5e957
+run:
+      user: 185
+      cmd:
+          - "/opt/eap/bin/standalone.sh"
+          - "-b"
+          - "0.0.0.0"
+          - "-c"
+          - "standalone-full.xml"
+osbs:
+      repository:
+          name: rhba-7-controller-docker
+          branch: jb-controller70
