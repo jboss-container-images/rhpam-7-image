@@ -1,5 +1,5 @@
-@rhba-7/rhba70-businesscentral
-Feature: Standalone Business Central tests
+@rhba-7/rhba70-businesscentral-monitoring
+Feature: Standalone Business Central Monitoring tests
 
   Scenario: Web console is available
     When container is ready
