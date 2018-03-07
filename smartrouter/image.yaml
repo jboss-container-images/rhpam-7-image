@@ -22,6 +22,8 @@ envs:
       value: "rhba-7.0.0.DR4-add-ons.zip"
     - name: "KIE_ROUTER_DISTRIBUTION_JAR"
       value: "rhba-7.0-smart-router.jar"
+ports:
+    - value: 9000
 modules:
       repositories:
           - path: modules
@@ -34,6 +36,8 @@ run:
       user: 185
       cmd:
           - "/usr/bin/java"
+          - "-Dorg.kie.server.router.host=0.0.0.0"
+          - "-Dorg.kie.server.router.port=9000"
           - "-jar"
           - "/opt/rhba-smartrouter/rhba-7.0-smart-router.jar"
 osbs:
