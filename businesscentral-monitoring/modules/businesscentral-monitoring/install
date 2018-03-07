@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+SOURCES_DIR=/tmp/artifacts
+
+unzip -q ${SOURCES_DIR}/${BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
+chmod 0755 ${SOURCES_DIR}/jboss-eap-7.1
+
+cp -rf ${SOURCES_DIR}/jboss-eap-7.1/* ${JBOSS_HOME}/
+mv "${JBOSS_HOME}/standalone/deployments/business-central-monitoring.war" "${JBOSS_HOME}/standalone/deployments/ROOT.war"
+mv "${JBOSS_HOME}/standalone/deployments/business-central-monitoring.war.dodeploy" "${JBOSS_HOME}/standalone/deployments/ROOT.war.dodeploy"
+
+chown -R jboss:root ${JBOSS_HOME}
+chmod 0755 ${JBOSS_HOME}
+chmod -R g+rwX ${JBOSS_HOME}

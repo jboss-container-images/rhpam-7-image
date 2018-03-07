@@ -19,15 +19,15 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-      value: "rhbas-7.0.0.ER1-business-central-eap7.zip"
+      value: "rhba-7.0.0.DR4-business-central-eap7-deployable.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: businesscentral
 artifacts:
-    - path: rhbas-7.0.0.ER1-business-central-eap7.zip
-      md5:  18967bad729427d552947d5adfb2e55d
+    - path: rhba-7.0.0.DR4-business-central-eap7-deployable.zip
+      md5:  929f1ef17bf38f245dfd76f140bad48c
 run:
       user: 185
       cmd:
