@@ -1,0 +1,40 @@
+schema_version: 1
+
+name: "rhba-7/elasticsearch"
+description: "Elasticsearch 5.6.5 Container Image"
+version: "5.6.5"
+from: "jboss/openjdk18-rhel7:1.1"
+labels:
+    - name: "com.redhat.component"
+      value: "rhba-7-rhba70-elasticsearch-container"
+    - name: "elasticsearch.version"
+      value: "5.6.5"
+envs:
+    - name: "ELASTICSEARCH_HOME"
+      value: "/opt/elasticsearch"
+    - name: "ELASTICSEARCH_VERSION"
+      value: "5.6.5"
+    - name: "ELASTICSEARCH_DISTRIBUTION_ZIP"
+      value: "elasticsearch-5.6.5.zip"
+modules:
+      repositories:
+          - path: modules
+      install:
+          - name: os.elasticsearch
+packages:
+      repositories:
+          - jboss-os
+          - jboss-rhscl
+      install:
+          - hostname
+artifacts:
+    - url: elasticsearch-5.6.5.zip
+      md5: d60fb08e59dd95a70eacb4a0519da889
+run:
+      user: 185
+      cmd:
+          - "/opt/elasticsearch/bin/elasticsearch"
+osbs:
+      repository:
+          name: containers/rhba-7-elasticsearch
+          branch: jb-rhba-7.0-elasticsearch-rhel-7
