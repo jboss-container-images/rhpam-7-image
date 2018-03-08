@@ -5,6 +5,8 @@ description: "Red Hat Business Automation Smart Router 7.0 container image"
 version: "7.0.0"
 from: "jboss/openjdk18-rhel7:1.0"
 labels:
+    - name: "com.redhat.component"
+      value: "rhba-7-rhba70-smartrouter-container"
     - name: "org.jboss.product"
       value: "rhba-smartrouter"
     - name: "org.jboss.product.version"
@@ -42,5 +44,5 @@ run:
           - "/opt/rhba-smartrouter/rhba-7.0-smart-router.jar"
 osbs:
       repository:
-          name: rhba-7-smartrouter-docker
-          branch: jb-smartrouter70
+          name: containers/rhba-7-smartrouter
+          branch: jb-rhba-7.0-smartrouter-rhel-7
