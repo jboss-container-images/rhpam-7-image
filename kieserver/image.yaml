@@ -5,6 +5,8 @@ description: "Red Hat Business Automation Execution Server 7.0 container image"
 version: "7.0.0"
 from: "jboss-eap-7/eap71:latest"
 labels:
+    - name: "com.redhat.component"
+      value: "rhba-7-rhba70-kieserver-container"
     - name: "org.jboss.product"
       value: "rhba-kieserver"
     - name: "org.jboss.product.version"
@@ -38,5 +40,5 @@ run:
           - "standalone-full.xml"
 osbs:
       repository:
-          name: rhba-7-kieserver-docker
-          branch: jb-kieserver70
+          name: containers/rhba-7-kieserver
+          branch: jb-rhba-7.0-kieserver-rhel-7
