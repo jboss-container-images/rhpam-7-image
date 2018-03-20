@@ -21,15 +21,15 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
     - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
-      value: "rhba-7.0.0.DR-redhat-4-monitoring-ee7.zip"
+      value: "rhba-7.0.0.ER1-monitoring-ee7.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: businesscentral-monitoring
 artifacts:
-    - path: rhba-7.0.0.DR-redhat-4-monitoring-ee7.zip
-      md5:  bc16b95333743b3f2e2e9d18a433ae69
+    - path: rhba-7.0.0.ER1-monitoring-ee7.zip
+      md5:  aa9be50830b4e4f6fede4dff4315d8a5
 run:
       user: 185
       cmd:

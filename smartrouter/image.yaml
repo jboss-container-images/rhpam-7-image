@@ -21,7 +21,7 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "rhba-7.0.0.DR4-add-ons.zip"
+      value: "rhba-7.0.0.ER1-add-ons.zip"
     - name: "KIE_ROUTER_DISTRIBUTION_JAR"
       value: "rhba-7.0-smart-router.jar"
 ports:
@@ -32,8 +32,8 @@ modules:
       install:
           - name: smartrouter
 artifacts:
-    - path: rhba-7.0.0.DR4-add-ons.zip
-      md5:  2107e8adb2d520b0f323a0dbdb38cf41
+    - path: rhba-7.0.0.ER1-add-ons.zip
+      md5:  9340f58e4d20119b9a53e9d196bbfefa
 run:
       user: 185
       cmd:
