@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+SOURCES_DIR=/tmp/artifacts
+
+unzip -q ${SOURCES_DIR}/${ELASTICSEARCH_DISTRIBUTION_ZIP} -d /opt
+mv /opt/elasticsearch-${ELASTICSEARCH_VERSION} ${ELASTICSEARCH_HOME}
+
+# install x-pack plugin - leave it here for a while
+# ${ELASTICSEARCH_HOME}/bin/elasticsearch-plugin install x-pack
+
+chown -R jboss:root ${ELASTICSEARCH_HOME}
+chmod 0755 ${ELASTICSEARCH_HOME}
+chmod -R g+rwX ${ELASTICSEARCH_HOME}
