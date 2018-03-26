@@ -1,6 +1,6 @@
 schema_version: 1
 
-name: "rhba-7/elasticsearch"
+name: "rhba-7/rhba70-elasticsearch"
 description: "Elasticsearch 5.6.5 Container Image"
 version: "5.6.5"
 from: "jboss/openjdk18-rhel7:1.1"
