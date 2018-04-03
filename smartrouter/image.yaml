@@ -1,22 +1,22 @@
 schema_version: 1
 
-name: "rhba-7/rhba70-smartrouter"
-description: "Red Hat Business Automation Smart Router 7.0 container image"
+name: "rhpam-7/rhpam70-smartrouter"
+description: "Red Hat Process Automation Manager Smart Router 7.0 container image"
 version: "7.0.0"
 from: "jboss/openjdk18-rhel7:1.0"
 labels:
     - name: "com.redhat.component"
-      value: "rhba-7-rhba70-smartrouter-container"
+      value: "rhpam-7-rhpam70-smartrouter-container"
     - name: "org.jboss.product"
-      value: "rhba-smartrouter"
+      value: "rhpam-smartrouter"
     - name: "org.jboss.product.version"
       value: "7.0.0"
-    - name: "org.jboss.product.rhba-smartrouter.version"
+    - name: "org.jboss.product.rhpam-smartrouter.version"
       value: "7.0.0"
 envs:
     - name: "JBOSS_PRODUCT"
-      value: "rhba-smartrouter"
-    - name: "JBOSS_RHBA_SMARTROUTER_VERSION"
+      value: "rhpam-smartrouter"
+    - name: "JBOSS_RHPAM_SMARTROUTER_VERSION"
       value: "7.0.0"
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
@@ -41,8 +41,8 @@ run:
           - "-Dorg.kie.server.router.host=0.0.0.0"
           - "-Dorg.kie.server.router.port=9000"
           - "-jar"
-          - "/opt/rhba-smartrouter/rhba-7.0-smart-router.jar"
+          - "/opt/rhpam-smartrouter/rhba-7.0-smart-router.jar"
 osbs:
       repository:
-          name: containers/rhba-7-smartrouter
-          branch: jb-rhba-7.0-smartrouter-rhel-7
+          name: containers/rhpam-7-smartrouter
+          branch: jb-rhpam-7.0-smartrouter-rhel-7

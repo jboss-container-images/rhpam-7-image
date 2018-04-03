@@ -1,12 +1,12 @@
 schema_version: 1
 
-name: "rhba-7/rhba70-elasticsearch"
+name: "rhpam-7/rhpam70-elasticsearch"
 description: "Elasticsearch 5.6.5 Container Image"
 version: "5.6.5"
 from: "jboss/openjdk18-rhel7:1.1"
 labels:
     - name: "com.redhat.component"
-      value: "rhba-7-rhba70-elasticsearch-container"
+      value: "rhpam-7-rhpam70-elasticsearch-container"
     - name: "elasticsearch.version"
       value: "5.6.5"
 envs:
@@ -36,5 +36,5 @@ run:
           - "/opt/elasticsearch/bin/elasticsearch"
 osbs:
       repository:
-          name: containers/rhba-7-elasticsearch
-          branch: jb-rhba-7.0-elasticsearch-rhel-7
+          name: containers/rhpam-7-elasticsearch
+          branch: jb-rhpam-7.0-elasticsearch-rhel-7

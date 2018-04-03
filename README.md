@@ -1,3 +1,3 @@
-# rhba-7-image
-Red Hat Business Automation 7 standalone images
+# rhpam-7-image
+Red Hat Process Automation Manager 7 standalone images
 
