@@ -1,4 +1,4 @@
-@rhba-7/rhba70-businesscentral-monitoring
+@rhpam-7/rhpam70-businesscentral-monitoring
 Feature: Standalone Business Central Monitoring tests
 
   Scenario: Web console is available

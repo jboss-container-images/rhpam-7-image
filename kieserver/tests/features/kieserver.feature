@@ -1,5 +1,5 @@
-@rhba-7/rhba70-kieserver
-Feature: RHBA Standalone Kie Execution Server tests
+@rhpam-7/rhpam70-kieserver
+Feature: RHPAM Standalone Kie Execution Server tests
 
   Scenario: Test REST API is secure
     When container is ready

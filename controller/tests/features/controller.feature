@@ -1,5 +1,5 @@
-@rhba-7/rhba70-controller
-Feature: RHBA Standalone Controller tests
+@rhpam-7/rhpam70-controller
+Feature: RHPAM Standalone Controller tests
 
   Scenario: Test REST API is secure
     When container is ready

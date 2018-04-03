@@ -1,4 +1,4 @@
-# Red Hat Business Automation Standalone Controller 7.0 container image
+# Red Hat Process Automation Manager Standalone Controller 7.0 container image
 
 NOTE: Extends link:https://github.com/jboss-container-images/jboss-eap-7-image[JBoss EAP 7 image]
 
