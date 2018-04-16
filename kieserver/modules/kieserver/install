@@ -13,6 +13,13 @@ cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${JBOSS_HOME}/standalone/deploymen
 touch ${JBOSS_HOME}/standalone/deployments/ROOT.war.dodeploy
 cp -rf ${SOURCES_DIR}/SecurityPolicy/* ${JBOSS_HOME}/bin/
 
+#temp fix for https://issues.jboss.org/browse/RHPAM-740, before the latest PostgreSQL JDGC rpm is provided
+#only copy the JDBC if it exists
+POSTGRESQL_JAR=${SOURCES_DIR}/postgresql-42.2.2.jar
+if [ -f $POSTGRESQL_JAR ]; then
+    cp $POSTGRESQL_JAR /usr/share/java/postgresql-jdbc.jar
+fi
+
 chown -R jboss:root ${JBOSS_HOME}
 chmod 0755 ${JBOSS_HOME}
 chmod -R g+rwX ${JBOSS_HOME}
