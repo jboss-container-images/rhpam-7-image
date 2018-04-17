@@ -21,9 +21,9 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "rhba-7.0.0.ER2-add-ons.zip"
+      value: "rhpam-7.0.0.ER3-add-ons.zip"
     - name: "KIE_ROUTER_DISTRIBUTION_JAR"
-      value: "rhba-7.0-smart-router.jar"
+      value: "rhpam-7.0-smart-router.jar"
 ports:
     - value: 9000
 modules:
@@ -32,8 +32,8 @@ modules:
       install:
           - name: smartrouter
 artifacts:
-    - path: rhba-7.0.0.ER2-add-ons.zip
-      md5:  3668a1a26df3a43f5456f439eb835b68
+    - path: rhpam-7.0.0.ER3-add-ons.zip
+      md5:  f07609cdc2263086c632c0dc4e549b29
 run:
       user: 185
       cmd:
@@ -41,7 +41,7 @@ run:
           - "-Dorg.kie.server.router.host=0.0.0.0"
           - "-Dorg.kie.server.router.port=9000"
           - "-jar"
-          - "/opt/rhpam-smartrouter/rhba-7.0-smart-router.jar"
+          - "/opt/rhpam-smartrouter/rhpam-7.0-smart-router.jar"
 osbs:
       repository:
           name: containers/rhpam-7-smartrouter

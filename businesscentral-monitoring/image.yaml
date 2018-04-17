@@ -21,15 +21,15 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
     - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
-      value: "rhba-7.0.0.ER2-monitoring-ee7.zip"
+      value: "rhpam-7.0.0.ER3-monitoring-ee7.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: businesscentral-monitoring
 artifacts:
-    - path: rhba-7.0.0.ER2-monitoring-ee7.zip
-      md5:  9cabe335ece4a45f46ce579300f0d8e9
+    - path: rhpam-7.0.0.ER3-monitoring-ee7.zip
+      md5:  6ea17e8b9bb21274e637a64a7aaaff0d
 run:
       user: 185
       cmd:
