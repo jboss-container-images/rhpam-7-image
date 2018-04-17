@@ -30,6 +30,8 @@ modules:
 artifacts:
     - path: rhba-7.0.0.ER2-kie-server-ee7.zip
       md5:  d0f388b9659fe57f164dafe0c3939caf
+    - path: postgresql-42.2.2.jar
+      md5:  aeaee2a456f269b49d78125d6f492f5d
 run:
       user: 185
       cmd:
