@@ -30,6 +30,8 @@ modules:
 artifacts:
     - path: rhpam-7.0.0.ER3-business-central-eap7-deployable.zip
       md5:  ed70dc2fa1751b531fd3bb9039a5bb6b
+ports:
+    - value: 8001
 run:
       user: 185
       cmd:
