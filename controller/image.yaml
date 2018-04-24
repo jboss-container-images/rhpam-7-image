@@ -21,7 +21,7 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "rhpam-7.0.0.ER3-add-ons.zip"
+      value: "rhpam-7.0.0.ER4-add-ons.zip"
     - name: "CONTROLLER_DISTRIBUTION_ZIP"
       value: "rhpam-7.0-controller-ee7.zip"
 modules:
@@ -30,8 +30,8 @@ modules:
       install:
           - name: controller
 artifacts:
-    - path: rhpam-7.0.0.ER3-add-ons.zip
-      md5:  f07609cdc2263086c632c0dc4e549b29
+    - path: rhpam-7.0.0.ER4-add-ons.zip
+      md5:  6ff943225b38027240f83ee04fdccb53
 run:
       user: 185
       cmd:
