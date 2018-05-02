@@ -16,7 +16,7 @@ labels:
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-kieserver"
-    - name: "JBOSS_RHPAM_KIESERVER_VERSION"
+    - name: "RHPAM_KIESERVER_VERSION"
       value: "7.0.0"
     - name: "PRODUCT_VERSION"
       value: "7.0.0"

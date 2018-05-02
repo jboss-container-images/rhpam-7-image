@@ -16,7 +16,7 @@ labels:
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-controller"
-    - name: "JBOSS_RHPAM_CONTROLLER_VERSION"
+    - name: "RHPAM_CONTROLLER_VERSION"
       value: "7.0.0"
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
