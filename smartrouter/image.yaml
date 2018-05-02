@@ -16,7 +16,7 @@ labels:
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-smartrouter"
-    - name: "JBOSS_RHPAM_SMARTROUTER_VERSION"
+    - name: "RHPAM_SMARTROUTER_VERSION"
       value: "7.0.0"
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
