@@ -22,6 +22,10 @@ envs:
       value: "7.0.0"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
       value: "rhpam-7.0.0.ER5-kie-server-ee7.zip"
+    - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
+      value: "rhpam-7.0.0.ER5-business-central-eap7-deployable.zip"
+    - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
+      value: "jbpm-wb-kie-server-backend-7.7.0.Final-redhat-4.jar"
 modules:
       repositories:
           - path: modules
@@ -30,6 +34,8 @@ modules:
 artifacts:
     - path: rhpam-7.0.0.ER5-kie-server-ee7.zip
       md5:  ded16b2910c489576f40bb1c93c09529
+    - path: rhpam-7.0.0.ER5-business-central-eap7-deployable.zip
+      md5:  1d632beec9c819411c1598d8c151e076
 run:
       user: 185
       cmd:
