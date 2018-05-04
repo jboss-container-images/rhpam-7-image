@@ -21,15 +21,15 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "rhpam-7.0.0.ER4-kie-server-ee7.zip"
+      value: "rhpam-7.0.0.ER5-kie-server-ee7.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: kieserver
 artifacts:
-    - path: rhpam-7.0.0.ER4-kie-server-ee7.zip
-      md5:  bfc5eb95bee0a8af7c7425541532a8d6
+    - path: rhpam-7.0.0.ER5-kie-server-ee7.zip
+      md5:  ded16b2910c489576f40bb1c93c09529
 run:
       user: 185
       cmd:
