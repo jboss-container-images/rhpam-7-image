@@ -9,10 +9,23 @@ DISTRIBUTION_WAR_DIR=kie-server.war
 
 unzip -q ${SOURCES_DIR}/${DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
 
-cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${JBOSS_HOME}/standalone/deployments/ROOT.war
-touch ${JBOSS_HOME}/standalone/deployments/ROOT.war.dodeploy
+ROOT_WAR_DIR=${JBOSS_HOME}/standalone/deployments/ROOT.war
+cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${ROOT_WAR_DIR}
+touch ${ROOT_WAR_DIR}.dodeploy
 cp -rf ${SOURCES_DIR}/SecurityPolicy/* ${JBOSS_HOME}/bin/
+
+# https://issues.jboss.org/browse/RHPAM-738
+BC_WAR_PATH="jboss-eap-7.1/standalone/deployments/business-central.war"
+ROOT_WEBINF_CLASSES_DIR="${ROOT_WAR_DIR}/WEB-INF/classes"
+if [[ -f "${SOURCES_DIR}/${BUSINESS_CENTRAL_DISTRIBUTION_ZIP}" ]] && [[ "${JBPM_WB_KIE_SERVER_BACKEND_JAR}" != "" ]]; then
+    unzip -qj "${SOURCES_DIR}/${BUSINESS_CENTRAL_DISTRIBUTION_ZIP}" "${BC_WAR_PATH}/WEB-INF/lib/${JBPM_WB_KIE_SERVER_BACKEND_JAR}" -d "${SOURCES_DIR}"
+    if [[ -f "${SOURCES_DIR}/${JBPM_WB_KIE_SERVER_BACKEND_JAR}" ]]; then
+        unzip -qj "${SOURCES_DIR}/${JBPM_WB_KIE_SERVER_BACKEND_JAR}" "default-query-definitions.json" -d "${ROOT_WEBINF_CLASSES_DIR}"
+        chmod 664 "${ROOT_WEBINF_CLASSES_DIR}/default-query-definitions.json"
+    fi
+fi
 
 chown -R jboss:root ${JBOSS_HOME}
 chmod 0755 ${JBOSS_HOME}
 chmod -R g+rwX ${JBOSS_HOME}
+
