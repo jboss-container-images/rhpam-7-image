@@ -21,15 +21,15 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-      value: "rhpam-7.0.0.ER5-business-central-eap7-deployable.zip"
+      value: "rhpam-7.0.0.GA-business-central-eap7-deployable.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: businesscentral
 artifacts:
-    - path: rhpam-7.0.0.ER5-business-central-eap7-deployable.zip
-      md5:  1d632beec9c819411c1598d8c151e076
+    - path: rhpam-7.0.0.GA-business-central-eap7-deployable.zip
+      md5:  65235e1e6655a8cae15a74742ceaf415
 ports:
     - value: 8001
 run:
