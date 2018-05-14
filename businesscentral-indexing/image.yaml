@@ -1,0 +1,52 @@
+schema_version: 1
+
+name: "rhpam-7/rhpam70-businesscentral-indexing"
+description: "Red Hat Business Central Indexing 7.0 Container Image"
+version: "7.0.0"
+from: "jboss/openjdk18-rhel7:1.1"
+labels:
+    - name: "com.redhat.component"
+      value: "rhpam-7-rhpam70-businesscentral-indexing-container"
+    - name: "org.jboss.product"
+      value: "rhpam-businesscentral-indexing"
+    - name: "org.jboss.product.version"
+      value: "7.0.0"
+    - name: "org.jboss.product.rhpam-businesscentral-indexing.version"
+      value: "7.0.0"
+    - name: "elasticsearch.version"
+      value: "5.6.5"
+envs:
+    - name: "JBOSS_PRODUCT"
+      value: "rhpam-businesscentral-indexing"
+    - name: "RHPAM_BUSINESS_CENTRAL_INDEXING_VERSION"
+      value: "7.0.0"
+    - name: "PRODUCT_VERSION"
+      value: "7.0.0"
+    - name: "ELASTICSEARCH_HOME"
+      value: "/opt/elasticsearch"
+    - name: "ELASTICSEARCH_VERSION"
+      value: "5.6.5"
+    - name: "ELASTICSEARCH_DISTRIBUTION_ZIP"
+      value: "elasticsearch-5.6.5.zip"
+modules:
+      repositories:
+          - path: modules
+      install:
+          - name: businesscentral-indexing
+packages:
+      repositories:
+          - jboss-os
+          - jboss-rhscl
+      install:
+          - hostname
+artifacts:
+    - url: elasticsearch-5.6.5.zip
+      md5: d60fb08e59dd95a70eacb4a0519da889
+run:
+      user: 185
+      cmd:
+          - "/opt/elasticsearch/bin/elasticsearch"
+osbs:
+      repository:
+          name: containers/rhpam-7-businesscentral-indexing
+          branch: jb-rhpam-7.0-businesscentral-indexing-rhel-7
