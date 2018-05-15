@@ -1,4 +1,4 @@
-# ElasticSearch image
+# Red Hat Business Central Indexing 7.0 container image
 
 NOTE: Extends link:https://github.com/jboss-container-images/jboss-openjdk-image[JBoss OpenJDK image]
 
