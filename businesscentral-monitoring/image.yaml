@@ -28,8 +28,8 @@ modules:
       install:
           - name: businesscentral-monitoring
 artifacts:
-    - path: rhpam-7.0.0.GA-redhat-1-monitoring-ee7.zip
-      md5:  eb8772965c7dfdb95fab0e930adb79f6
+    - path: rhpam-7.0.0.GA-redhat-2-monitoring-ee7.zip
+      md5:  fe7403132fd0b6259e9cfdcb90a93d16
 run:
       user: 185
       cmd:
