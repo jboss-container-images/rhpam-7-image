@@ -21,7 +21,7 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
     - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
-      value: "rhpam-7.0.0.GA-redhat-1-monitoring-ee7.zip"
+      value: "rhpam-7.0.0.GA-redhat-2-monitoring-ee7.zip"
 modules:
       repositories:
           - path: modules
