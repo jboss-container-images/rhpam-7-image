@@ -21,15 +21,15 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.0.0"
     - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
-      value: "rhpam-7.0.0.GA-redhat-2-monitoring-ee7.zip"
+      value: "rhpam-7.0.0.GA-redhat-3-monitoring-ee7.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: businesscentral-monitoring
 artifacts:
-    - path: rhpam-7.0.0.GA-redhat-2-monitoring-ee7.zip
-      md5:  fe7403132fd0b6259e9cfdcb90a93d16
+    - path: rhpam-7.0.0.GA-redhat-3-monitoring-ee7.zip
+      md5:  b69da950d504481c2cf9f6c97ed9b97a
 run:
       user: 185
       cmd:
