@@ -2,7 +2,7 @@ schema_version: 1
 
 name: "rhpam-7/rhpam70-controller"
 description: "Red Hat Process Automation Manager Standalone Controller 7.0 container image"
-version: "7.0.1"
+version: "7.0.2"
 from: "jboss-eap-7/eap71:7.1.2"
 labels:
     - name: "com.redhat.component"
@@ -10,18 +10,18 @@ labels:
     - name: "org.jboss.product"
       value: "rhpam-controller"
     - name: "org.jboss.product.version"
-      value: "7.0.1"
+      value: "7.0.2"
     - name: "org.jboss.product.rhpam-controller.version"
-      value: "7.0.1"
+      value: "7.0.2"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-controller"
     - name: "RHPAM_CONTROLLER_VERSION"
-      value: "7.0.1"
+      value: "7.0.2"
     - name: "PRODUCT_VERSION"
-      value: "7.0.1"
+      value: "7.0.2"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "rhpam-7.0.1.GA-add-ons.zip"
+      value: "rhpam-7.0.2.GA-add-ons.zip"
     - name: "CONTROLLER_DISTRIBUTION_ZIP"
       value: "rhpam-7.0-controller-ee7.zip"
 modules:
@@ -30,8 +30,8 @@ modules:
       install:
           - name: controller
 artifacts:
-    - path: rhpam-7.0.1.GA-add-ons.zip
-      md5:  6bfee269cb3c855c6afd16fc7ecddfb0
+    - path: rhpam-7.0.2.GA-add-ons.zip
+      md5:  ea92b93a7f4fd2c22574977be4e7d81b
 run:
       user: 185
       cmd:
