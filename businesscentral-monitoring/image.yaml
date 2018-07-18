@@ -3,7 +3,7 @@ schema_version: 1
 name: "rhpam-7/rhpam70-businesscentral-monitoring"
 description: "Red Hat Business Central Monitoring 7.0 container image"
 version: "7.0.2"
-from: "jboss-eap-7/eap71:7.1.2"
+from: "jboss-eap-7/eap71:7.1.3"
 labels:
     - name: "com.redhat.component"
       value: "rhpam-7-rhpam70-businesscentral-monitoring-container"
