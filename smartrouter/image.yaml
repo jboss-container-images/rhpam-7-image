@@ -33,7 +33,7 @@ modules:
           - name: smartrouter
 artifacts:
     - path: rhpam-7.0.2.GA-add-ons.zip
-      md5:  ea92b93a7f4fd2c22574977be4e7d81b
+      md5: cee1f40ae6932d5bcca52c83ac21f243
 run:
       user: 185
       cmd:
