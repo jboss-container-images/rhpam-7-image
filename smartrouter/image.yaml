@@ -1,8 +1,8 @@
 schema_version: 1
 
 name: "rhpam-7/rhpam70-smartrouter"
-description: "Red Hat Process Automation Manager Smart Router 7.0 container image"
-version: "7.0.2"
+description: "Red Hat Process Automation Manager Smart Router 7.1 container image"
+version: "7.1.0"
 from: "jboss/openjdk18-rhel7:1.1"
 labels:
     - name: "com.redhat.component"
@@ -10,16 +10,16 @@ labels:
     - name: "org.jboss.product"
       value: "rhpam-smartrouter"
     - name: "org.jboss.product.version"
-      value: "7.0.2"
+      value: "7.1.0"
     - name: "org.jboss.product.rhpam-smartrouter.version"
-      value: "7.0.2"
+      value: "7.1.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-smartrouter"
     - name: "RHPAM_SMARTROUTER_VERSION"
-      value: "7.0.2"
+      value: "7.1.0"
     - name: "PRODUCT_VERSION"
-      value: "7.0.2"
+      value: "7.1.0"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
       value: "rhpam-7.0.2.GA-add-ons.zip"
     - name: "KIE_ROUTER_DISTRIBUTION_JAR"
@@ -45,4 +45,4 @@ run:
 osbs:
       repository:
           name: containers/rhpam-7-smartrouter
-          branch: jb-rhpam-7.0-smartrouter-rhel-7
+          branch: jb-rhpam-7.1-smartrouter-rhel-7
