@@ -1,12 +1,12 @@
 schema_version: 1
 
-name: "rhpam-7/rhpam70-smartrouter"
+name: "rhpam-7/rhpam71-smartrouter"
 description: "Red Hat Process Automation Manager Smart Router 7.1 container image"
 version: "7.1.0"
 from: "jboss/openjdk18-rhel7:1.1"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam70-smartrouter-container"
+      value: "rhpam-7-rhpam71-smartrouter-container"
     - name: "org.jboss.product"
       value: "rhpam-smartrouter"
     - name: "org.jboss.product.version"

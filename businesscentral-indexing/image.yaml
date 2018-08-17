@@ -1,12 +1,12 @@
 schema_version: 1
 
-name: "rhpam-7/rhpam70-businesscentral-indexing"
+name: "rhpam-7/rhpam71-businesscentral-indexing"
 description: "Red Hat Business Central Indexing 7.1 Container Image"
 version: "7.1.0"
 from: "jboss/openjdk18-rhel7:1.1"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam70-businesscentral-indexing-container"
+      value: "rhpam-7-rhpam71-businesscentral-indexing-container"
     - name: "org.jboss.product"
       value: "rhpam-businesscentral-indexing"
     - name: "org.jboss.product.version"
