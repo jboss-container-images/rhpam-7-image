@@ -21,21 +21,23 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "rhpam-7.0.2.GA-kie-server-ee7.zip"
+      value: "rhpam-7.1.0.PAM-redhat-20180821-kie-server-ee7.zip"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-      value: "rhpam-7.0.2.GA-business-central-eap7-deployable.zip"
+      value: "rhpam-7.1.0.PAM-redhat-20180821-business-central-eap7-deployable.zip"
     - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-      value: "jbpm-wb-kie-server-backend-7.7.0.Final-redhat-10.jar"
+      value: "jbpm-wb-kie-server-backend-7.10.0.redhat-20180821.jar"
 modules:
       repositories:
           - path: modules
       install:
           - name: kieserver
 artifacts:
-    - path: rhpam-7.0.2.GA-kie-server-ee7.zip
-      md5: 70bc31783fc4c8f2413233e555e4a805
-    - path: rhpam-7.0.2.GA-business-central-eap7-deployable.zip
-      md5: d271ed2ad2dacdbc086ad62fe87a006e
+    - name: rhpam-7.1.0.PAM-redhat-20180821-kie-server-ee7.zip
+      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180821/rhpam-7.1.0.PAM-redhat-20180821-kie-server-ee7.zip
+      md5: 2828be36949b28048204788f66eb6be8
+    - name: rhpam-7.1.0.PAM-redhat-20180821-business-central-eap7-deployable.zip
+      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180821/rhpam-7.1.0.PAM-redhat-20180821-business-central-eap7-deployable.zip
+      md5: 71810cd045af0719a54d35aea81ddabc
 run:
       user: 185
       cmd:
