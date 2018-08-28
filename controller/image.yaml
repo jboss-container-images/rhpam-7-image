@@ -21,7 +21,7 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "rhpam-7.1.0.PAM-redhat-20180821-add-ons.zip"
+      value: "rhpam-7.1.0.PAM-redhat-20180827-add-ons.zip"
     - name: "CONTROLLER_DISTRIBUTION_ZIP"
       value: "rhpam-7.1-controller-ee7.zip"
 modules:
@@ -30,9 +30,9 @@ modules:
       install:
           - name: controller
 artifacts:
-    - name: rhpam-7.1.0.PAM-redhat-20180821-add-ons.zip
-      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180821/rhpam-7.1.0.PAM-redhat-20180821-add-ons.zip
-      md5: caad19a26e42a760501d7ee913efbda2
+    - name: rhpam-7.1.0.PAM-redhat-20180827-add-ons.zip
+      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180827/rhpam-7.1.0.PAM-redhat-20180827-add-ons.zip
+      md5: 551af95b36d7db079165f1fd5f16b82c
 run:
       user: 185
       cmd:

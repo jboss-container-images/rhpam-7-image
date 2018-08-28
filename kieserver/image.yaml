@@ -21,23 +21,23 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "rhpam-7.1.0.PAM-redhat-20180821-kie-server-ee7.zip"
+      value: "rhpam-7.1.0.PAM-redhat-20180827-kie-server-ee7.zip"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-      value: "rhpam-7.1.0.PAM-redhat-20180821-business-central-eap7-deployable.zip"
+      value: "rhpam-7.1.0.PAM-redhat-20180827-business-central-eap7-deployable.zip"
     - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-      value: "jbpm-wb-kie-server-backend-7.10.0.redhat-20180821.jar"
+      value: "jbpm-wb-kie-server-backend-7.11.0.redhat-20180827.jar"
 modules:
       repositories:
           - path: modules
       install:
           - name: kieserver
 artifacts:
-    - name: rhpam-7.1.0.PAM-redhat-20180821-kie-server-ee7.zip
-      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180821/rhpam-7.1.0.PAM-redhat-20180821-kie-server-ee7.zip
-      md5: 2828be36949b28048204788f66eb6be8
-    - name: rhpam-7.1.0.PAM-redhat-20180821-business-central-eap7-deployable.zip
-      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180821/rhpam-7.1.0.PAM-redhat-20180821-business-central-eap7-deployable.zip
-      md5: 71810cd045af0719a54d35aea81ddabc
+    - name: rhpam-7.1.0.PAM-redhat-20180827-kie-server-ee7.zip
+      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180827/rhpam-7.1.0.PAM-redhat-20180827-kie-server-ee7.zip
+      md5: 36cc5561cbec9e1b6999f2a053c37e35
+    - name: rhpam-7.1.0.PAM-redhat-20180827-business-central-eap7-deployable.zip
+      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180827/rhpam-7.1.0.PAM-redhat-20180827-business-central-eap7-deployable.zip
+      md5: f6db005f9cfd670e9aa14d7c56991504
 run:
       user: 185
       cmd:
