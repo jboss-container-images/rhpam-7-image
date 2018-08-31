@@ -21,16 +21,16 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-      value: "rhpam-7.1.0.PAM-redhat-20180827-business-central-eap7-deployable.zip"
+      value: "rhpam-7.1.0.PAM-redhat-20180829-business-central-eap7-deployable.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: businesscentral
 artifacts:
-    - name: rhpam-7.1.0.PAM-redhat-20180827-business-central-eap7-deployable.zip
-      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180827/rhpam-7.1.0.PAM-redhat-20180827-business-central-eap7-deployable.zip
-      md5: f6db005f9cfd670e9aa14d7c56991504
+    - name: rhpam-7.1.0.PAM-redhat-20180829-business-central-eap7-deployable.zip
+      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180829/rhpam-7.1.0.PAM-redhat-20180829-business-central-eap7-deployable.zip
+      md5: 07998e1a2385cbbde601df0153263f99
 ports:
     - value: 8001
 run:
