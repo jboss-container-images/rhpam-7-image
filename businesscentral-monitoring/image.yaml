@@ -21,16 +21,16 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
     - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
-      value: "rhpam-7.1.0.PAM-redhat-20180829-monitoring-ee7.zip"
+      value: "rhpam-7.1.0.PAM-redhat-20180907-monitoring-ee7.zip"
 modules:
       repositories:
           - path: modules
       install:
           - name: businesscentral-monitoring
 artifacts:
-    - name: rhpam-7.1.0.PAM-redhat-20180829-monitoring-ee7.zip
-      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180829/rhpam-7.1.0.PAM-redhat-20180829-monitoring-ee7.zip
-      md5: 1334115a64e46c657fd051f1514bd205
+    - name: rhpam-7.1.0.PAM-redhat-20180907-monitoring-ee7.zip
+      url: http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/repositories/rhpam-7.1-nightly/org/kie/rhba/rhpam/7.1.0.PAM-redhat-20180907/rhpam-7.1.0.PAM-redhat-20180907-monitoring-ee7.zip
+      md5: b4593c586834ca899de91f4afc8394b7
 run:
       user: 185
       cmd:
