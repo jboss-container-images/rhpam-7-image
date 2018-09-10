@@ -40,7 +40,7 @@ packages:
       install:
           - hostname
 artifacts:
-    - url: elasticsearch-5.6.5.zip
+    - path: elasticsearch-5.6.5.zip
       md5: d60fb08e59dd95a70eacb4a0519da889
 run:
       user: 185
