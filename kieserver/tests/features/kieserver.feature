@@ -1,5 +1,5 @@
 @rhpam-7/rhpam71-kieserver
-Feature: RHPAM Standalone Kie Execution Server tests
+Feature: RHPAM Standalone Kie Server tests
 
   Scenario: Test REST API is secure
     When container is ready
