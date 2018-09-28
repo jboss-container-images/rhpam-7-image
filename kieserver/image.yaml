@@ -21,21 +21,21 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "rhpam-7.1.0.GA-kie-server-ee7.zip"
+      value: "rhpam-7.1.0-kie-server-ee7.zip"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-      value: "rhpam-7.1.0.GA-business-central-eap7-deployable.zip"
+      value: "rhpam-7.1.0-business-central-eap7-deployable.zip"
     - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-      value: "jbpm-wb-kie-server-backend-7.11.0.Final-redhat-00001.jar"
+      value: "jbpm-wb-kie-server-backend-7.11.0.Final-redhat-00002.jar"
 modules:
       repositories:
           - path: modules
       install:
           - name: kieserver
 artifacts:
-    - path: rhpam-7.1.0.GA-kie-server-ee7.zip
-      md5: 8bc1ad0f9c019ebaaba547bb2b0c2ed8
-    - path: rhpam-7.1.0.GA-business-central-eap7-deployable.zip
-      md5: a580356adcdcbdbb658f2584ae8d9f7f
+    - path: rhpam-7.1.0-kie-server-ee7.zip
+      md5: 2d6db546870ecdb5492f0f866f2e6a10
+    - path: rhpam-7.1.0-business-central-eap7-deployable.zip
+      md5: 9ab805d98ea1843f3e710f6b2c908923
 run:
       user: 185
       cmd:
