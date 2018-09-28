@@ -21,7 +21,7 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.1.0"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "rhpam-7.1.0.GA-add-ons.zip"
+      value: "rhpam-7.1.0-add-ons.zip"
     - name: "CONTROLLER_DISTRIBUTION_ZIP"
       value: "rhpam-7.1-controller-ee7.zip"
 modules:
@@ -30,8 +30,8 @@ modules:
       install:
           - name: controller
 artifacts:
-    - path: rhpam-7.1.0.GA-add-ons.zip
-      md5: 8315cf930c646268600374053374c7d1
+    - path: rhpam-7.1.0-add-ons.zip
+      md5: 97ff27bee802cb335ebd185001d537ba
 run:
       user: 185
       cmd:
