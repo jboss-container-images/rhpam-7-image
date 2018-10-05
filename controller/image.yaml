@@ -31,7 +31,7 @@ modules:
           - name: controller
 artifacts:
     - path: rhpam-7.1.0-add-ons.zip
-      md5: 97ff27bee802cb335ebd185001d537ba
+      md5: b774ce56624a612d7685b2b8a470a6b4
 run:
       user: 185
       cmd:

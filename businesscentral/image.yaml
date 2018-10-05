@@ -29,7 +29,7 @@ modules:
           - name: businesscentral
 artifacts:
     - path: rhpam-7.1.0-business-central-eap7-deployable.zip
-      md5: 9ab805d98ea1843f3e710f6b2c908923
+      md5: bec9dc9d291d82ad7b9c68cbe6cad29e
 ports:
     - value: 8001
 run:
