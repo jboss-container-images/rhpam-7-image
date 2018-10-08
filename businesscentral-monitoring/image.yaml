@@ -29,7 +29,7 @@ modules:
           - name: businesscentral-monitoring
 artifacts:
     - path: rhpam-7.1.0-monitoring-ee7.zip
-      md5: d2727e459ce07dabe2b608c5942d7033
+      md5: 8e43444e08cb93b3e1d3baeef4fbeffe
 run:
       user: 185
       cmd:
