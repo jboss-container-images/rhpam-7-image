@@ -25,7 +25,7 @@ envs:
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
       value: "rhpam-7.1.0-business-central-eap7-deployable.zip"
     - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-      value: "jbpm-wb-kie-server-backend-7.11.0.Final-redhat-00002.jar"
+      value: "jbpm-wb-kie-server-backend-7.11.0.Final-redhat-00003.jar"
 modules:
       repositories:
           - path: modules
