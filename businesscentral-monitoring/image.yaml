@@ -1,25 +1,25 @@
 schema_version: 1
 
-name: "rhpam-7/rhpam71-businesscentral-monitoring"
-description: "Red Hat Business Central Monitoring 7.1 container image"
-version: "7.1.0"
+name: "rhpam-7/rhpam72-businesscentral-monitoring"
+description: "Red Hat Business Central Monitoring 7.2 container image"
+version: "7.2.0"
 from: "jboss-eap-7/eap71:7.1.4"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam71-businesscentral-monitoring-container"
+      value: "rhpam-7-rhpam72-businesscentral-monitoring-container"
     - name: "org.jboss.product"
       value: "rhpam-businesscentral-monitoring"
     - name: "org.jboss.product.version"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "org.jboss.product.rhpam-businesscentral-monitoring.version"
-      value: "7.1.0"
+      value: "7.2.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-businesscentral-monitoring"
     - name: "RHPAM_BUSINESS_CENTRAL_MONITORING_VERSION"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "PRODUCT_VERSION"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
       value: "rhpam-7.1.0-monitoring-ee7.zip"
 modules:
@@ -41,4 +41,4 @@ run:
 osbs:
       repository:
           name: containers/rhpam-7-businesscentral-monitoring
-          branch: jb-rhpam-7.1-businesscentral-monitoring-rhel-7
+          branch: jb-rhpam-7.2-businesscentral-monitoring-rhel-7

@@ -1,25 +1,25 @@
 schema_version: 1
 
-name: "rhpam-7/rhpam71-businesscentral"
-description: "Red Hat Business Central 7.1 container image"
-version: "7.1.0"
+name: "rhpam-7/rhpam72-businesscentral"
+description: "Red Hat Business Central 7.2 container image"
+version: "7.2.0"
 from: "jboss-eap-7/eap71:7.1.4"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam71-businesscentral-container"
+      value: "rhpam-7-rhpam72-businesscentral-container"
     - name: "org.jboss.product"
       value: "rhpam-businesscentral"
     - name: "org.jboss.product.version"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "org.jboss.product.rhpam-businesscentral.version"
-      value: "7.1.0"
+      value: "7.2.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-businesscentral"
     - name: "RHPAM_BUSINESS_CENTRAL_VERSION"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "PRODUCT_VERSION"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
       value: "rhpam-7.1.0-business-central-eap7-deployable.zip"
 modules:
@@ -43,4 +43,4 @@ run:
 osbs:
       repository:
           name: containers/rhpam-7-businesscentral
-          branch: jb-rhpam-7.1-businesscentral-rhel-7
+          branch: jb-rhpam-7.2-businesscentral-rhel-7
