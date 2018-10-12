@@ -1,25 +1,25 @@
 schema_version: 1
 
-name: "rhpam-7/rhpam71-kieserver"
-description: "Red Hat Process Automation Manager KIE Server 7.1 container image"
-version: "7.1.0"
+name: "rhpam-7/rhpam72-kieserver"
+description: "Red Hat Process Automation Manager KIE Server 7.2 container image"
+version: "7.2.0"
 from: "jboss-eap-7/eap71:7.1.4"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam71-kieserver-container"
+      value: "rhpam-7-rhpam72-kieserver-container"
     - name: "org.jboss.product"
       value: "rhpam-kieserver"
     - name: "org.jboss.product.version"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "org.jboss.product.rhpam-kieserver.version"
-      value: "7.1.0"
+      value: "7.2.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-kieserver"
     - name: "RHPAM_KIESERVER_VERSION"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "PRODUCT_VERSION"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
       value: "rhpam-7.1.0-kie-server-ee7.zip"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
@@ -47,4 +47,4 @@ run:
 osbs:
       repository:
           name: containers/rhpam-7-kieserver
-          branch: jb-rhpam-7.1-kieserver-rhel-7
+          branch: jb-rhpam-7.2-kieserver-rhel-7

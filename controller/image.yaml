@@ -1,25 +1,25 @@
 schema_version: 1
 
-name: "rhpam-7/rhpam71-controller"
-description: "Red Hat Process Automation Manager Standalone Controller 7.1 container image"
-version: "7.1.0"
+name: "rhpam-7/rhpam72-controller"
+description: "Red Hat Process Automation Manager Standalone Controller 7.2 container image"
+version: "7.2.0"
 from: "jboss-eap-7/eap71:7.1.4"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam71-controller-container"
+      value: "rhpam-7-rhpam72-controller-container"
     - name: "org.jboss.product"
       value: "rhpam-controller"
     - name: "org.jboss.product.version"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "org.jboss.product.rhpam-controller.version"
-      value: "7.1.0"
+      value: "7.2.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-controller"
     - name: "RHPAM_CONTROLLER_VERSION"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "PRODUCT_VERSION"
-      value: "7.1.0"
+      value: "7.2.0"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
       value: "rhpam-7.1.0-add-ons.zip"
     - name: "CONTROLLER_DISTRIBUTION_ZIP"
@@ -43,4 +43,4 @@ run:
 osbs:
       repository:
           name: containers/rhpam-7-controller
-          branch: jb-rhpam-7.1-controller-rhel-7
+          branch: jb-rhpam-7.2-controller-rhel-7
