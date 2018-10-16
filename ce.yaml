@@ -1,0 +1,20 @@
+builds:
+  # Product builds
+  - name: "rhpam-businesscentral"
+    descriptor: "businesscentral/image.yaml"
+    product: true
+  - name: "rhpam-businesscentral-indexing"
+    descriptor: "businesscentral-indexing/image.yaml"
+    product: true
+  - name: "rhpam-businesscentral-monitoring"
+    descriptor: "businesscentral-monitoring/image.yaml"
+    product: true
+  - name: "rhpam-controller"
+    descriptor: "controller/image.yaml"
+    product: true
+  - name: "rhpam-kieserver"
+    descriptor: "kieserver/image.yaml"
+    product: true
+  - name: "rhpam-smartrouter"
+    descriptor: "smartrouter/image.yaml"
+    product: true
