@@ -1,0 +1,16 @@
+schema_version: 1
+
+modules:
+      repositories:
+          - name: cct_module
+            git:
+                  url: https://github.com/jboss-openshift/cct_module.git
+                  ref: sprint-26
+          - name: jboss-eap-7-image
+            git:
+                  url: https://github.com/jboss-container-images/jboss-eap-7-image.git
+                  ref: TBD
+osbs:
+      repository:
+          name: containers/rhpam-7-controller
+          branch: jb-rhpam-7.2-controller-rhel-7

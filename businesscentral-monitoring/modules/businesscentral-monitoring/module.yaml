@@ -1,5 +1,38 @@
 schema_version: 1
 
-name: businesscentral-monitoring
+name: "rhpam-7-businesscentral-monitoring"
+description: "Red Hat Business Central Monitoring 7.2 container image"
+labels:
+    - name: "org.jboss.product"
+      value: "rhpam-businesscentral-monitoring"
+    - name: "org.jboss.product.version"
+      value: "7.2.0"
+    - name: "org.jboss.product.rhpam-businesscentral-monitoring.version"
+      value: "7.2.0"
+envs:
+    - name: "JBOSS_PRODUCT"
+      value: "rhpam-businesscentral-monitoring"
+    - name: "RHPAM_BUSINESS_CENTRAL_MONITORING_VERSION"
+      value: "7.2.0"
+    - name: "PRODUCT_VERSION"
+      value: "7.2.0"
+    - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
+      value: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION.ZIP"
+    - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_EAP"
+      value: "jboss-eap-7.2"
+ports:    
+    - value: 8001
+artifacts:
+    - name: BUSINESS_CENTRAL_MONITORING_DISTRIBUTION.ZIP
+      path: rhpam-7.2.0.PAM-redhat-20181111-monitoring-ee7.zip
+      md5: 0cbaedd9445a7e0cd67ac129d9afe76d
+run:
+      user: 185
+      cmd:
+          - "/opt/eap/bin/standalone.sh"
+          - "-b"
+          - "0.0.0.0"
+          - "-c"
+          - "standalone.xml"
 execute:
     - script: install

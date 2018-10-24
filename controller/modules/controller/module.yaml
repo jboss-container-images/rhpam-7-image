@@ -1,5 +1,36 @@
 schema_version: 1
 
-name: controller
+name: "rhpam-7-controller"
+description: "Red Hat Process Automation Manager Standalone Controller 7.2 install"
+labels:
+    - name: "org.jboss.product"
+      value: "rhpam-controller"
+    - name: "org.jboss.product.version"
+      value: "7.2.0"
+    - name: "org.jboss.product.rhpam-controller.version"
+      value: "7.2.0"
+envs:
+    - name: "JBOSS_PRODUCT"
+      value: "rhpam-controller"
+    - name: "RHPAM_CONTROLLER_VERSION"
+      value: "7.2.0"
+    - name: "PRODUCT_VERSION"
+      value: "7.2.0"
+    - name: "ADD_ONS_DISTRIBUTION_ZIP"
+      value: "ADD_ONS_DISTRIBUTION.ZIP"
+    - name: "CONTROLLER_DISTRIBUTION_ZIP"
+      value: "rhpam-7.2-controller-ee7.zip"
+artifacts:
+    - name: ADD_ONS_DISTRIBUTION.ZIP
+      path: rhpam-7.2.0.PAM-redhat-20181111-add-ons.zip
+      md5: 20dfe888cb9b35584ba2656df3ff8024
+run:
+      user: 185
+      cmd:
+          - "/opt/eap/bin/standalone.sh"
+          - "-b"
+          - "0.0.0.0"
+          - "-c"
+          - "standalone-full.xml"
 execute:
     - script: install
