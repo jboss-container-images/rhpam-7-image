@@ -1,20 +1,32 @@
 builds:
   # Product builds
-  - name: "rhpam-businesscentral"
+  - name: "rhpam-businesscentral-dev"
     descriptor: "businesscentral/image.yaml"
     product: true
-  - name: "rhpam-businesscentral-indexing"
+    overrides:
+      - "businesscentral/dev-overrides.yaml"
+  - name: "rhpam-businesscentral-indexing-dev"
     descriptor: "businesscentral-indexing/image.yaml"
     product: true
-  - name: "rhpam-businesscentral-monitoring"
+    overrides:
+      - "businesscentral-indexing/dev-overrides.yaml"
+  - name: "rhpam-businesscentral-monitoring-dev"
     descriptor: "businesscentral-monitoring/image.yaml"
     product: true
-  - name: "rhpam-controller"
+    overrides:
+      - "businesscentral-monitoring/dev-overrides.yaml"
+  - name: "rhpam-controller-dev"
     descriptor: "controller/image.yaml"
     product: true
-  - name: "rhpam-kieserver"
+    overrides:
+      - "controller/dev-overrides.yaml"
+  - name: "rhpam-kieserver-dev"
     descriptor: "kieserver/image.yaml"
     product: true
-  - name: "rhpam-smartrouter"
+    overrides:
+      - "kieserver/dev-overrides.yaml"
+  - name: "rhpam-smartrouter-dev"
     descriptor: "smartrouter/image.yaml"
     product: true
+    overrides:
+      - "smartrouter/dev-overrides.yaml"

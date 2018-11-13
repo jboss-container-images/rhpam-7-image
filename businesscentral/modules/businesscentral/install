@@ -5,9 +5,9 @@ set -e
 SOURCES_DIR=/tmp/artifacts
 
 unzip -q ${SOURCES_DIR}/${BUSINESS_CENTRAL_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
-chmod 0755 ${SOURCES_DIR}/jboss-eap-7.1
+chmod 0755 ${SOURCES_DIR}/${BUSINESS_CENTRAL_DISTRIBUTION_EAP}
 
-cp -rf ${SOURCES_DIR}/jboss-eap-7.1/* ${JBOSS_HOME}/
+cp -rf ${SOURCES_DIR}/${BUSINESS_CENTRAL_DISTRIBUTION_EAP}/* ${JBOSS_HOME}/
 mv "${JBOSS_HOME}/standalone/deployments/business-central.war" "${JBOSS_HOME}/standalone/deployments/ROOT.war"
 mv "${JBOSS_HOME}/standalone/deployments/business-central.war.dodeploy" "${JBOSS_HOME}/standalone/deployments/ROOT.war.dodeploy"
 

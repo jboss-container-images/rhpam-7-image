@@ -3,46 +3,27 @@ schema_version: 1
 name: "rhpam-7/rhpam72-smartrouter"
 description: "Red Hat Process Automation Manager Smart Router 7.2 container image"
 version: "7.2.0"
-from: "jboss/openjdk18-rhel7:1.1"
+from: "rhel7:7-released"
 labels:
     - name: "com.redhat.component"
       value: "rhpam-7-rhpam72-smartrouter-container"
-    - name: "org.jboss.product"
-      value: "rhpam-smartrouter"
-    - name: "org.jboss.product.version"
-      value: "7.2.0"
-    - name: "org.jboss.product.rhpam-smartrouter.version"
-      value: "7.2.0"
-envs:
-    - name: "JBOSS_PRODUCT"
-      value: "rhpam-smartrouter"
-    - name: "RHPAM_SMARTROUTER_VERSION"
-      value: "7.2.0"
-    - name: "PRODUCT_VERSION"
-      value: "7.2.0"
-    - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "rhpam-7.1.0-add-ons.zip"
-    - name: "KIE_ROUTER_DISTRIBUTION_JAR"
-      value: "rhpam-7.1-smart-router.jar"
-ports:
-    - value: 9000
 modules:
       repositories:
+          - name: cct_module
+            git:
+                  url: https://github.com/jboss-openshift/cct_module.git
+                  ref: master
           - path: modules
       install:
-          - name: smartrouter
-artifacts:
-    - path: rhpam-7.1.0-add-ons.zip
-      md5: b774ce56624a612d7685b2b8a470a6b4
-run:
-      user: 185
-      cmd:
-          - "/usr/bin/java"
-          - "-Dorg.kie.server.router.host=0.0.0.0"
-          - "-Dorg.kie.server.router.port=9000"
-          - "-jar"
-          - "/opt/rhpam-smartrouter/rhpam-7.1-smart-router.jar"
+          - name: jboss.container.openjdk.jdk
+            version: "8"
+          - name: rhpam-7-smartrouter
+packages:
+      repositories:
+          - name: base
+            id: rhel-7-server-rpms
+          - jboss-os
 osbs:
       repository:
           name: containers/rhpam-7-smartrouter
-          branch: jb-rhpam-7.2-smartrouter-rhel-7
+          branch: jb-rhpam-7.2-smartrouter-dev-rhel-7
