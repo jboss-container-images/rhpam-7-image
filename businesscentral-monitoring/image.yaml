@@ -27,7 +27,8 @@ packages:
       repositories:
           - name: base
             id: rhel-7-server-rpms
-          - jboss-os
+          - name: scl
+            id: rhel-server-rhscl-7-rpms
 osbs:
       repository:
           name: containers/rhpam-7-businesscentral-monitoring
