@@ -23,15 +23,15 @@ envs:
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
       value: "jboss-eap-7.2"
     - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-      value: "jbpm-wb-kie-server-backend-7.2.0.redhat-20181114.jar"
+      value: "jbpm-wb-kie-server-backend-7.14.0.Final-redhat-00001.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
     - name: KIE_SERVER_DISTRIBUTION.ZIP
-      path: rhpam-7.2.0.PAM-redhat-20181114-kie-server-ee7.zip
-      md5: ceabd3595d049799ab265293d80c5481
+      path: rhpam-7.2.0-kie-server-ee7.zip
+      md5: ee09fc008cddc99c07df1897ecd6ceec
     - name: BUSINESS_CENTRAL_DISTRIBUTION.ZIP
-      path: rhpam-7.2.0.PAM-redhat-20181114-business-central-eap7-deployable.zip
-      md5: a569a5cb3e97a9f82a1d897d45418599
+      path: rhpam-7.2.0-business-central-eap7-deployable.zip
+      md5: e471cfcd7ab7b10aa10443844096a4b6
 run:
       user: 185
       cmd:

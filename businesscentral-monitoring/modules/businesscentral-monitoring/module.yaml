@@ -20,12 +20,12 @@ envs:
       value: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION.ZIP"
     - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_EAP"
       value: "jboss-eap-7.2"
-ports:    
+ports:
     - value: 8001
 artifacts:
     - name: BUSINESS_CENTRAL_MONITORING_DISTRIBUTION.ZIP
-      path: rhpam-7.2.0.PAM-redhat-20181114-monitoring-ee7.zip
-      md5: 54ca3585bce4a23a1ff3ad87eb82754a
+      path: rhpam-7.2.0-monitoring-ee7.zip
+      md5: 989e75f653f4149a0995355719cda9c1
 run:
       user: 185
       cmd:
