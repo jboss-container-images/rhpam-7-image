@@ -10,7 +10,3 @@ modules:
             git:
                   url: https://github.com/jboss-container-images/jboss-eap-7-image.git
                   ref: EAP72-CR1
-osbs:
-      repository:
-          name: containers/rhpam-7-businesscentral
-          branch: rhpam-7.2-rhel-7
