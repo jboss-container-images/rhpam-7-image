@@ -27,4 +27,4 @@ packages:
 osbs:
       repository:
           name: containers/rhpam-7-smartrouter
-          branch: jb-rhpam-7.2-smartrouter-dev-rhel-7
+          branch: rhpam-7.2-rhel-7
