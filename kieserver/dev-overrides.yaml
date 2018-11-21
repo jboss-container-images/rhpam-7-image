@@ -10,7 +10,3 @@ modules:
             git:
                   url: https://github.com/jboss-container-images/jboss-eap-7-image.git
                   ref: EAP72-CR1
-osbs:
-      repository:
-          name: containers/rhpam-7-kieserver
-          branch: jb-rhpam-7.2-kieserver-dev-rhel-7

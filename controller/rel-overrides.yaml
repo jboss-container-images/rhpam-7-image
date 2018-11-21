@@ -10,7 +10,3 @@ modules:
             git:
                   url: https://github.com/jboss-container-images/jboss-eap-7-image.git
                   ref: TBD
-osbs:
-      repository:
-          name: containers/rhpam-7-controller
-          branch: jb-rhpam-7.2-controller-rhel-7
