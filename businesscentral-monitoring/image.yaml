@@ -32,4 +32,4 @@ packages:
 osbs:
       repository:
           name: containers/rhpam-7-businesscentral-monitoring
-          branch: jb-rhpam-7.2-businesscentral-monitoring-dev-rhel-7
+          branch: rhpam-7.2-rhel-7
