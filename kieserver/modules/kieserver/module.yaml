@@ -32,6 +32,9 @@ artifacts:
     - name: BUSINESS_CENTRAL_DISTRIBUTION.ZIP
       path: rhpam-7.2.0-business-central-eap7-deployable.zip
       md5: 198f3b5360733a1470598e6f7152027a
+    - name: slf4j-simple.jar
+      path: slf4j-simple-1.7.22.redhat-1.jar
+      md5: 51c319582c16a07c21e41737e45cb03a
 run:
       user: 185
       cmd:
