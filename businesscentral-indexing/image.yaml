@@ -19,14 +19,12 @@ modules:
             version: "8"
           - name: rhpam-7-businesscentral-indexing
 packages:
-      repositories:
-          - name: base
-            id: rhel-7-server-rpms
-          - name: scl
-            id: rhel-server-rhscl-7-rpms
+      content_sets_file: content_sets.yml
       install:
           - hostname
 osbs:
+      configuration:
+          container_file: container.yaml
       repository:
           name: containers/rhpam-7-businesscentral-indexing
           branch: rhpam-7.2-rhel-7
