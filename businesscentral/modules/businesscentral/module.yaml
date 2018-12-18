@@ -1,21 +1,21 @@
 schema_version: 1
 
 name: "rhpam-7-businesscentral"
-description: "Red Hat Business Central 7.2 install"
+description: "Red Hat Business Central 7.3 install"
 labels:
     - name: "org.jboss.product"
       value: "rhpam-businesscentral"
     - name: "org.jboss.product.version"
-      value: "7.2.0"
+      value: "7.3.0"
     - name: "org.jboss.product.rhpam-businesscentral.version"
-      value: "7.2.0"
+      value: "7.3.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-businesscentral"
     - name: "RHPAM_BUSINESS_CENTRAL_VERSION"
-      value: "7.2.0"
+      value: "7.3.0"
     - name: "PRODUCT_VERSION"
-      value: "7.2.0"
+      value: "7.3.0"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
       value: "BUSINESS_CENTRAL_DISTRIBUTION.ZIP"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
