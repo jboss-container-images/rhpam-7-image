@@ -1,12 +1,12 @@
 schema_version: 1
 
-name: "rhpam-7/rhpam72-smartrouter"
-description: "Red Hat Process Automation Manager Smart Router 7.2 container image"
-version: "7.2.0"
+name: "rhpam-7/rhpam73-smartrouter"
+description: "Red Hat Process Automation Manager Smart Router 7.3 container image"
+version: "7.3.0"
 from: "rhel7:7-released"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam72-smartrouter-container"
+      value: "rhpam-7-rhpam73-smartrouter-container"
 modules:
       repositories:
           - name: cct_module
@@ -25,4 +25,4 @@ osbs:
           container_file: container.yaml
       repository:
           name: containers/rhpam-7-smartrouter
-          branch: rhpam-7.2-rhel-7
+          branch: rhpam-7.3-rhel-7
