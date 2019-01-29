@@ -33,6 +33,6 @@ run:
           - "-Dorg.kie.server.router.host=0.0.0.0"
           - "-Dorg.kie.server.router.port=9000"
           - "-jar"
-          - "/opt/rhpam-smartrouter/rhpam-7.2-smart-router.jar"
+          - "/opt/rhpam-smartrouter/${KIE_ROUTER_DISTRIBUTION_JAR}"
 execute:
     - script: install
