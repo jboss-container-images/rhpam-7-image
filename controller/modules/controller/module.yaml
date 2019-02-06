@@ -19,11 +19,11 @@ envs:
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
       value: "ADD_ONS_DISTRIBUTION.ZIP"
     - name: "CONTROLLER_DISTRIBUTION_ZIP"
-      value: "rhpam-7.2-controller-ee7.zip"
+      value: "rhpam-7.3-controller-ee7.zip"
 artifacts:
     - name: ADD_ONS_DISTRIBUTION.ZIP
-      path: rhpam-7.2.1-add-ons.zip
-      md5: 7a60843a4b14a06a77dc5e0f2893127a
+      path: rhpam-7.3.0.PAM-redhat-20190127-add-ons.zip
+      md5: 78b4bed9abf56dbbbef3abda1d225ee6
 run:
       user: 185
       cmd:
