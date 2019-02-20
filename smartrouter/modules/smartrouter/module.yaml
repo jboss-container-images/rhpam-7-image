@@ -23,8 +23,8 @@ ports:
     - value: 9000
 artifacts:
     - name: ADD_ONS_DISTRIBUTION.ZIP
-      path: rhpam-7.3.0.PAM-redhat-20190127-add-ons.zip
-      md5: 78b4bed9abf56dbbbef3abda1d225ee6
+      path: rhpam-7.3.0.PAM-redhat-20190219-add-ons.zip
+      md5: 67ca069e9dadc5795d5dc7883c2f0f38
 run:
       user: 185
       cmd:
