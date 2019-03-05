@@ -1,21 +1,21 @@
 schema_version: 1
 
 name: "rhpam-7-kieserver"
-description: "Red Hat Process Automation Manager KIE Server 7.3 install"
+description: "Red Hat Process Automation Manager KIE Server 7.4 install"
 labels:
     - name: "org.jboss.product"
       value: "rhpam-kieserver"
     - name: "org.jboss.product.version"
-      value: "7.3.0"
+      value: "7.4.0"
     - name: "org.jboss.product.rhpam-kieserver.version"
-      value: "7.3.0"
+      value: "7.4.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-kieserver"
     - name: "RHPAM_KIESERVER_VERSION"
-      value: "7.3.0"
+      value: "7.4.0"
     - name: "PRODUCT_VERSION"
-      value: "7.3.0"
+      value: "7.4.0"
     - name: "KIE_SERVER_DISTRIBUTION_ZIP"
       value: "KIE_SERVER_DISTRIBUTION.ZIP"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
@@ -23,15 +23,15 @@ envs:
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
       value: "jboss-eap-7.2"
     - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-      value: "jbpm-wb-kie-server-backend-7.18.0.Final-redhat-00001.jar"
+      value: "jbpm-wb-kie-server-backend-7.4.0.redhat-20190304.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
     - name: KIE_SERVER_DISTRIBUTION.ZIP
-      path: rhpam-7.3.0-kie-server-ee8.zip
-      md5: aad5a46b73ec6df71c959bbb6a2b2d5a
+      path: rhpam-7.4.0.PAM-redhat-20190304-kie-server-ee8.zip
+      md5: e3a4c170fdeafebd48fe9a89f93f14a9
     - name: BUSINESS_CENTRAL_DISTRIBUTION.ZIP
-      path: rhpam-7.3.0-business-central-eap7-deployable.zip
-      md5: 42451e910f52df524d932a1fd6a34777
+      path: rhpam-7.4.0.PAM-redhat-20190304-business-central-eap7-deployable.zip
+      md5: b717ed911c84ecb2bb779330adb9b6d6
     - name: slf4j-simple.jar
       path: slf4j-simple-1.7.22.redhat-1.jar
       md5: 51c319582c16a07c21e41737e45cb03a

@@ -1,21 +1,21 @@
 schema_version: 1
 
 name: "rhpam-7-businesscentral-monitoring"
-description: "Red Hat Business Central Monitoring 7.3 container image"
+description: "Red Hat Business Central Monitoring 7.4 container image"
 labels:
     - name: "org.jboss.product"
       value: "rhpam-businesscentral-monitoring"
     - name: "org.jboss.product.version"
-      value: "7.3.0"
+      value: "7.4.0"
     - name: "org.jboss.product.rhpam-businesscentral-monitoring.version"
-      value: "7.3.0"
+      value: "7.4.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-businesscentral-monitoring"
     - name: "RHPAM_BUSINESS_CENTRAL_MONITORING_VERSION"
-      value: "7.3.0"
+      value: "7.4.0"
     - name: "PRODUCT_VERSION"
-      value: "7.3.0"
+      value: "7.4.0"
     - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
       value: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION.ZIP"
     - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_EAP"
@@ -24,8 +24,8 @@ ports:
     - value: 8001
 artifacts:
     - name: BUSINESS_CENTRAL_MONITORING_DISTRIBUTION.ZIP
-      path: rhpam-7.3.0-monitoring-ee7.zip
-      md5: 28a0fd120d2de78cacf17f8f0cc53ef6
+      path: rhpam-7.4.0.PAM-redhat-20190304-monitoring-ee7.zip
+      md5: efff75e6782e932df4d90f613049c08e
 run:
       user: 185
       cmd:

@@ -1,4 +1,4 @@
-@rhpam-7/rhpam73-controller
+@rhpam-7/rhpam74-controller
 Feature: RHPAM Standalone Controller tests
 
   Scenario: Test REST API is secure

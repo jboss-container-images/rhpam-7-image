@@ -1,12 +1,12 @@
 schema_version: 1
 
-name: "rhpam-7/rhpam73-controller"
-description: "Red Hat Process Automation Manager Standalone Controller 7.3 container image"
-version: "7.3.0"
+name: "rhpam-7/rhpam74-controller"
+description: "Red Hat Process Automation Manager Standalone Controller 7.4 container image"
+version: "7.4.0"
 from: "rhel7:7-released"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam73-controller-container"
+      value: "rhpam-7-rhpam74-controller-container"
 modules:
       repositories:
           - name: cct_module
@@ -30,4 +30,4 @@ osbs:
           container_file: container.yaml
       repository:
           name: containers/rhpam-7-controller
-          branch: rhpam-7.3-rhel-7
+          branch: rhpam-7.4-rhel-7

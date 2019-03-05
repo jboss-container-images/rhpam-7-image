@@ -1,4 +1,4 @@
-@rhpam-7/rhpam73-businesscentral
+@rhpam-7/rhpam74-businesscentral
 Feature: Standalone Business Central tests
 
   Scenario: Web console is available
@@ -9,4 +9,3 @@ Feature: Standalone Business Central tests
          | path     | /kie-wb.jsp |
          | expected_status_code | 200 |
          | wait     | 120   |
-
