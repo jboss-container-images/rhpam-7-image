@@ -24,7 +24,7 @@ ports:
 artifacts:
     - name: ADD_ONS_DISTRIBUTION.ZIP
       path: rhpam-7.3.0-add-ons.zip
-      md5: 2bf22dc9bea63cf6d8df6aa4b9e009fa
+      md5: 3476f3b9e3ac4c2d8448fd67829217b9
 run:
       user: 185
       cmd:
