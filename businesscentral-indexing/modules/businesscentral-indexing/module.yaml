@@ -23,11 +23,12 @@ envs:
     - name: "ELASTICSEARCH_VERSION"
       value: "5.6.5"
     - name: "ELASTICSEARCH_DISTRIBUTION_ZIP"
-      value: "ELASTICSEARCH_DISTRIBUTION.ZIP"
+      value: "elasticsearch_distribution.zip"
 artifacts:
-    - name: ELASTICSEARCH_DISTRIBUTION.ZIP
-      path: elasticsearch-5.6.5.zip
-      md5: d60fb08e59dd95a70eacb4a0519da889
+    - name: "ELASTICSEARCH_DISTRIBUTION_ZIP"
+      target: "elasticsearch_distribution.zip"
+      #     elasticsearch-5.6.5.zip
+      md5: "d60fb08e59dd95a70eacb4a0519da889"
 run:
       user: 185
       cmd:
