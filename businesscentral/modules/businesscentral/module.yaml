@@ -17,15 +17,16 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "7.4.0"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-      value: "BUSINESS_CENTRAL_DISTRIBUTION.ZIP"
+      value: "business_central_distribution.zip"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
       value: "jboss-eap-7.2"
 ports:
     - value: 8001
 artifacts:
-    - name: BUSINESS_CENTRAL_DISTRIBUTION.ZIP
-      path: rhpam-7.4.0.PAM-redhat-20190312-business-central-eap7-deployable.zip
-      md5: 07652ac35ecd04d852236f843b3b091a
+    - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
+      target: "business_central_distribution.zip"
+      #     rhpam-7.4.0.PAM-redhat-20190312-business-central-eap7-deployable.zip
+      md5: "07652ac35ecd04d852236f843b3b091a"
 run:
       user: 185
       cmd:
