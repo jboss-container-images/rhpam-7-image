@@ -24,8 +24,8 @@ ports:
 artifacts:
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
       target: "add_ons_distribution.zip"
-      #     rhpam-7.4.0.PAM-redhat-20190312-add-ons.zip
-      md5: "d2bff96f4dc62b09dbf48147833d78ee"
+      #     rhpam-7.4.0.PAM-redhat-20190322-add-ons.zip
+      md5: "ac3b16467ce951e36b283fa81aab9a6c"
 run:
       user: 185
       cmd:
