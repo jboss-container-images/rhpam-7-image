@@ -5,26 +5,27 @@ labels:
     - name: "org.jboss.product"
       value: "rhpam-smartrouter"
     - name: "org.jboss.product.version"
-      value: "7.3.0"
+      value: "7.3.1"
     - name: "org.jboss.product.rhpam-smartrouter.version"
-      value: "7.3.0"
+      value: "7.3.1"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-smartrouter"
     - name: "RHPAM_SMARTROUTER_VERSION"
-      value: "7.3.0"
+      value: "7.3.1"
     - name: "PRODUCT_VERSION"
-      value: "7.3.0"
+      value: "7.3.1"
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "ADD_ONS_DISTRIBUTION.ZIP"
+      value: "add_ons_distribution.zip"
     - name: "KIE_ROUTER_DISTRIBUTION_JAR"
       value: "rhpam-7.3-smart-router.jar"
 ports:
     - value: 9000
 artifacts:
-    - name: ADD_ONS_DISTRIBUTION.ZIP
-      path: rhpam-7.3.0-add-ons.zip
-      md5: 3476f3b9e3ac4c2d8448fd67829217b9
+    - name: "ADD_ONS_DISTRIBUTION_ZIP"
+      target: "add_ons_distribution.zip"
+      #     rhpam-7.3.0.PAM-redhat-20190331-add-ons.zip
+      md5: "3cecd7c340a46837886e686721ca37ec"
 run:
       user: 185
       cmd:

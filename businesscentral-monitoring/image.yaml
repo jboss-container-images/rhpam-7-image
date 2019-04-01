@@ -2,7 +2,7 @@ schema_version: 1
 
 name: "rhpam-7/rhpam73-businesscentral-monitoring"
 description: "Red Hat Business Central Monitoring 7.3 container image"
-version: "7.3.0"
+version: "7.3.1"
 from: "rhel7:7-released"
 labels:
     - name: "com.redhat.component"
