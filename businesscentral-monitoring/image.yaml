@@ -20,7 +20,7 @@ modules:
           - path: modules
       install:
           - name: jboss.container.openjdk.jdk
-            version: "8"
+            version: "11"
           - name: eap-7.2-latest
           - name: rhpam-7-businesscentral-monitoring
 packages:
