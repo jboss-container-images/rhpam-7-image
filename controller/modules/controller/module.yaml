@@ -24,7 +24,7 @@ artifacts:
     - name: "ADD_ONS_DISTRIBUTION_ZIP"
       target: "add_ons_distribution.zip"
       #     rhpam-7.3.1-add-ons.zip
-      md5: "dfd22a1a593ccd19377e28f40322427f"
+      md5: "4f59a79f21ff4d2fa64070ecc500456f"
 run:
       user: 185
       cmd:
