@@ -3,7 +3,7 @@ schema_version: 1
 name: "rhpam-7/rhpam74-businesscentral-indexing"
 description: "Red Hat Business Central Indexing 7.4 container image"
 version: "7.4.0"
-from: "rhel7:7-released"
+from: "ubi8:8-released"
 labels:
     - name: "com.redhat.component"
       value: "rhpam-7-rhpam74-businesscentral-indexing-container"
@@ -16,7 +16,10 @@ modules:
           - path: modules
       install:
           - name: jboss.container.openjdk.jdk
+            # elasticsearch 5.6.5 is incompatible with jdk 11
             version: "8"
+          - name: java-alternatives
+          - name: dynamic-resources
           - name: rhpam-7-businesscentral-indexing
 packages:
       content_sets_file: content_sets.yml
@@ -27,4 +30,4 @@ osbs:
           container_file: container.yaml
       repository:
           name: containers/rhpam-7-businesscentral-indexing
-          branch: rhpam-7.4-rhel-7
+          branch: rhpam-7.4-ubi-8

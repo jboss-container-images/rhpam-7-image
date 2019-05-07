@@ -19,6 +19,8 @@ envs:
       value: "add_ons_distribution.zip"
     - name: "KIE_ROUTER_DISTRIBUTION_JAR"
       value: "rhpam-7.4-smart-router.jar"
+    - name: "LAUNCH_DIR"
+      value: "/opt/rhpam-smartrouter/launch"
 ports:
     - value: 9000
 artifacts:
