@@ -21,6 +21,8 @@ envs:
       value: "rhpam-7.4-smart-router.jar"
     - name: "LAUNCH_DIR"
       value: "/opt/rhpam-smartrouter/launch"
+    - name: "JBOSS_HOME"
+      value: "/opt/rhpam-smartrouter"  
 ports:
     - value: 9000
 artifacts:
