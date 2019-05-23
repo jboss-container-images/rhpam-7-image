@@ -30,4 +30,4 @@ osbs:
           container_file: container.yaml
       repository:
           name: containers/rhpam-7-businesscentral-indexing
-          branch: rhpam-7.4-ubi-8
+          branch: rhpam-7.4-rhel-8
