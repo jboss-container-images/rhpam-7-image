@@ -36,8 +36,8 @@ artifacts:
       md5: "e3acb746f42e98f6fc58986f6332df85"
     - name: "slf4j-simple.jar"
       target: "slf4j-simple.jar"
-      #     slf4j-simple-1.7.22.redhat-1.jar
-      md5: "51c319582c16a07c21e41737e45cb03a"
+      #     slf4j-simple-1.7.22.redhat-2.jar
+      md5: "62cc6eeb72e2738e3acc8957ca95f37b"
 run:
       user: 185
       cmd:
