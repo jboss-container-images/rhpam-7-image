@@ -25,8 +25,8 @@ ports:
 artifacts:
     - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
       target: "business_central_monitoring_distribution.zip"
-      #     rhpam-7.4.0.PAM-redhat-20190610-monitoring-ee7.zip
-      md5: "076c74ad6993fbf5099033888f03a093"
+      #     rhpam-7.4.0-monitoring-ee7.zip
+      md5: "cbf4be6012a323acfc14e6ba6631b604"
 run:
       user: 185
       cmd:
