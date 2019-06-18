@@ -1,4 +1,4 @@
-@rhpam-7/rhpam74-kieserver
+@rhpam-7/rhpam75-kieserver
 Feature: RHPAM Standalone Kie Server tests
 
   Scenario: Test REST API is secure
