@@ -26,4 +26,4 @@ osbs:
           container_file: container.yaml
       repository:
           name: containers/rhpam-7-smartrouter
-          branch: rhpam-7.4-rhel-8
+          branch: rhba-7.4-rhel-8
