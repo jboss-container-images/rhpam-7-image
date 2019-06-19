@@ -1,23 +1,23 @@
 schema_version: 1
 
 name: "rhpam-7-businesscentral-indexing"
-description: "Red Hat Business Central Indexing 7.4 install"
+description: "Red Hat Business Central Indexing 7.5 install"
 labels:
     - name: "org.jboss.product"
       value: "rhpam-businesscentral-indexing"
     - name: "org.jboss.product.version"
-      value: "7.4.0"
+      value: "7.5.0"
     - name: "org.jboss.product.rhpam-businesscentral-indexing.version"
-      value: "7.4.0"
+      value: "7.5.0"
     - name: "elasticsearch.version"
       value: "5.6.5"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-businesscentral-indexing"
     - name: "RHPAM_BUSINESS_CENTRAL_INDEXING_VERSION"
-      value: "7.4.0"
+      value: "7.5.0"
     - name: "PRODUCT_VERSION"
-      value: "7.4.0"
+      value: "7.5.0"
     - name: "ELASTICSEARCH_HOME"
       value: "/opt/elasticsearch"
     - name: "ELASTICSEARCH_VERSION"
