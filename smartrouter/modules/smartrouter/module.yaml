@@ -1,42 +1,42 @@
+---
 schema_version: 1
 name: "rhpam-7-smartrouter"
 description: "Red Hat Process Automation Manager Smart Router 7.5 install"
 labels:
-    - name: "org.jboss.product"
-      value: "rhpam-smartrouter"
-    - name: "org.jboss.product.version"
-      value: "7.5.0"
-    - name: "org.jboss.product.rhpam-smartrouter.version"
-      value: "7.5.0"
+- name: "org.jboss.product"
+  value: "rhpam-smartrouter"
+- name: "org.jboss.product.version"
+  value: "7.5.0"
+- name: "org.jboss.product.rhpam-smartrouter.version"
+  value: "7.5.0"
 envs:
-    - name: "JBOSS_PRODUCT"
-      value: "rhpam-smartrouter"
-    - name: "RHPAM_SMARTROUTER_VERSION"
-      value: "7.5.0"
-    - name: "PRODUCT_VERSION"
-      value: "7.5.0"
-    - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "add_ons_distribution.zip"
-    - name: "KIE_ROUTER_DISTRIBUTION_JAR"
-      value: "rhpam-7.5-smart-router.jar"
-    - name: "LAUNCH_DIR"
-      value: "/opt/rhpam-smartrouter/launch"
-    - name: "JBOSS_HOME"
-      value: "/opt/rhpam-smartrouter"
+- name: "JBOSS_PRODUCT"
+  value: "rhpam-smartrouter"
+- name: "RHPAM_SMARTROUTER_VERSION"
+  value: "7.5.0"
+- name: "PRODUCT_VERSION"
+  value: "7.5.0"
+- name: "ADD_ONS_DISTRIBUTION_ZIP"
+  value: "add_ons_distribution.zip"
+- name: "KIE_ROUTER_DISTRIBUTION_JAR"
+  value: "rhpam-7.5-smart-router.jar"
+- name: "LAUNCH_DIR"
+  value: "/opt/rhpam-smartrouter/launch"
+- name: "JBOSS_HOME"
+  value: "/opt/rhpam-smartrouter"
 ports:
-    - value: 9000
+- value: 9000
 artifacts:
-    - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      target: "add_ons_distribution.zip"
-      #     rhpam-7.5.0.PAM-redhat-20190618-add-ons.zip
-      md5: "f8a0801d81f5a89993c2d153b383865b"
+- name: "ADD_ONS_DISTRIBUTION_ZIP"
+  target: "add_ons_distribution.zip"
+  md5: "ab4"
 run:
-      user: 185
-      cmd:
-          - "/usr/bin/java"
-          - "-Dorg.kie.server.router.host=0.0.0.0"
-          - "-Dorg.kie.server.router.port=9000"
-          - "-jar"
-          - "/opt/rhpam-smartrouter/${KIE_ROUTER_DISTRIBUTION_JAR}"
+  user: 185
+  cmd:
+  - "/usr/bin/java"
+  - "-Dorg.kie.server.router.host=0.0.0.0"
+  - "-Dorg.kie.server.router.port=9000"
+  - "-jar"
+  - "/opt/rhpam-smartrouter/${KIE_ROUTER_DISTRIBUTION_JAR}"
 execute:
-    - script: install
+- script: "install"

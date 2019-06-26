@@ -1,39 +1,39 @@
+---
 schema_version: 1
-
 name: "rhpam-7-businesscentral-monitoring"
 description: "Red Hat Business Central Monitoring 7.5 container image"
 labels:
-    - name: "org.jboss.product"
-      value: "rhpam-businesscentral-monitoring"
-    - name: "org.jboss.product.version"
-      value: "7.5.0"
-    - name: "org.jboss.product.rhpam-businesscentral-monitoring.version"
-      value: "7.5.0"
+- name: "org.jboss.product"
+  value: "rhpam-businesscentral-monitoring"
+- name: "org.jboss.product.version"
+  value: "7.5.0"
+- name: "org.jboss.product.rhpam-businesscentral-monitoring.version"
+  value: "7.5.0"
 envs:
-    - name: "JBOSS_PRODUCT"
-      value: "rhpam-businesscentral-monitoring"
-    - name: "RHPAM_BUSINESS_CENTRAL_MONITORING_VERSION"
-      value: "7.5.0"
-    - name: "PRODUCT_VERSION"
-      value: "7.5.0"
-    - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
-      value: "business_central_monitoring_distribution.zip"
-    - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_EAP"
-      value: "jboss-eap-7.2"
+- name: "JBOSS_PRODUCT"
+  value: "rhpam-businesscentral-monitoring"
+- name: "RHPAM_BUSINESS_CENTRAL_MONITORING_VERSION"
+  value: "7.5.0"
+- name: "PRODUCT_VERSION"
+  value: "7.5.0"
+- name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
+  value: "business_central_monitoring_distribution.zip"
+- name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_EAP"
+  value: "jboss-eap-7.2"
 ports:
-    - value: 8001
+- value: 8001
 artifacts:
-    - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
-      target: "business_central_monitoring_distribution.zip"
-      #     rhpam-7.5.0.PAM-redhat-20190618-monitoring-ee7.zip
-      md5: "505e75e61e8a2d13dab2bbb273167f4c"
+- name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
+  target: "business_central_monitoring_distribution.zip"
+  # rhpam-7.5.0.PAM-redhat-20190627-monitoring-ee7.zip
+  md5: "ab6"
 run:
-      user: 185
-      cmd:
-          - "/opt/eap/bin/standalone.sh"
-          - "-b"
-          - "0.0.0.0"
-          - "-c"
-          - "standalone.xml"
+  user: 185
+  cmd:
+  - "/opt/eap/bin/standalone.sh"
+  - "-b"
+  - "0.0.0.0"
+  - "-c"
+  - "standalone.xml"
 execute:
-    - script: install
+- script: "install"
