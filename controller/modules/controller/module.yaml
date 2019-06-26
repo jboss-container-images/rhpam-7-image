@@ -1,37 +1,37 @@
+---
 schema_version: 1
-
 name: "rhpam-7-controller"
 description: "Red Hat Process Automation Manager Standalone Controller 7.5 install"
 labels:
-    - name: "org.jboss.product"
-      value: "rhpam-controller"
-    - name: "org.jboss.product.version"
-      value: "7.5.0"
-    - name: "org.jboss.product.rhpam-controller.version"
-      value: "7.5.0"
+- name: "org.jboss.product"
+  value: "rhpam-controller"
+- name: "org.jboss.product.version"
+  value: "7.5.0"
+- name: "org.jboss.product.rhpam-controller.version"
+  value: "7.5.0"
 envs:
-    - name: "JBOSS_PRODUCT"
-      value: "rhpam-controller"
-    - name: "RHPAM_CONTROLLER_VERSION"
-      value: "7.5.0"
-    - name: "PRODUCT_VERSION"
-      value: "7.5.0"
-    - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      value: "add_ons_distribution.zip"
-    - name: "CONTROLLER_DISTRIBUTION_ZIP"
-      value: "rhpam-7.5-controller-ee7.zip"
+- name: "JBOSS_PRODUCT"
+  value: "rhpam-controller"
+- name: "RHPAM_CONTROLLER_VERSION"
+  value: "7.5.0"
+- name: "PRODUCT_VERSION"
+  value: "7.5.0"
+- name: "ADD_ONS_DISTRIBUTION_ZIP"
+  value: "add_ons_distribution.zip"
+- name: "CONTROLLER_DISTRIBUTION_ZIP"
+  value: "rhpam-7.5-controller-ee7.zip"
 artifacts:
-    - name: "ADD_ONS_DISTRIBUTION_ZIP"
-      target: "add_ons_distribution.zip"
-      #     rhpam-7.5.0.PAM-redhat-20190618-add-ons.zip
-      md5: "f8a0801d81f5a89993c2d153b383865b"
+- name: "ADD_ONS_DISTRIBUTION_ZIP"
+  target: "add_ons_distribution.zip"
+  # rhpam-7.5.0.PAM-redhat-20190620-add-ons.zip
+  md5: "0a4f0fd2f55c43e0857f2c77ce82a517"
 run:
-      user: 185
-      cmd:
-          - "/opt/eap/bin/standalone.sh"
-          - "-b"
-          - "0.0.0.0"
-          - "-c"
-          - "standalone-full.xml"
+  user: 185
+  cmd:
+  - "/opt/eap/bin/standalone.sh"
+  - "-b"
+  - "0.0.0.0"
+  - "-c"
+  - "standalone-full.xml"
 execute:
-    - script: install
+- script: "install"
