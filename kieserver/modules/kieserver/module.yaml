@@ -1,50 +1,50 @@
+---
 schema_version: 1
-
 name: "rhpam-7-kieserver"
 description: "Red Hat Process Automation Manager KIE Server 7.4 install"
 labels:
-    - name: "org.jboss.product"
-      value: "rhpam-kieserver"
-    - name: "org.jboss.product.version"
-      value: "7.4.0"
-    - name: "org.jboss.product.rhpam-kieserver.version"
-      value: "7.4.0"
+- name: "org.jboss.product"
+  value: "rhpam-kieserver"
+- name: "org.jboss.product.version"
+  value: "7.4.0"
+- name: "org.jboss.product.rhpam-kieserver.version"
+  value: "7.4.0"
 envs:
-    - name: "JBOSS_PRODUCT"
-      value: "rhpam-kieserver"
-    - name: "RHPAM_KIESERVER_VERSION"
-      value: "7.4.0"
-    - name: "PRODUCT_VERSION"
-      value: "7.4.0"
-    - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      value: "kie_server_distribution.zip"
-    - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-      value: "business_central_distribution.zip"
-    - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
-      value: "jboss-eap-7.2"
-    - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-      value: "jbpm-wb-kie-server-backend-7.23.0.Final-redhat-00001.jar"
+- name: "JBOSS_PRODUCT"
+  value: "rhpam-kieserver"
+- name: "RHPAM_KIESERVER_VERSION"
+  value: "7.4.0"
+- name: "PRODUCT_VERSION"
+  value: "7.4.0"
+- name: "KIE_SERVER_DISTRIBUTION_ZIP"
+  value: "kie_server_distribution.zip"
+- name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
+  value: "business_central_distribution.zip"
+- name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
+  value: "jboss-eap-7.2"
+- name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
+  value: "jbpm-wb-kie-server-backend-7.4.0.redhat-20190701.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
-    - name: "KIE_SERVER_DISTRIBUTION_ZIP"
-      target: "kie_server_distribution.zip"
-      #     rhpam-7.4.0-kie-server-ee8.zip
-      md5: "a4fe5079a84bc96843bec72dcef8d0e3"
-    - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-      target: "business_central_distribution.zip"
-      #     rhpam-7.4.0-business-central-eap7-deployable.zip
-      md5: "19a4780832af412bd9ad596abcdad2c9"
-    - name: "slf4j-simple.jar"
-      target: "slf4j-simple.jar"
-      #     slf4j-simple-1.7.22.redhat-2.jar
-      md5: "62cc6eeb72e2738e3acc8957ca95f37b"
+- name: "KIE_SERVER_DISTRIBUTION_ZIP"
+  target: "kie_server_distribution.zip"
+  # rhpam-7.4.0.PAM-redhat-20190701-kie-server-ee8.zip
+  md5: "ba3fa43a4029d3b47d5db4063c17d334"
+- name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
+  target: "business_central_distribution.zip"
+  # rhpam-7.4.0.PAM-redhat-20190701-business-central-eap7-deployable.zip
+  md5: "203eabb0d25a42677c110c6fbd6a16a9"
+- name: "slf4j-simple.jar"
+  target: "slf4j-simple.jar"
+  # slf4j-simple-1.7.22.redhat-2.jar
+  md5: "62cc6eeb72e2738e3acc8957ca95f37b"
 run:
-      user: 185
-      cmd:
-          - "/opt/eap/bin/standalone.sh"
-          - "-b"
-          - "0.0.0.0"
-          - "-c"
-          - "standalone-full.xml"
+  user: 185
+  cmd:
+  - "/opt/eap/bin/standalone.sh"
+  - "-b"
+  - "0.0.0.0"
+  - "-c"
+  - "standalone-full.xml"
 execute:
-    - script: install
+- script: "install"
