@@ -1,6 +1,7 @@
 ---
 schema_version: 1
 name: "rhpam-7-controller"
+version: "1.0"
 description: "Red Hat Process Automation Manager Standalone Controller 7.5 install"
 labels:
 - name: "org.jboss.product"
