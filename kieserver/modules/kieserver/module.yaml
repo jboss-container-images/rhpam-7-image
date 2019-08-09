@@ -1,6 +1,7 @@
 ---
 schema_version: 1
 name: "rhpam-7-kieserver"
+version: "1.0"
 description: "Red Hat Process Automation Manager KIE Server 7.5 install"
 labels:
 - name: "org.jboss.product"
