@@ -1,12 +1,12 @@
 schema_version: 1
 
-name: "rhpam-7/rhpam75-businesscentral"
-description: "Red Hat Business Central 7.5 container image"
-version: "7.5.0"
+name: "rhpam-7/rhpam76-businesscentral"
+description: "Red Hat Business Central 7.6 container image"
+version: "7.6.0"
 from: "ubi8:8-released"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam75-businesscentral-rhel8-container"
+      value: "rhpam-7-rhpam76-businesscentral-rhel8-container"
 modules:
       repositories:
           - name: cct_module
@@ -31,4 +31,4 @@ osbs:
           container_file: container.yaml
       repository:
           name: containers/rhpam-7-businesscentral
-          branch: rhba-7.5-rhel-8
+          branch: rhba-7.6-rhel-8
