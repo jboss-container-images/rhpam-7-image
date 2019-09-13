@@ -1,0 +1,6 @@
+# Red Hat Process Automation Manager Process Migration 7.6 container image
+
+## License
+
+See link:LICENSE[LICENSE] file.
+
