@@ -18,7 +18,7 @@ envs:
   value: "7.6.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "add_ons_distribution.zip"
-- name: "KIE_PROCESS_MIGRATION_DISTRIBUTION_JAR"
+- name: "PROCESS_MIGRATION_DISTRIBUTION_JAR"
   value: "rhpam-7.6-process-migration-service-standalone.jar"
 - name: "LAUNCH_DIR"
   value: "/opt/rhpam-process-migration/launch"
@@ -31,13 +31,13 @@ ports:
 artifacts:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   target: "add_ons_distribution.zip"
-  # rhpam-7.6.0.PAM-redhat-20190912-add-ons.zip
-  md5: "e3f444b35d75c9eefcf7218ce4da1f87"
+  # rhpam-7.6.0.PAM-redhat-20190930-add-ons.zip
+  md5: "c9bb873a46f76033b07d76fcc832d568"
 run:
   user: 185
   cmd:
   - "/usr/bin/java"
   - "-jar"
-  - "/opt/rhpam-process-migration/${KIE_PROCESS_MIGRATION_DISTRIBUTION_JAR}"
+  - "/opt/rhpam-process-migration/${PROCESS_MIGRATION_DISTRIBUTION_JAR}"
 execute:
 - script: "install"
