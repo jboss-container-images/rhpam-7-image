@@ -6,7 +6,7 @@ version: "7.6.0"
 from: "ubi8-minimal:8-released"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam76-process-migration-rhel8-container"
+      value: "rhpam-7-rhpam76-process-migration-container"
 modules:
       repositories:
           - name: cct_module
