@@ -6,7 +6,7 @@ version: "7.5.0"
 from: "ubi8:8-released"
 labels:
     - name: "com.redhat.component"
-      value: "rhpam-7-rhpam75-businesscentral-rhel8-container"
+      value: "rhpam-7-rhpam75-businesscentral-container"
 modules:
       repositories:
           - name: cct_module
