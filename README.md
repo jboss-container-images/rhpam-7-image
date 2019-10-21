@@ -74,11 +74,6 @@ file and its purpose, all the modules have the same files, as described below:
  - **tag-overrides.yaml**: Used to override the branchs to use the final tags to rebuild released images, for CVE respins.
  - **image.yaml**: the main image descriptor file, here are all the pieces and configuration needed to build an image. (Deprecated)
 
-And on the root directory we have:
-
- - **ce.yaml**: used to configure the internal CI.
-
-
 
  ##### Found a issue?
  Please submit a issue [here](https://issues.jboss.org/projects/KIECLOUD) or send us a email: bsig-cloud@redhat.com.

@@ -1,8 +1,5 @@
-# Red Hat Business Central Monitoring 7.0 container image
-
-NOTE: Extends link:https://github.com/jboss-container-images/jboss-eap-7-image[JBoss EAP 7 image]
+# Red Hat Business Central Monitoring 7 module
 
 # License
 
 See link:LICENSE[LICENSE] file.
-
