@@ -19,7 +19,7 @@ envs:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "add_ons_distribution.zip"
 - name: "PROCESS_MIGRATION_DISTRIBUTION_JAR"
-  value: "rhpam-7.6-process-migration-service-standalone.jar"
+  value: "rhpam-7.6.0-process-migration-service-standalone.jar"
 - name: "LAUNCH_DIR"
   value: "/opt/rhpam-process-migration/launch"
 - name: "CONFIG_DIR"
