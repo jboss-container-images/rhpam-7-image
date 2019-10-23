@@ -20,7 +20,7 @@ envs:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "add_ons_distribution.zip"
 - name: "KIE_ROUTER_DISTRIBUTION_JAR"
-  value: "rhpam-7.5-smart-router.jar"
+  value: "rhpam-7.5.0-smart-router.jar"
 - name: "LAUNCH_DIR"
   value: "/opt/rhpam-smartrouter/launch"
 - name: "JBOSS_HOME"
@@ -31,7 +31,7 @@ artifacts:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   target: "add_ons_distribution.zip"
   # rhpam-7.5.0-add-ons.zip
-  md5: "56fd32a3e299255a53e8129d930f3bc9"
+  md5: "a0c92ff0a2b9f751a1215026141b3837"
 run:
   user: 185
   cmd:
