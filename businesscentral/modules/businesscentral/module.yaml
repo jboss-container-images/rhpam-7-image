@@ -26,8 +26,8 @@ ports:
 artifacts:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   target: "business_central_distribution.zip"
-  # rhpam-7.6.0.PAM-redhat-20191027-business-central-eap7-deployable.zip
-  md5: "03dd8ec78ef0cb9d2a5c5722f210ec4f"
+  # rhpam-7.6.0.PAM-redhat-20191028-business-central-eap7-deployable.zip
+  md5: "03b0be005fc3b74f2c50998f04883524"
 run:
   user: 185
   cmd:
