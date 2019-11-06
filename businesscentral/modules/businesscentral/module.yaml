@@ -7,16 +7,16 @@ labels:
 - name: "org.jboss.product"
   value: "rhpam-businesscentral"
 - name: "org.jboss.product.version"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "org.jboss.product.rhpam-businesscentral.version"
-  value: "7.5.0"
+  value: "7.5.1"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-businesscentral"
 - name: "RHPAM_BUSINESS_CENTRAL_VERSION"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "PRODUCT_VERSION"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   value: "business_central_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
@@ -26,8 +26,8 @@ ports:
 artifacts:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   target: "business_central_distribution.zip"
-  # rhpam-7.5.0-business-central-eap7-deployable.zip
-  md5: "d933783b290676760d3c06d45ad088ed"
+  # rhpam-7.5.1-business-central-eap7-deployable.zip
+  md5: "4de4389d25ae9d32cd7cc5fac7500d1f"
 run:
   user: 185
   cmd:

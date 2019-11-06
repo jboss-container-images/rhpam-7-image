@@ -7,16 +7,16 @@ labels:
 - name: "org.jboss.product"
   value: "rhpam-kieserver"
 - name: "org.jboss.product.version"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "org.jboss.product.rhpam-kieserver.version"
-  value: "7.5.0"
+  value: "7.5.1"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-kieserver"
 - name: "RHPAM_KIESERVER_VERSION"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "PRODUCT_VERSION"
-  value: "7.5.0"
+  value: "7.5.1"
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   value: "kie_server_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
@@ -24,17 +24,17 @@ envs:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
   value: "jboss-eap-7.2"
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-  value: "jbpm-wb-kie-server-backend-7.26.0.Final-redhat-00005.jar"
+  value: "jbpm-wb-kie-server-backend-7.26.0.Final-redhat-00006.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   target: "kie_server_distribution.zip"
-  # rhpam-7.5.0-kie-server-ee8.zip
-  md5: "c1b057d7a45b6fd52b10e133b91b84ca"
+  # rhpam-7.5.1-kie-server-ee8.zip
+  md5: "91f1abb04c6e46b675afac61ea79121b"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   target: "business_central_distribution.zip"
-  # rhpam-7.5.0-business-central-eap7-deployable.zip
-  md5: "d933783b290676760d3c06d45ad088ed"
+  # rhpam-7.5.1-business-central-eap7-deployable.zip
+  md5: "4de4389d25ae9d32cd7cc5fac7500d1f"
 - name: "slf4j-simple.jar"
   target: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
