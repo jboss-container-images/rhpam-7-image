@@ -18,7 +18,7 @@ envs:
   value: "7.6.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "add_ons_distribution.zip"
-- name: "PROCESS_MIGRATION_DISTRIBUTION_JAR"
+- name: "KIE_PROCESS_MIGRATION_DISTRIBUTION_JAR"
   value: "rhpam-7.6.0-process-migration-service-standalone.jar"
 - name: "LAUNCH_DIR"
   value: "/opt/rhpam-process-migration/launch"
@@ -38,6 +38,6 @@ run:
   cmd:
   - "/usr/bin/java"
   - "-jar"
-  - "/opt/rhpam-process-migration/${PROCESS_MIGRATION_DISTRIBUTION_JAR}"
+  - "/opt/rhpam-process-migration/${KIE_PROCESS_MIGRATION_DISTRIBUTION_JAR}"
 execute:
 - script: "install"
