@@ -38,6 +38,6 @@ run:
   cmd:
   - "/usr/bin/java"
   - "-jar"
-  - "/opt/rhpam-process-migration/${PROCESS_MIGRATION_DISTRIBUTION_JAR}"
+  - "/opt/rhpam-process-migration/${KIE_PROCESS_MIGRATION_DISTRIBUTION_JAR}"
 execute:
 - script: "install"
