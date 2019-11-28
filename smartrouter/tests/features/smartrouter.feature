@@ -1,4 +1,4 @@
-@rhpam-7/rhpam76-smartrouter
+@rhpam-7/rhpam77-smartrouter
 Feature: RHPAM Smart Router tests
 
    Scenario: Test REST API is available and valid

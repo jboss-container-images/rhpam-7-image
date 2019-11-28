@@ -1,21 +1,21 @@
 ---
 schema_version: 1
 name: "rhpam-7-process-migration"
-description: "Red Hat Process Automation Manager Process Migration 7.6 install"
+description: "Red Hat Process Automation Manager Process Migration 7.7 install"
 labels:
 - name: "org.jboss.product"
   value: "rhpam-process-migration"
 - name: "org.jboss.product.version"
-  value: "7.6.0"
+  value: "7.7.0"
 - name: "org.jboss.product.rhpam-process-migration.version"
-  value: "7.6.0"
+  value: "7.7.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-process-migration"
 - name: "RHPAM_PROCESS_MIGRATION_VERSION"
-  value: "7.6.0"
+  value: "7.7.0"
 - name: "PRODUCT_VERSION"
-  value: "7.6.0"
+  value: "7.7.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "add_ons_distribution.zip"
 - name: "KIE_PROCESS_MIGRATION_DISTRIBUTION_JAR"

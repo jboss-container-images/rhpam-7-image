@@ -1,4 +1,4 @@
-@rhpam-7/rhpam76-process-migration
+@rhpam-7/rhpam77-process-migration
 Feature: RHPAM Process Migration tests
 
    Scenario: Test REST API is available and valid
