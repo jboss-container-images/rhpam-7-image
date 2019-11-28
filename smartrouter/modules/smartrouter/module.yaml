@@ -20,7 +20,7 @@ envs:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "add_ons_distribution.zip"
 - name: "KIE_ROUTER_DISTRIBUTION_JAR"
-  value: "rhpam-7.6.0-smart-router.jar"
+  value: "rhpam-7.7.0-smart-router.jar"
 - name: "LAUNCH_DIR"
   value: "/opt/rhpam-smartrouter/launch"
 - name: "JBOSS_HOME"
@@ -30,8 +30,8 @@ ports:
 artifacts:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   target: "add_ons_distribution.zip"
-  # rhpam-7.6.0.PAM-redhat-20191124-add-ons.zip
-  md5: "2f0904badea6f190976888e21f327d4c"
+  # rhpam-7.7.0.PAM-redhat-20191126-add-ons.zip
+  md5: "c0937f1b09c8930bd0ac7d8b98b4d42e"
 run:
   user: 185
   cmd:
