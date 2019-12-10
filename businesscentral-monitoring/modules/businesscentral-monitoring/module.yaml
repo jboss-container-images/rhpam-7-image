@@ -27,7 +27,7 @@ artifacts:
 - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
   target: "business_central_monitoring_distribution.zip"
   # rhpam-7.6.0-monitoring-ee7.zip
-  md5: "9feb2847d7b7af2cada5dcb1054a3299"
+  md5: "3092daef71d3928d7ff3d0f5da1360a4"
 run:
   user: 185
   cmd:
