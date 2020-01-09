@@ -30,11 +30,11 @@ artifacts:
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   target: "kie_server_distribution.zip"
   # rhpam-7.6.0-kie-server-ee8.zip
-  md5: "0fa192c2e6280e71aa0d106d43a34836"
+  md5: "cbe5ef1babd6752e41f8ddda31ce8ce6"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   target: "business_central_distribution.zip"
   # rhpam-7.6.0-business-central-eap7-deployable.zip
-  md5: "c15dc64493e6dcda630aac3c174317c2"
+  md5: "e8895073ed5b429babd10c163f765caa"
 - name: "slf4j-simple.jar"
   target: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
