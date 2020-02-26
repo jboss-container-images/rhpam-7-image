@@ -14,21 +14,21 @@ Let’s inspect the rhpam-7-businesscentral cekit module:
 schema_version: 1
 
 name: "rhpam-7-businesscentral"
-description: "Red Hat Business Central 7.7 install"
+description: "Red Hat Business Central 7.8 install"
 labels:
     - name: "org.jboss.product"
       value: "rhpam-businesscentral"
     - name: "org.jboss.product.version"
-      value: "7.7.0"
+      value: "7.8.0"
     - name: "org.jboss.product.rhpam-businesscentral.version"
-      value: "7.7.0"
+      value: "7.8.0"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "rhpam-businesscentral"
     - name: "RHPAM_BUSINESS_CENTRAL_VERSION"
-      value: "7.7.0"
+      value: "7.8.0"
     - name: "PRODUCT_VERSION"
-      value: "7.7.0"
+      value: "7.8.0"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
       value: "BUSINESS_CENTRAL_DISTRIBUTION.ZIP"
     - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
@@ -37,7 +37,7 @@ ports:
     - value: 8001
 artifacts:
     - name: BUSINESS_CENTRAL_DISTRIBUTION.ZIP
-      path: rhpam-7.7.0.PAM-redhat-20190312-business-central-eap7-deployable.zip
+      path: rhpam-7.8.0.PAM-redhat-20200224-business-central-eap7-deployable.zip
       md5: 07652ac35ecd04d852236f843b3b091a
 run:
       user: 185
