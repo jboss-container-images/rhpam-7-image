@@ -27,7 +27,7 @@ artifacts:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   target: "business_central_distribution.zip"
   # rhpam-7.7.0-business-central-eap7-deployable.zip
-  md5: "5e64aaa64ad768858bab1d92f211c025"
+  md5: "063fd5385273e5bcd1d21759048bdc43"
 run:
   user: 185
   cmd:
