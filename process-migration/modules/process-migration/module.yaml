@@ -1,6 +1,7 @@
 ---
 schema_version: 1
 name: "rhpam-7-process-migration"
+version: "1.0"
 description: "Red Hat Process Automation Manager Process Migration 7.8 install"
 labels:
 - name: "org.jboss.product"
