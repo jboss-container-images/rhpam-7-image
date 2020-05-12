@@ -1,0 +1,39 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/buildpack-deps
+    steps:
+      - checkout
+      - run:
+          type: shell
+          name: Download CeKit Image Validator
+          command: |
+            wget https://github.com/kiegroup/kie-cloud-tools/releases/download/1.0-SNAPSHOT/cekit-image-validator-runner.tgz
+            tar -xzvf cekit-image-validator-runner.tgz
+            chmod +x cekit-image-validator-runner
+      - run:
+          name: Validate businesscentral-monitoring image files
+          command: |
+            ./cekit-image-validator-runner businesscentral-monitoring/
+      - run:
+          name: Validate businesescentral image files
+          command: |
+            ./cekit-image-validator-runner businesscentral/
+      - run:
+          name: Validate controller image files
+          command: |
+            ./cekit-image-validator-runner controller/
+      - run:
+          name: Validate kieserver image files
+          command: |
+            ./cekit-image-validator-runner kieserver/
+      - run:
+          name: Validate process-migration image files
+          command: |
+            ./cekit-image-validator-runner process-migration/
+      - run:
+          name: Validate smartrouter image files
+          command: |
+            ./cekit-image-validator-runner smartrouter/
+
