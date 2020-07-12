@@ -24,17 +24,17 @@ envs:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
   value: "jboss-eap-7.3"
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-  value: "jbpm-wb-kie-server-backend-7.8.0.redhat-20200709.jar"
+  value: "jbpm-wb-kie-server-backend-7.8.0.redhat-20200711.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   target: "kie_server_distribution.zip"
-  # rhpam-7.8.0.redhat-20200709-kie-server-ee8.zip
-  md5: "9b6d50a89884431c92d81c4a20667dd2"
+  # rhpam-7.8.0.redhat-20200711-kie-server-ee8.zip
+  md5: "8440c083079d14329d6c899ae620891e"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   target: "business_central_distribution.zip"
-  # rhpam-7.8.0.redhat-20200709-business-central-eap7-deployable.zip
-  md5: "454781a4f7e62b17703875931ac64948"
+  # rhpam-7.8.0.redhat-20200711-business-central-eap7-deployable.zip
+  md5: "1195bd9e1d049a94de1fd07836c26c80"
 - name: "slf4j-simple.jar"
   target: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
