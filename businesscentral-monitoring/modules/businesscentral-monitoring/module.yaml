@@ -7,16 +7,16 @@ labels:
 - name: "org.jboss.product"
   value: "rhpam-businesscentral-monitoring"
 - name: "org.jboss.product.version"
-  value: "7.8.0"
+  value: "7.8.1"
 - name: "org.jboss.product.rhpam-businesscentral-monitoring.version"
-  value: "7.8.0"
+  value: "7.8.1"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-businesscentral-monitoring"
 - name: "RHPAM_BUSINESS_CENTRAL_MONITORING_VERSION"
-  value: "7.8.0"
+  value: "7.8.1"
 - name: "PRODUCT_VERSION"
-  value: "7.8.0"
+  value: "7.8.1"
 - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
   value: "business_central_monitoring_distribution.zip"
 - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_EAP"
@@ -26,8 +26,8 @@ ports:
 artifacts:
 - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
   target: "business_central_monitoring_distribution.zip"
-  # rhpam-7.8.0-monitoring-ee7.zip
-  md5: "a5fcb0e8a54ae623257a60e2b4799d42"
+  # rhpam-7.8.1-monitoring-ee7.zip
+  md5: "7eee1e7ceb123416635ba9852fefc18b"
 run:
   user: 185
   cmd:
