@@ -30,8 +30,8 @@ ports:
 artifacts:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   target: "add_ons_distribution.zip"
-  # rhpam-7.9.0.redhat-20200907-add-ons.zip
-  md5: "0fbf114a51dc092e29c5da03b65d3176"
+  # rhpam-7.9.0.redhat-20200908-add-ons.zip
+  md5: "13d99ab12aa84c192e47e53527829039"
 run:
   user: 185
   cmd:
