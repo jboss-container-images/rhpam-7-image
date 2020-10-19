@@ -1,0 +1,40 @@
+---
+schema_version: 1
+name: "rhpam-7-dashbuilder"
+version: "1.0"
+description: "Red Hat Dashbuilder 7.10 installer"
+labels:
+- name: "org.jboss.product"
+  value: "rhpam-dashbuilder"
+- name: "org.jboss.product.version"
+  value: "7.10.0"
+- name: "org.jboss.product.rhpam-dashbuilder.version"
+  value: "7.10.0"
+envs:
+- name: "JBOSS_PRODUCT"
+  value: "rhpam-dashbuilder"
+- name: "RHPAM_DASHBUILDER_VERSION"
+  value: "7.10.0"
+- name: "PRODUCT_VERSION"
+  value: "7.10.0"
+- name: "ADD_ONS_DISTRIBUTION_ZIP"
+  value: "add_ons_distribution.zip"
+- name: "DASHBUILDER_DISTRIBUTION_ZIP"
+  value: "rhpam-7.10.0-dashbuilder-runtime.zip"
+ports:
+- value: 8080
+artifacts:
+- name: "ADD_ONS_DISTRIBUTION_ZIP"
+  target: "add_ons_distribution.zip"
+  # rhpam-7.10.0.redhat-20201109-add-ons.zip
+  md5: "50a41b22475fffc1f23a9e2d6d1350e8"
+run:
+  user: 185
+  cmd:
+  - "/opt/eap/bin/standalone.sh"
+  - "-b"
+  - "0.0.0.0"
+  - "-c"
+  - "standalone.xml"
+execute:
+- script: "install"

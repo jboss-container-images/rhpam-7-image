@@ -1,0 +1,5 @@
+# Red Hat Process Automation Manager Dashbuilder 7 module
+
+# License
+
+See link:LICENSE[LICENSE] file.

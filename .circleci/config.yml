@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build:
+  validate-cekit-module-yaml-files:
     docker:
       - image: circleci/buildpack-deps
     steps:
@@ -25,6 +25,10 @@ jobs:
           command: |
             ./cekit-image-validator-runner controller/
       - run:
+          name: Validate dashbuilder image files
+          command: |
+            ./cekit-image-validator-runner dashbuilder/
+      - run:
           name: Validate kieserver image files
           command: |
             ./cekit-image-validator-runner kieserver/
@@ -37,3 +41,7 @@ jobs:
           command: |
             ./cekit-image-validator-runner smartrouter/
 
+workflows:
+  build:
+    jobs:
+      - validate-cekit-module-yaml-files
