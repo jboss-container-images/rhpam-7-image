@@ -24,8 +24,8 @@ envs:
 artifacts:
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   target: "add_ons_distribution.zip"
-  # rhpam-7.10.0.redhat-20201020-add-ons.zip
-  md5: "02e43aa49375e1d805ddbc24e9d7d126"
+  # rhpam-7.10.0.redhat-20201021-add-ons.zip
+  md5: "0d62688324968910f032b0800c48cf8d"
 run:
   user: 185
   cmd:
