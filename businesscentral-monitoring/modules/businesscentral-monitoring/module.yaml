@@ -18,14 +18,13 @@ envs:
 - name: "PRODUCT_VERSION"
   value: "7.10.0"
 - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
-  value: "business_central_monitoring_distribution.zip"
+  value: "rhpam_business_central_monitoring_distribution.zip"
 - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_EAP"
   value: "jboss-eap-7.3"
 ports:
 - value: 8001
 artifacts:
-- name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
-  target: "business_central_monitoring_distribution.zip"
+- name: "rhpam_business_central_monitoring_distribution.zip"
   # rhpam-7.10.0.redhat-20201111-monitoring-ee7.zip
   md5: "ca495e3a0b47025e8f1329464400a0de"
 run:
