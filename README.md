@@ -36,7 +36,7 @@ envs:
 ports:
 - value: 8001
 artifacts:
-- name: "rhpam_usiness_central_distribution.zip"
+- name: "rhpam_business_central_distribution.zip"
   # rhpam-7.9.0.redhat-20200224-business-central-eap7-deployable.zip
   md5: "4194d7aa9613a52a1c5045e0236f94d5"
 run:
