@@ -18,14 +18,13 @@ envs:
 - name: "PRODUCT_VERSION"
   value: "7.10.0"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-  value: "business_central_distribution.zip"
+  value: "rhpam_business_central_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
   value: "jboss-eap-7.3"
 ports:
 - value: 8001
 artifacts:
-- name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-  target: "business_central_distribution.zip"
+- name: "rhpam_business_central_distribution.zip"
   # rhpam-7.10.0.redhat-20201111-business-central-eap7-deployable.zip
   md5: "fed22671c6079e75e3f1522a5bee699e"
 run:

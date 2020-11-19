@@ -18,7 +18,7 @@ envs:
 - name: "PRODUCT_VERSION"
   value: "7.10.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
-  value: "add_ons_distribution.zip"
+  value: "rhpam_add_ons_distribution.zip"
 - name: "KIE_ROUTER_DISTRIBUTION_JAR"
   value: "rhpam-7.10.0-smart-router.jar"
 - name: "LAUNCH_DIR"
@@ -28,8 +28,7 @@ envs:
 ports:
 - value: 9000
 artifacts:
-- name: "ADD_ONS_DISTRIBUTION_ZIP"
-  target: "add_ons_distribution.zip"
+- name: "rhpam_add_ons_distribution.zip"
   # rhpam-7.10.0.redhat-20201111-add-ons.zip
   md5: "688efcd73dc55e0ad211f41be30ed0c7"
 run:
