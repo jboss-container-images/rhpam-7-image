@@ -31,8 +31,8 @@ ports:
 - value: 8080
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.10.0.redhat-20201129-add-ons.zip
-  md5: "debb1f6893e071aa73a4097b694666f3"
+  # rhpam-7.10.0.redhat-20201130-add-ons.zip
+  md5: "d41c8315c1da2a3e33cbf046f2774e28"
 run:
   user: 185
   cmd:
