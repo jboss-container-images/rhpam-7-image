@@ -24,7 +24,7 @@ envs:
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
   # rhpam-7.9.1-add-ons.zip
-  md5: "4f670ae8180e2bfd389025eaa712eaec"
+  md5: "2700cd16cedd55f2642bc737b52a6539"
 run:
   user: 185
   cmd:
