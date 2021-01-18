@@ -1,29 +1,28 @@
----
 schema_version: 1
 name: "rhpam-7-controller"
 version: "1.0"
-description: "Red Hat Process Automation Manager Standalone Controller 7.10 installer"
+description: "Red Hat Process Automation Manager Standalone Controller 7.11 installer"
 labels:
 - name: "org.jboss.product"
   value: "rhpam-controller"
 - name: "org.jboss.product.version"
-  value: "7.10.0"
+  value: "7.11.0"
 - name: "org.jboss.product.rhpam-controller.version"
-  value: "7.10.0"
+  value: "7.11.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-controller"
 - name: "RHPAM_CONTROLLER_VERSION"
-  value: "7.10.0"
+  value: "7.11.0"
 - name: "PRODUCT_VERSION"
-  value: "7.10.0"
+  value: "7.11.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "rhpam_add_ons_distribution.zip"
 - name: "CONTROLLER_DISTRIBUTION_ZIP"
-  value: "rhpam-7.10.0-controller-ee7.zip"
+  value: "rhpam-7.11.0-controller-ee7.zip"
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.10.0.redhat-20210113-add-ons.zip
+  # rhpam-7.11.0.redhat-20210113-add-ons.zip
   md5: "ed964aa2a12fbb547bd080ce4adf3b78"
 run:
   user: 185

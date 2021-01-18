@@ -1,22 +1,21 @@
----
 schema_version: 1
 name: "rhpam-7-businesscentral"
 version: "1.0"
-description: "Red Hat Business Central 7.10 installer"
+description: "Red Hat Business Central 7.11 installer"
 labels:
 - name: "org.jboss.product"
   value: "rhpam-businesscentral"
 - name: "org.jboss.product.version"
-  value: "7.10.0"
+  value: "7.11.0"
 - name: "org.jboss.product.rhpam-businesscentral.version"
-  value: "7.10.0"
+  value: "7.11.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-businesscentral"
 - name: "RHPAM_BUSINESS_CENTRAL_VERSION"
-  value: "7.10.0"
+  value: "7.11.0"
 - name: "PRODUCT_VERSION"
-  value: "7.10.0"
+  value: "7.11.0"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   value: "rhpam_business_central_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
@@ -25,7 +24,7 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhpam_business_central_distribution.zip"
-  # rhpam-7.10.0.redhat-20210113-business-central-eap7-deployable.zip
+  # rhpam-7.11.0.redhat-20210113-business-central-eap7-deployable.zip
   md5: "953944530e64e3882cb49c93745adff8"
 run:
   user: 185
