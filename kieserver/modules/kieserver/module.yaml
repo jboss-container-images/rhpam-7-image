@@ -28,10 +28,10 @@ envs:
 artifacts:
 - name: "rhpam_kie_server_distribution.zip"
   # rhpam-7.11.0.redhat-20210113-kie-server-ee8.zip
-  md5: "423a5f0caec0a0d57ad7540e2d706bfd"
+  md5: "a1a582095a55b9c1707026d7d0942b0c"
 - name: "rhpam_business_central_distribution.zip"
   # rhpam-7.11.0.redhat-20210113-business-central-eap7-deployable.zip
-  md5: "953944530e64e3882cb49c93745adff8"
+  md5: "bfc0655440f55c9e3660bdc753f56ecf"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
