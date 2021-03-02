@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "rhpam-7-businesscentral-monitoring"
 version: "1.0"
@@ -24,8 +25,8 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhpam_business_central_monitoring_distribution.zip"
-  # rhpam-7.11.0.redhat-20210113-monitoring-ee7.zip
-  md5: "bfc0655440f55c9e3660bdc753f56ecf"
+  # rhpam-7.11.0.redhat-210302-monitoring-ee7.zip
+  md5: "175beb86e244822cd9fe5b053dd080dd"
 run:
   user: 185
   cmd:

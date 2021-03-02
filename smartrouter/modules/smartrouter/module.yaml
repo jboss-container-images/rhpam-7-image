@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "rhpam-7-smartrouter"
 version: "1.0"
@@ -28,8 +29,8 @@ ports:
 - value: 9000
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.11.0.redhat-20210113-add-ons.zip
-  md5: "069097facdd9f0d5ded78dcf1a78475c"
+  # rhpam-7.11.0.redhat-210302-add-ons.zip
+  md5: "07e44a6060ed8f032589fdf292a40007"
 run:
   user: 185
   cmd:
