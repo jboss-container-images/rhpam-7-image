@@ -35,6 +35,10 @@ artifacts:
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
+- name: "jbpm-event-emitters-kafka-7.x.Final.jar"
+  # jbpm-event-emitters-kafka-7.52.0.Final-redhat-00004.jar
+  md5: "07e2ec53eb779fab36b357b145ba255b"
+  dest: /opt
 run:
   user: 185
   cmd:
