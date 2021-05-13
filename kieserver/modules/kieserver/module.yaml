@@ -26,8 +26,6 @@ envs:
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
   value: "jbpm-wb-kie-server-backend-7.52.0.Final-redhat-00004.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
-- name: "JBPM_WB_KIE_SERVER_CLUSTER_JAR"
-  value: "kie-server-services-jbpm-cluster-7.52.0.Final-redhat-00004.jar"
 artifacts:
 - name: "rhpam_kie_server_distribution.zip"
   # rhpam-7.11.0-kie-server-ee8.zip
@@ -38,6 +36,10 @@ artifacts:
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
+- name: "kie-server-services-jbpm-cluster-7.x.Final.jar"
+  md5: "44f302877d28e2493fc28ead4dfb6dea"
+  # kie-server-services-jbpm-cluster-7.52.0.Final-redhat-00004.jar"
+  dest: /opt
 run:
   user: 185
   cmd:
