@@ -26,6 +26,8 @@ envs:
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
   value: "jbpm-wb-kie-server-backend-7.52.0.Final-redhat-00004.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
+- name: "JBPM_WB_KIE_SERVER_CLUSTER_JAR"
+  value: "kie-server-services-jbpm-cluster-7.52.0.Final-redhat-00004.jar"
 artifacts:
 - name: "rhpam_kie_server_distribution.zip"
   # rhpam-7.11.0-kie-server-ee8.zip
