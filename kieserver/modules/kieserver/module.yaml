@@ -29,16 +29,16 @@ envs:
 artifacts:
 - name: "rhpam_kie_server_distribution.zip"
   # rhpam-7.11.0-kie-server-ee8.zip
-  md5: "e5353118cbd2e739f46885cda6d133cd"
+  md5: "da8ff89813f43a329d5bd2e863011308"
 - name: "rhpam_business_central_distribution.zip"
   # rhpam-7.11.0-business-central-eap7-deployable.zip
-  md5: "ecfa904ecdc416b90014a9b0629d8e86"
+  md5: "c0273ba50552f9c13631da8fcc1ee39a"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
 - name: "kie-server-services-jbpm-cluster-7.52.0.Final-redhat-00004.jar"
+  dest: "/opt/kie/dependencies/jbpm-clustering"
   md5: "44f302877d28e2493fc28ead4dfb6dea"
-  dest: /opt/kie/dependencies/jbpm-clustering
 run:
   user: 185
   cmd:
