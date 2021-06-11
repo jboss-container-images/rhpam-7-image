@@ -71,7 +71,7 @@ file and its purpose, all the modules have the same files, as described below:
 
  - **container.yaml**: used by OSBS builds.
  - **content_sets.yaml**: define the yum repositories needed to install dependencies for the image.
- - **branch-overrides.yaml**: overrides file which uses the latest stable version for external dependencies. The module.yaml and image.yaml always refer to master branch.
+ - **branch-overrides.yaml**: overrides file which uses the latest stable version for external dependencies.
  - **tag-overrides.yaml**: Used to override the branchs to use the final tags to rebuild released images, for CVE respins.
  - **image.yaml**: the main image descriptor file, here are all the pieces and configuration needed to build an image. (Deprecated)
 
