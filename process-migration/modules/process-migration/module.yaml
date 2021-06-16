@@ -22,7 +22,7 @@ envs:
 - name: "KIE_PROCESS_MIGRATION_DISTRIBUTION_JAR"
   value: "rhpam-7.12.0-process-migration-service-standalone.jar"
 - name: "LAUNCH_DIR"
-  value: "/opt/rhpam-process-migration/launch"
+  value: "/opt/rhpam-process-migration/bin/launch"
 - name: "CONFIG_DIR"
   value: "/opt/rhpam-process-migration/config"
 - name: "JBOSS_HOME"

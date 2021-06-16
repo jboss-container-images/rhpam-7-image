@@ -22,7 +22,7 @@ envs:
 - name: "KIE_ROUTER_DISTRIBUTION_JAR"
   value: "rhpam-7.12.0-smart-router.jar"
 - name: "LAUNCH_DIR"
-  value: "/opt/rhpam-smartrouter/launch"
+  value: "/opt/rhpam-smartrouter/bin/launch"
 - name: "JBOSS_HOME"
   value: "/opt/rhpam-smartrouter"
 ports:
