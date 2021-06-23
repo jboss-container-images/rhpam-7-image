@@ -39,9 +39,9 @@ artifacts:
 - name: "kie-server-services-jbpm-cluster-7.52.0.Final-redhat-00007.jar"
   dest: "/opt/kie/dependencies/jbpm-clustering"
   md5: "139aeae58d08eda539a1c72778967b3a"
-- name: "jbpm-event-emitters-kafka-7.52.0.Final-redhat-00004.jar"
-  md5: "07e2ec53eb779fab36b357b145ba255b"
-  dest: /opt/kie/dependencies/jbpm-kafka
+- name: "jbpm-event-emitters-kafka-7.52.0.Final-redhat-00007.jar"
+  md5: "339ef81a6f9d773362a8d19296dc92bb"
+  dest: "/opt/kie/dependencies/jbpm-kafka"
 run:
   user: 185
   cmd:
