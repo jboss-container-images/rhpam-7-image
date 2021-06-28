@@ -25,18 +25,14 @@ envs:
   value: "jboss-eap-7.3"
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
   value: "jbpm-wb-kie-server-backend-7.56.0.redhat-210614.jar"
-# remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "rhpam_kie_server_distribution.zip"
-  # rhpam-7.12.0.redhat-210614-kie-server-ee8.zip
   md5: "a3d096c48b0f54c5f2bda04a30b26ff1"
 - name: "rhpam_business_central_distribution.zip"
-  # rhpam-7.12.0.redhat-210614-business-central-eap7-deployable.zip
   md5: "99b519a18d2e1947e7655b2ea610da08"
 - name: "slf4j-simple.jar"
-  # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
-- name: "kie-server-services-jbpm-cluster-7.52.0.Final-redhat-00004.jar"
+- name: "kie-server-services-jbpm-cluster-7.56.0.redhat-210614.jar"
   dest: "/opt/kie/dependencies/jbpm-clustering"
   md5: "44f302877d28e2493fc28ead4dfb6dea"
 run:
