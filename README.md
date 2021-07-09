@@ -2,12 +2,12 @@
 
 This repo contains the base module that installs the product artifacts in the target OpenShift image.
 
-does not need to be built manually, it is used as a cekit module  that will builds the base image that contains
+does not need to be built manually, it is used as a CeKit module  that will build the base image that contains
 the EAP with the application layer (business central, kieserver, etc.) on it without any kind of configuration, we call
 it standalone-image, all the configuration will be made by the *-openshift repositories which contains the image
 descriptors with all modules that will be installed. In this repo you will find the basics like which artifact
 (kieserver, business central, etc) is being used to build the openshift images.
-Let’s inspect the rhpam-7-businesscentral cekit module:
+Let’s inspect the rhpam-7-businesscentral CeKit module:
 
 
 ```yaml
@@ -19,16 +19,16 @@ labels:
 - name: "org.jboss.product"
   value: "rhpam-businesscentral"
 - name: "org.jboss.product.version"
-  value: "7.11.0"
+  value: "7.11.1"
 - name: "org.jboss.product.rhpam-businesscentral.version"
-  value: "7.11.0"
+  value: "7.11.1"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-businesscentral"
 - name: "RHPAM_BUSINESS_CENTRAL_VERSION"
-  value: "7.11.0"
+  value: "7.11.1"
 - name: "PRODUCT_VERSION"
-  value: "7.11.0"
+  value: "7.11.1"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   value: "rhpam_business_central_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
@@ -37,7 +37,7 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhpam_business_central_distribution.zip"
-  # rhpam-7.11.0.redhat-20200224-business-central-eap7-deployable.zip
+  # rhpam-7.11.1.redhat-20200224-business-central-eap7-deployable.zip
   md5: "4194d7aa9613a52a1c5045e0236f94d5"
 run:
   user: 185
@@ -77,4 +77,4 @@ file and its purpose, all the modules have the same files, as described below:
 
 
  ##### Found a issue?
- Please submit a issue [here](https://issues.jboss.org/projects/KIECLOUD) or send us a email: bsig-cloud@redhat.com.
+ Please submit a issue [here](https://issues.jboss.org/projects/KIECLOUD) or send us an email: bsig-cloud@redhat.com.
