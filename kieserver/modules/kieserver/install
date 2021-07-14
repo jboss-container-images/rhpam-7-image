@@ -12,6 +12,7 @@ unzip -q ${SOURCES_DIR}/${DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
 ROOT_WAR_DIR=${JBOSS_HOME}/standalone/deployments/ROOT.war
 cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${ROOT_WAR_DIR}
 touch ${ROOT_WAR_DIR}.dodeploy
+chown jboss:root ${ROOT_WAR_DIR}.dodeploy
 cp -rf ${SOURCES_DIR}/SecurityPolicy/* ${JBOSS_HOME}/bin/
 
 # https://issues.jboss.org/browse/RHPAM-738
@@ -25,7 +26,22 @@ if [[ -f "${SOURCES_DIR}/${BUSINESS_CENTRAL_DISTRIBUTION_ZIP}" ]] && [[ "${JBPM_
     fi
 fi
 
-chown -R jboss:root ${JBOSS_HOME}
-chmod 0755 ${JBOSS_HOME}
-chmod -R g+rwX ${JBOSS_HOME}
+cp -r ${SOURCES_DIR}/slf4j-*.jar ${JBOSS_HOME}/bin/launch
+
+# jbpm-clustering jar
+mkdir -p /opt/kie/dependencies/jbpm-clustering
+chown -R jboss:root /opt/kie/dependencies/jbpm-clustering
+chmod -R 0755 /opt/kie/dependencies/jbpm-clustering
+
+# jbpm-kafka-emitter jar
+mkdir -p /opt/kie/dependencies/jbpm-kafka
+chown -R jboss:root /opt/kie/dependencies/jbpm-kafka
+chmod -R 0755 /opt/kie/dependencies/jbpm-kafka
+
+chown -R jboss:root ${ROOT_WAR_DIR}
+chmod 0755 ${ROOT_WAR_DIR}
+
+chown -R jboss:root ${JBOSS_HOME}/bin
+chmod 0755 ${JBOSS_HOME}/bin
+chmod -R g+rwX ${JBOSS_HOME}/bin
 
