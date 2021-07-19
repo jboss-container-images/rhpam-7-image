@@ -15,6 +15,13 @@ cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${JBOSS_HOME}/standalone/deploymen
 touch ${JBOSS_HOME}/standalone/deployments/ROOT.war.dodeploy
 cp -rf ${SOURCES_DIR}/SecurityPolicy/* ${JBOSS_HOME}/bin/
 
-chown -R jboss:root ${JBOSS_HOME}
-chmod 0755 ${JBOSS_HOME}
-chmod -R g+rwX ${JBOSS_HOME}
+
+for dir in $JBOSS_HOME/bin $JBOSS_HOME/standalone; do
+    chown -R jboss:root $dir
+    chmod -R g+rwX $dir
+done
+
+# Create dir to remove JDBC driver
+mkdir ${JBOSS_HOME}/modules/system/layers/openshift &> /dev/null || true
+chown -R jboss:root ${JBOSS_HOME}/modules/system/layers/openshift
+
