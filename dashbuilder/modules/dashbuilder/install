@@ -12,7 +12,8 @@ unzip -q ${SOURCES_DIR}/${DASHBUILDER_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
 cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${JBOSS_HOME}/standalone/deployments/ROOT.war
 touch ${JBOSS_HOME}/standalone/deployments/ROOT.war.dodeploy
 
-chown -R jboss:root ${JBOSS_HOME}
-chmod 0755 ${JBOSS_HOME}
-chmod -R g+rwX ${JBOSS_HOME}
+for dir in $JBOSS_HOME/bin $JBOSS_HOME/standalone; do
+    chown -R jboss:root $dir
+    chmod -R g+rwX $dir
+done
 
