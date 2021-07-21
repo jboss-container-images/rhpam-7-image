@@ -37,10 +37,8 @@ artifacts:
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
 - name: "kie-server-services-jbpm-cluster-7.58.0.redhat-210716.jar"
-  dest: "/opt/kie/dependencies/jbpm-clustering"
   md5: "ea09d73a2a559263e052cc24bd93084a"
 - name: "jbpm-event-emitters-kafka-7.58.0.redhat-210716.jar"
-  dest: "/opt/kie/dependencies/jbpm-kafka"
   md5: "ac7a47a4806153ff00c957ba7a5f99c7"
 run:
   user: 185

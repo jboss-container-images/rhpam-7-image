@@ -28,20 +28,19 @@ fi
 
 cp -r ${SOURCES_DIR}/slf4j-*.jar ${JBOSS_HOME}/bin/launch
 
-# jbpm-clustering jar
-mkdir -p /opt/kie/dependencies/jbpm-clustering
-chown -R jboss:root /opt/kie/dependencies/jbpm-clustering
-chmod -R 0755 /opt/kie/dependencies/jbpm-clustering
-
-# jbpm-kafka-emitter jar
-mkdir -p /opt/kie/dependencies/jbpm-kafka
-chown -R jboss:root /opt/kie/dependencies/jbpm-kafka
-chmod -R 0755 /opt/kie/dependencies/jbpm-kafka
-
 chown -R jboss:root ${ROOT_WAR_DIR}
 chmod 0755 ${ROOT_WAR_DIR}
 
-chown -R jboss:root ${JBOSS_HOME}/bin
-chmod 0755 ${JBOSS_HOME}/bin
-chmod -R g+rwX ${JBOSS_HOME}/bin
+# Dir for optional deps
+mkdir -p /opt/kie/dependencies/{jbpm-clustering,jbpm-kafka}
+
+cp ${SOURCES_DIR}/jbpm-event-emitters-kafka-*.jar /opt/kie/dependencies/jbpm-kafka/
+cp ${SOURCES_DIR}/kie-server-services-jbpm-cluster-*.jar /opt/kie/dependencies/jbpm-clustering/
+
+# Necessary to permit running with a randomised UID
+for dir in ${JBOSS_HOME} /opt/kie; do
+    chown -R jboss:root ${dir}
+    chmod 0755 ${dir}
+    chmod -R g+rwX ${dir}
+done
 
