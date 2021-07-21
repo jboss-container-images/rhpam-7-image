@@ -25,7 +25,16 @@ if [[ -f "${SOURCES_DIR}/${BUSINESS_CENTRAL_DISTRIBUTION_ZIP}" ]] && [[ "${JBPM_
     fi
 fi
 
-chown -R jboss:root ${JBOSS_HOME}
-chmod 0755 ${JBOSS_HOME}
-chmod -R g+rwX ${JBOSS_HOME}
+# Dir for optional deps
+mkdir -p /opt/kie/dependencies/{jbpm-clustering,jbpm-kafka}
+
+cp ${SOURCES_DIR}/jbpm-event-emitters-kafka-*.jar /opt/kie/dependencies/jbpm-kafka/
+cp ${SOURCES_DIR}/kie-server-services-jbpm-cluster-*.jar /opt/kie/dependencies/jbpm-clustering/
+
+# Necessary to permit running with a randomised UID
+for dir in ${JBOSS_HOME} /opt/kie; do
+    chown -R jboss:root ${dir}
+    chmod 0755 ${dir}
+    chmod -R g+rwX ${dir}
+done
 
