@@ -22,7 +22,7 @@ envs:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   value: "rhpam_business_central_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
-  value: "jboss-eap-7.3"
+  value: "jboss-eap-7.4"
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
   value: "jbpm-wb-kie-server-backend-7.59.0.redhat-210819.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
