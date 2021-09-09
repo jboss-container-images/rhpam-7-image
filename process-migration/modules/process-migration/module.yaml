@@ -19,12 +19,12 @@ envs:
   value: "7.12.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "rhpam_add_ons_distribution.zip"
-- name: "KIE_PROCESS_MIGRATION_DISTRIBUTION_JAR"
-  value: "rhpam-7.12.0-process-migration-service-standalone.jar"
+- name: "KIE_PROCESS_MIGRATION_DISTRIBUTION_ZIP"
+  value: "rhpam-7.12.0-process-migration-service.zip"
 - name: "LAUNCH_DIR"
   value: "/opt/rhpam-process-migration/bin/launch"
 - name: "CONFIG_DIR"
-  value: "/opt/rhpam-process-migration/config"
+  value: "/opt/rhpam-process-migration/quarkus-app/config"
 - name: "JBOSS_HOME"
   value: "/opt/rhpam-process-migration"
 ports:
@@ -32,12 +32,12 @@ ports:
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
   # rhpam-7.12.0.redhat-210819-add-ons.zip
-  md5: "cb43d0fd18dab8b118db85218a8848ec"
+  md5: "9ffb4ef795b298b5afe085a8fb2911f6"
 run:
   user: 185
   cmd:
   - "/usr/bin/java"
   - "-jar"
-  - "/opt/rhpam-process-migration/${KIE_PROCESS_MIGRATION_DISTRIBUTION_JAR}"
+  - "/opt/rhpam-process-migration/quarkus-app/quarkus-run.jar"
 execute:
 - script: "install"
