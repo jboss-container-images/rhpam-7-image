@@ -20,7 +20,7 @@ envs:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   value: "rhpam_business_central_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
-  value: "jboss-eap-7.3"
+  value: "jboss-eap-7.4"
 ports:
 - value: 8001
 artifacts:
