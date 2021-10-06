@@ -1,26 +1,25 @@
----
 schema_version: 1
 name: "rhpam-7-smartrouter"
 version: "1.0"
-description: "Red Hat Process Automation Manager Smart Router 7.12 installer"
+description: "Red Hat Process Automation Manager Smart Router 7.13 installer"
 labels:
 - name: "org.jboss.product"
   value: "rhpam-smartrouter"
 - name: "org.jboss.product.version"
-  value: "7.12.0"
+  value: "7.13.0"
 - name: "org.jboss.product.rhpam-smartrouter.version"
-  value: "7.12.0"
+  value: "7.13.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-smartrouter"
 - name: "RHPAM_SMARTROUTER_VERSION"
-  value: "7.12.0"
+  value: "7.13.0"
 - name: "PRODUCT_VERSION"
-  value: "7.12.0"
+  value: "7.13.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "rhpam_add_ons_distribution.zip"
 - name: "KIE_ROUTER_DISTRIBUTION_JAR"
-  value: "rhpam-7.12.0-smart-router.jar"
+  value: "rhpam-7.13.0-smart-router.jar"
 - name: "LAUNCH_DIR"
   value: "/opt/rhpam-smartrouter/bin/launch"
 - name: "JBOSS_HOME"
@@ -29,7 +28,7 @@ ports:
 - value: 9000
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.12.0.redhat-211006-add-ons.zip
+  # rhpam-7.13.0.redhat-211006-add-ons.zip
   md5: "455b890c2d5d0b67605e8cde8eb4e9bc"
 run:
   user: 185
