@@ -26,7 +26,7 @@ ports:
 artifacts:
 - name: "rhpam_business_central_monitoring_distribution.zip"
   # rhpam-7.12.0-monitoring-ee7.zip
-  md5: "2467efb27685f5f95a6afd9dd602433a"
+  md5: "71fdacfb572bdb1699ec42880158fbe6"
 run:
   user: 185
   cmd:
