@@ -1,3 +1,16 @@
+# Notice of Product Replacement
+```text
+With the 7.13 release, RHDM customers will notice that the distribution files for RHDM have been replaced with those 
+for RHPAM. Note that there is no change to the RHDM subscription - support entitlements and fees remain the same.
+RHDM is a subset of RHPAM, and RHDM subscribers will continue to receive full support for the decision management 
+and optimization capabilities included. The business process management (BPM) capabilities exclusive to RHPAM will 
+be available for use by RHDM subscribers, but with development support services only. RHDM subscribers may upgrade 
+to a full RHPAM subscription at any time to receive full support for BPM features."
+```
+
+---
+
+
 # Red Hat Process Automation Manager 7 standalone CeKit Module
 
 This repo contains the base module that installs the product artifacts in the target OpenShift image.
