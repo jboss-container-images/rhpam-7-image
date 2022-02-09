@@ -24,22 +24,22 @@ envs:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
   value: "jboss-eap-7.4"
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-  value: "jbpm-wb-kie-server-backend-7.65.0.redhat-220201.jar"
+  value: "jbpm-wb-kie-server-backend-7.66.0.redhat-220208.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "rhpam_kie_server_distribution.zip"
-  # rhpam-7.13.0.redhat-220201-kie-server-ee8.zip
-  md5: "9d09ed97afea6782ff58dd5115db76ae"
+  # rhpam-7.13.0.redhat-220208-kie-server-ee8.zip
+  md5: "15f7fcb83ba944b936efcbceb8ba3cfc"
 - name: "rhpam_business_central_distribution.zip"
-  # rhpam-7.13.0.redhat-220201-business-central-eap7-deployable.zip
-  md5: "609893235c6597e09fa763b44026ad19"
+  # rhpam-7.13.0.redhat-220208-business-central-eap7-deployable.zip
+  md5: "d12baefb5da1ba37a904bddbe6e56b12"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
-- name: "kie-server-services-jbpm-cluster-7.65.0.redhat-220201.jar"
-  md5: "5d9cdf54e4c4f28bac17912413e6b95d"
-- name: "jbpm-event-emitters-kafka-7.65.0.redhat-220201.jar"
-  md5: "727f948f51f03ed953c2fd6417f5843b"
+- name: "kie-server-services-jbpm-cluster-7.66.0.redhat-220208.jar"
+  md5: "48653d9719cde8f727fea090a5ef7512"
+- name: "jbpm-event-emitters-kafka-7.66.0.redhat-220208.jar"
+  md5: "3d7201dee49a4fa7c720c221c88427b9"
 run:
   user: 185
   cmd:
