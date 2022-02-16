@@ -23,8 +23,8 @@ envs:
   value: "rhpam-7.13.0-controller-ee7.zip"
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.13.0.redhat-220214-add-ons.zip
-  md5: "fa844f66c4f528e359a8b396a1d2a61a"
+  # rhpam-7.13.0.redhat-220215-add-ons.zip
+  md5: "22101d4e59e97bfb82940c2efcb21d23"
 run:
   user: 185
   cmd:
