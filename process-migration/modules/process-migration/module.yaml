@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "rhpam-7-process-migration"
 version: "1.0"
@@ -30,8 +31,8 @@ ports:
 - value: 8080
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.12.1-add-ons.zip
-  md5: "130b988a796987f78e5d3f33770e12d9"
+  # rhpam-7.12.0-add-ons.zip
+  md5: "477a834455e1e6f152d0fceaf7ad70e8"
 run:
   user: 185
   cmd:
