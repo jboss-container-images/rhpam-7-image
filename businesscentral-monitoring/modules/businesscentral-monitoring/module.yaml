@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "rhpam-7-businesscentral-monitoring"
 version: "1.0"
@@ -25,7 +26,7 @@ ports:
 artifacts:
 - name: "rhpam_business_central_monitoring_distribution.zip"
   # rhpam-7.12.1-monitoring-ee7.zip
-  md5: "17a4f39bcc26567b89f938fc11d44690"
+  md5: "10ceae1b520d8a031410613136acab89"
 run:
   user: 185
   cmd:
