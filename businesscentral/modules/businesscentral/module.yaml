@@ -25,8 +25,8 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhpam_business_central_distribution.zip"
-  # rhpam-7.13.0.redhat-220419-business-central-eap7-deployable.zip
-  md5: "8a53c3ef16de1184e727fc33089e639c"
+  # rhpam-7.13.0.redhat-220422-business-central-eap7-deployable.zip
+  md5: "320c2a190ba6d827eb236e222572b120"
 run:
   user: 185
   cmd:
