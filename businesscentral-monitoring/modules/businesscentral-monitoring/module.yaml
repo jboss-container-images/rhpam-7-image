@@ -25,8 +25,8 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhpam_business_central_monitoring_distribution.zip"
-  # rhpam-7.13.0.redhat-220423-monitoring-ee7.zip
-  md5: "e440da826dd384fb515428fc04148fbe"
+  # rhpam-7.13.0.redhat-220425-monitoring-ee7.zip
+  md5: "9d22691801f1f51245ea94f92f737e4b"
 run:
   user: 185
   cmd:
