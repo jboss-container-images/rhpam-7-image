@@ -1,22 +1,21 @@
----
 schema_version: 1
 name: "rhpam-7-kieserver"
 version: "1.0"
-description: "Red Hat Process Automation Manager KIE Server 7.13 installer"
+description: "Red Hat Process Automation Manager KIE Server 7.14 installer"
 labels:
 - name: "org.jboss.product"
   value: "rhpam-kieserver"
 - name: "org.jboss.product.version"
-  value: "7.13.0"
+  value: "7.14.0"
 - name: "org.jboss.product.rhpam-kieserver.version"
-  value: "7.13.0"
+  value: "7.14.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-kieserver"
 - name: "RHPAM_KIESERVER_VERSION"
-  value: "7.13.0"
+  value: "7.14.0"
 - name: "PRODUCT_VERSION"
-  value: "7.13.0"
+  value: "7.14.0"
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   value: "rhpam_kie_server_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
@@ -28,17 +27,17 @@ envs:
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "rhpam_kie_server_distribution.zip"
-  # rhpam-7.13.0-kie-server-ee8.zip
+  # rhpam-7.14.0.redhat-220426-kie-server-ee8.zip
   md5: "a038933913d9f4bc72e311caa2e07c77"
 - name: "rhpam_business_central_distribution.zip"
-  # rhpam-7.13.0-business-central-eap7-deployable.zip
+  # rhpam-7.14.0.redhat-220426-business-central-eap7-deployable.zip
   md5: "95f65320b7ab61af80f82c9d5e8fda7b"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
-- name: "kie-server-services-jbpm-cluster-7.67.0.Final-redhat-00005.jar"
+- name: "kie-server-services-jbpm-cluster-7.14.0.redhat-220322.jar"
   md5: "31dfc9345ea9d0a66a4a60f868dab8a5"
-- name: "jbpm-event-emitters-kafka-7.67.0.Final-redhat-00005.jar"
+- name: "jbpm-event-emitters-kafka-7.14.0.redhat-220322.jar"
   md5: "6a08ebd4bf70a2d7f2487071d99540e3"
 run:
   user: 185
