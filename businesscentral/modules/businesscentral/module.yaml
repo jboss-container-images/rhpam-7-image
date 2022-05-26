@@ -26,7 +26,7 @@ ports:
 artifacts:
 - name: "rhpam_business_central_distribution.zip"
   # rhpam-7.13.0-business-central-eap7-deployable.zip
-  md5: "95f65320b7ab61af80f82c9d5e8fda7b"
+  md5: "28c4213e9d730b8c9572f0a11e35a1d0"
 run:
   user: 185
   cmd:

@@ -29,17 +29,17 @@ envs:
 artifacts:
 - name: "rhpam_kie_server_distribution.zip"
   # rhpam-7.13.0-kie-server-ee8.zip
-  md5: "a038933913d9f4bc72e311caa2e07c77"
+  md5: "21bc95613acf34195e8b7ba8d51d32f5"
 - name: "rhpam_business_central_distribution.zip"
   # rhpam-7.13.0-business-central-eap7-deployable.zip
-  md5: "95f65320b7ab61af80f82c9d5e8fda7b"
+  md5: "28c4213e9d730b8c9572f0a11e35a1d0"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
-- name: "kie-server-services-jbpm-cluster-7.67.0.Final-redhat-00005.jar"
-  md5: "31dfc9345ea9d0a66a4a60f868dab8a5"
-- name: "jbpm-event-emitters-kafka-7.67.0.Final-redhat-00005.jar"
-  md5: "6a08ebd4bf70a2d7f2487071d99540e3"
+- name: "kie-server-services-jbpm-cluster-7.67.0.Final-redhat-00006.jar"
+  md5: "87660043a5514ec2f7df5af098d8e09b"
+- name: "jbpm-event-emitters-kafka-7.67.0.Final-redhat-00006.jar"
+  md5: "b5050694b89deec4b267ccc64723b54d"
 run:
   user: 185
   cmd:
