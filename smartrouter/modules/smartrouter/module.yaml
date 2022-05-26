@@ -30,7 +30,7 @@ ports:
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
   # rhpam-7.13.0-add-ons.zip
-  md5: "2d96a5fa6350507b0a9031f82a147c28"
+  md5: "c321f5f7b3871c9c50b4d3c893662e10"
 run:
   user: 185
   cmd:
