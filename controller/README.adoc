@@ -1,4 +1,4 @@
-# Red Hat Process Automation Manager Standalone Controller 7 module
+# Business Automation Manager Open Editions Standalone Controller 7 module
 
 # License
 

@@ -5,7 +5,7 @@ version: "1.0"
 description: "Red Hat Business Central Monitoring 7.13 container image"
 labels:
 - name: "org.jboss.product"
-  value: "rhpam-businesscentral-monitoring"
+  value: "ibm-bamoe-businesscentral-monitoring"
 - name: "org.jboss.product.version"
   value: "7.13.0"
 - name: "org.jboss.product.rhpam-businesscentral-monitoring.version"

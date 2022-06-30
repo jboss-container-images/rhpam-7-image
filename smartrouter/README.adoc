@@ -1,4 +1,4 @@
-# Red Hat Process Automation Manager Smart Router 7 module
+# Business Automation Manager Open Editions Smart Router 7 module
 
 # License
 

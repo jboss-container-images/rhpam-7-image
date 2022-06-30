@@ -2,10 +2,10 @@
 schema_version: 1
 name: "rhpam-7-kieserver"
 version: "1.0"
-description: "Red Hat Process Automation Manager KIE Server 7.13 installer"
+description: "Business Automation Manager Open Editions KIE Server 7.13 installer"
 labels:
 - name: "org.jboss.product"
-  value: "rhpam-kieserver"
+  value: "ibm-bamoe-kieserver"
 - name: "org.jboss.product.version"
   value: "7.13.0"
 - name: "org.jboss.product.rhpam-kieserver.version"

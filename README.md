@@ -1,4 +1,4 @@
-# Red Hat Process Automation Manager 7 standalone CeKit Module
+# Business Automation Manager Open Editions 7 standalone CeKit Module
 
 This repo contains the base module that installs the product artifacts in the target OpenShift image.
 

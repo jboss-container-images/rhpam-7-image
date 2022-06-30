@@ -1,4 +1,4 @@
-# Red Hat Process Automation Manager Process Migration 7 module
+# Business Automation Manager Open Editions Process Migration 7 module
 
 # License
 

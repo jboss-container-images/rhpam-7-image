@@ -1,4 +1,4 @@
-# Red Hat Process Automation Manager KIE Server 7.0 module
+# Business Automation Manager Open Editions KIE Server 7.0 module
 
 # License
 

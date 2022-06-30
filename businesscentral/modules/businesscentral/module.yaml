@@ -5,7 +5,7 @@ version: "1.0"
 description: "Red Hat Business Central 7.13 installer"
 labels:
 - name: "org.jboss.product"
-  value: "rhpam-businesscentral"
+  value: "ibm-bamoe-businesscentral"
 - name: "org.jboss.product.version"
   value: "7.13.0"
 - name: "org.jboss.product.rhpam-businesscentral.version"
