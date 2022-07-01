@@ -14,17 +14,17 @@ Let’s inspect the rhpam-7-businesscentral cekit module:
 schema_version: 1
 name: "rhpam-7-businesscentral"
 version: "1.0"
-description: "Red Hat Business Central 7.13 installer"
+description: "IBM Business Automation Manager Open Editions Business Central 7.13 installer"
 labels:
 - name: "org.jboss.product"
-  value: "rhpam-businesscentral"
+  value: "ibm-bamoe-businesscentral"
 - name: "org.jboss.product.version"
   value: "7.13.0"
 - name: "org.jboss.product.rhpam-businesscentral.version"
   value: "7.13.0"
 envs:
 - name: "JBOSS_PRODUCT"
-  value: "rhpam-businesscentral"
+  value: "ibm-bamoe-businesscentral"
 - name: "RHPAM_BUSINESS_CENTRAL_VERSION"
   value: "7.13.0"
 - name: "PRODUCT_VERSION"

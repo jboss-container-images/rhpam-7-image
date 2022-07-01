@@ -2,7 +2,7 @@
 schema_version: 1
 name: "rhpam-7-smartrouter"
 version: "1.0"
-description: "Business Automation Manager Open Editions Smart Router 7.13 installer"
+description: "IBM Business Automation Manager Open Editions Smart Router 7.13 installer"
 labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-smartrouter"
@@ -12,7 +12,7 @@ labels:
   value: "7.13.0"
 envs:
 - name: "JBOSS_PRODUCT"
-  value: "rhpam-smartrouter"
+  value: "ibm-bamoe-smartrouter"
 - name: "RHPAM_SMARTROUTER_VERSION"
   value: "7.13.0"
 - name: "PRODUCT_VERSION"

@@ -2,7 +2,7 @@
 schema_version: 1
 name: "rhpam-7-businesscentral-monitoring"
 version: "1.0"
-description: "Red Hat Business Central Monitoring 7.13 container image"
+description: "IBM Business Automation Manager Open Editions Business Central Monitoring 7.13 container image"
 labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-businesscentral-monitoring"
@@ -12,7 +12,7 @@ labels:
   value: "7.13.0"
 envs:
 - name: "JBOSS_PRODUCT"
-  value: "rhpam-businesscentral-monitoring"
+  value: "ibm-bamoe-businesscentral-monitoring"
 - name: "RHPAM_BUSINESS_CENTRAL_MONITORING_VERSION"
   value: "7.13.0"
 - name: "PRODUCT_VERSION"

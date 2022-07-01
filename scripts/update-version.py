@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# This script will to help to manage rhpam components modules version, it will update all needed files
+# This script will to help to manage ibm bamoe components modules version, it will update all needed files
 # Example of usage:
 #   # move the current version to the next one or rcX
 #   python3 scripts/update-version.py -v 7.15.1 --confirm
@@ -18,7 +18,7 @@ import sys
 
 from ruamel.yaml import YAML
 
-# All rhpam modules that will have the given version updated.
+# All ibm bamoe modules that will have the given version updated.
 MODULES = {"businesscentral/modules/businesscentral", "businesscentral-monitoring/modules/businesscentral-monitoring",
           "controller/modules/controller", "dashbuilder/modules/dashbuilder", "kieserver/modules/kieserver",
           "process-migration/modules/process-migration", "smartrouter/modules/smartrouter"}
@@ -45,7 +45,7 @@ def get_shortened_version(version):
 
 def update_version(version, confirm):
     """
-    Update rhpam components module.yaml to the given version.
+    Update ibm bamoe components module.yaml to the given version.
     :param version: version to set into the module
     :param confirm: if true will save the changes otherwise will print the proposed changes
     """
@@ -85,7 +85,7 @@ def update_version(version, confirm):
 
 def update_main_readme(version, confirm):
     """
-    Update rhpam version on the main README file to the given version.
+    Update ibm bamoe version on the main README file to the given version.
     :param version: version to set into the module
     :param confirm: if true will save the changes otherwise will print the proposed changes
     """
@@ -115,10 +115,10 @@ def update_main_readme(version, confirm):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='RHPAM Version Manager')
+    parser = argparse.ArgumentParser(description='IBM BAMOE Version Manager')
     parser.add_argument('-v', dest='t_version', help='update everything to the next version')
     parser.add_argument('--confirm', default=False, action='store_true', help='if not set, script will not update the '
-                                                                              'rhpam modules. (Dry run)')
+                                                                              'ibm bamoe modules. (Dry run)')
     args = parser.parse_args()
 
     if len(sys.argv) == 1:

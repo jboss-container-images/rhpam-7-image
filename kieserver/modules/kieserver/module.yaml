@@ -2,7 +2,7 @@
 schema_version: 1
 name: "rhpam-7-kieserver"
 version: "1.0"
-description: "Business Automation Manager Open Editions KIE Server 7.13 installer"
+description: "IBM Business Automation Manager Open Editions KIE Server 7.13 installer"
 labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-kieserver"
@@ -12,7 +12,7 @@ labels:
   value: "7.13.0"
 envs:
 - name: "JBOSS_PRODUCT"
-  value: "rhpam-kieserver"
+  value: "ibm-bamoe-kieserver"
 - name: "RHPAM_KIESERVER_VERSION"
   value: "7.13.0"
 - name: "PRODUCT_VERSION"
