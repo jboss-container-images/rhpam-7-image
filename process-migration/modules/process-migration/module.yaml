@@ -2,7 +2,7 @@
 schema_version: 1
 name: "rhpam-7-process-migration"
 version: "1.0"
-description: "IBM Business Automation Manager Open Editions Process Migration 7.13 installer"
+description: "IBM Process Migration 7.13 installer"
 labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-process-migration"

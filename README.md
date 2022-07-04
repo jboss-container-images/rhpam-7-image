@@ -14,7 +14,7 @@ Let’s inspect the rhpam-7-businesscentral cekit module:
 schema_version: 1
 name: "rhpam-7-businesscentral"
 version: "1.0"
-description: "IBM Business Automation Manager Open Editions Business Central 7.13 installer"
+description: "IBM Business Central 7.13 installer"
 labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-businesscentral"
