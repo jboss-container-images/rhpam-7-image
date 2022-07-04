@@ -2,7 +2,7 @@
 schema_version: 1
 name: "rhpam-7-dashbuilder"
 version: "1.0"
-description: "IBM IBM Business Automation Manager Open Editions Dashbuilder 7.13 installer"
+description: "IBM Dashbuilder 7.13 installer"
 labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-dashbuilder"
