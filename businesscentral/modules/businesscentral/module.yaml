@@ -2,7 +2,7 @@
 schema_version: 1
 name: "rhpam-7-businesscentral"
 version: "1.0"
-description: "IBM Business Automation Manager Open Editions Red Hat Business Central 7.13 installer"
+description: "IBM Business Central 7.13 installer"
 labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-businesscentral"
