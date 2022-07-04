@@ -1,4 +1,4 @@
-# Business Automation Manager Open Editions Smart Router 7 module
+# IBM Business Automation Manager Open Editions Smart Router 7 module
 
 # License
 
