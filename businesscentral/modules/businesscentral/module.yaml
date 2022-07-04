@@ -2,21 +2,21 @@
 schema_version: 1
 name: "rhpam-7-businesscentral"
 version: "1.0"
-description: "IBM Business Central 7.13 installer"
+description: "IBM Business Central 8.0 installer"
 labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-businesscentral"
 - name: "org.jboss.product.version"
-  value: "7.13.0"
+  value: "8.0.0"
 - name: "org.jboss.product.rhpam-businesscentral.version"
-  value: "7.13.0"
+  value: "8.0.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-businesscentral"
 - name: "RHPAM_BUSINESS_CENTRAL_VERSION"
-  value: "7.13.0"
+  value: "8.0.0"
 - name: "PRODUCT_VERSION"
-  value: "7.13.0"
+  value: "8.0.0"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   value: "rhpam_business_central_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
@@ -25,7 +25,7 @@ ports:
 - value: 8001
 artifacts:
 - name: "rhpam_business_central_distribution.zip"
-  # rhpam-7.13.0-business-central-eap7-deployable.zip
+  # rhpam-8.0.0-business-central-eap7-deployable.zip
   md5: "9403b2f7f8a261c3789af0680fc1e567"
 run:
   user: 185

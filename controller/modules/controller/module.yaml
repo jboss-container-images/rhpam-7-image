@@ -2,28 +2,28 @@
 schema_version: 1
 name: "rhpam-7-controller"
 version: "1.0"
-description: "IBM Standalone Controller 7.13 installer"
+description: "IBM Standalone Controller 8.0 installer"
 labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-controller"
 - name: "org.jboss.product.version"
-  value: "7.13.0"
+  value: "8.0.0"
 - name: "org.jboss.product.rhpam-controller.version"
-  value: "7.13.0"
+  value: "8.0.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-controller"
 - name: "RHPAM_CONTROLLER_VERSION"
-  value: "7.13.0"
+  value: "8.0.0"
 - name: "PRODUCT_VERSION"
-  value: "7.13.0"
+  value: "8.0.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "rhpam_add_ons_distribution.zip"
 - name: "CONTROLLER_DISTRIBUTION_ZIP"
-  value: "rhpam-7.13.0-controller-ee7.zip"
+  value: "rhpam-8.0.0-controller-ee7.zip"
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.13.0-add-ons.zip
+  # rhpam-8.0.0-add-ons.zip
   md5: "dee1126c44954cd9cc618820ed8d8bb7"
 run:
   user: 185
