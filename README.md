@@ -12,7 +12,7 @@ Let’s inspect the bamoe-8-businesscentral cekit module:
 
 ```yaml
 schema_version: 1
-name: "rhpam-8-businesscentral"
+name: "bamoe-8-businesscentral"
 version: "1.0"
 description: "IBM Business Central 8.0 installer"
 labels:
