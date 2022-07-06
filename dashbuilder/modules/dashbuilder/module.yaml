@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-name: "rhpam-7-dashbuilder"
+name: "rhpam-8-dashbuilder"
 version: "1.0"
 description: "IBM Dashbuilder 8.0 installer"
 labels:

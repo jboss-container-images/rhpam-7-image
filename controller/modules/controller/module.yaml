@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-name: "rhpam-7-controller"
+name: "rhpam-8-controller"
 version: "1.0"
 description: "IBM Standalone Controller 8.0 installer"
 labels:

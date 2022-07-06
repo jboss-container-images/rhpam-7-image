@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-name: "rhpam-7-process-migration"
+name: "rhpam-8-process-migration"
 version: "1.0"
 description: "IBM Process Migration 8.0 installer"
 labels:

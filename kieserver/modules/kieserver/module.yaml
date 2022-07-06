@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-name: "rhpam-7-kieserver"
+name: "rhpam-8-kieserver"
 version: "1.0"
 description: "IBM Business Automation Manager Open Editions KIE Server 8.0 installer"
 labels:

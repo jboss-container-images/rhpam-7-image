@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-name: "rhpam-7-smartrouter"
+name: "rhpam-8-smartrouter"
 version: "1.0"
 description: "IBM Smart Router 8.0 installer"
 labels:
