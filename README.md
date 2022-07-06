@@ -7,7 +7,7 @@ the EAP with the application layer (business central, kieserver, etc.) on it wit
 it standalone-image, all the configuration will be made by the *-openshift repositories which contains the image
 descriptors with all modules that will be installed. In this repo you will find the basics like which artifact
 (kieserver, business central, etc) is being used to build the openshift images.
-Let’s inspect the rhpam-8-businesscentral cekit module:
+Let’s inspect the bamoe-8-businesscentral cekit module:
 
 
 ```yaml
