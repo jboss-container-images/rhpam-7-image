@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-name: "rhpam-8-smartrouter"
+name: "ibm-bamoe-8-smartrouter"
 version: "1.0"
 description: "IBM Smart Router 8.0 installer"
 labels:
@@ -8,29 +8,29 @@ labels:
   value: "ibm-bamoe-smartrouter"
 - name: "org.jboss.product.version"
   value: "8.0.0"
-- name: "org.jboss.product.rhpam-smartrouter.version"
+- name: "org.jboss.product.ibm-bamoe-smartrouter.version"
   value: "8.0.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-smartrouter"
-- name: "RHPAM_SMARTROUTER_VERSION"
+- name: "IBM_BAMOE_SMARTROUTER_VERSION"
   value: "8.0.0"
 - name: "PRODUCT_VERSION"
   value: "8.0.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
-  value: "rhpam_add_ons_distribution.zip"
+  value: "bamoe_add_ons_distribution.zip"
 - name: "KIE_ROUTER_DISTRIBUTION_JAR"
-  value: "rhpam-8.0.0-smart-router.jar"
+  value: "bamoe-8.0.0-smart-router.jar"
 - name: "LAUNCH_DIR"
-  value: "/opt/rhpam-smartrouter/bin/launch"
+  value: "/opt/ibm-bamoe-smartrouter/bin/launch"
 - name: "JBOSS_HOME"
-  value: "/opt/rhpam-smartrouter"
+  value: "/opt/ibm-bamoe-smartrouter"
 ports:
 - value: 9000
 artifacts:
-- name: "rhpam_add_ons_distribution.zip"
-  # rhpam-8.0.0-add-ons.zip
-  md5: "dee1126c44954cd9cc618820ed8d8bb7"
+- name: "bamoe_add_ons_distribution.zip"
+  # bamoe-8.0.0-add-ons.zip
+  md5: "ff12ebed0ef24dddec05455595cc3c97"
 run:
   user: 185
   cmd:
@@ -38,6 +38,6 @@ run:
   - "-Dorg.kie.server.router.host=0.0.0.0"
   - "-Dorg.kie.server.router.port=9000"
   - "-jar"
-  - "/opt/rhpam-smartrouter/${KIE_ROUTER_DISTRIBUTION_JAR}"
+  - "/opt/ibm-bamoe-smartrouter/${KIE_ROUTER_DISTRIBUTION_JAR}"
 execute:
 - script: "install"

@@ -7,12 +7,14 @@ the EAP with the application layer (business central, kieserver, etc.) on it wit
 it standalone-image, all the configuration will be made by the *-openshift repositories which contains the image
 descriptors with all modules that will be installed. In this repo you will find the basics like which artifact
 (kieserver, business central, etc) is being used to build the openshift images.
-Let’s inspect the bamoe-8-businesscentral cekit module:
+
+Let’s inspect the ibm-bamoe-8-businesscentral cekit module:
+
 
 
 ```yaml
 schema_version: 1
-name: "bamoe-8-businesscentral"
+name: "ibm-bamoe-8-businesscentral"
 version: "1.0"
 description: "IBM Business Central 8.0 installer"
 labels:
@@ -20,24 +22,24 @@ labels:
   value: "ibm-bamoe-businesscentral"
 - name: "org.jboss.product.version"
   value: "8.0.0"
-- name: "org.jboss.product.rhpam-businesscentral.version"
+- name: "org.jboss.product.ibm-bamoe-businesscentral.version"
   value: "8.0.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-businesscentral"
-- name: "RHPAM_BUSINESS_CENTRAL_VERSION"
+- name: "IBM_BAMOE_BUSINESS_CENTRAL_VERSION"
   value: "8.0.0"
 - name: "PRODUCT_VERSION"
   value: "8.0.0"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
-  value: "rhpam_business_central_distribution.zip"
+  value: "bamoe_business_central_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
   value: "jboss-eap-7.2"
 ports:
 - value: 8001
 artifacts:
-- name: "rhpam_business_central_distribution.zip"
-  # rhpam-8.0.0.redhat-211006-business-central-eap7-deployable.zip
+- name: "bamoe_business_central_distribution.zip"
+  # bamoe-8.0.0.redhat-211006-business-central-eap7-deployable.zip
   md5: "4194d7aa9613a52a1c5045e0236f94d5"
 run:
   user: 185
@@ -104,5 +106,6 @@ There is two options to run it, a dry-run option which will only print for you t
 how the changes will looks like after the script is executed, and if the chages are correct, the `--confirm` flag
 should be used.
 
- ##### Found a issue?
- Please submit a issue [here](https://issues.jboss.org/projects/KIECLOUD) or send us a email: bsig-cloud@redhat.com.
+ ##### Found an issue?
+ Please submit an issue [here](https://issues.jboss.org/projects/KIECLOUD) or send us a email: bsig-cloud@redhat.com.
+

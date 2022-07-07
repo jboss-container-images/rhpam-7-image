@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-name: "rhpam-8-businesscentral-monitoring"
+name: "ibm-bamoe-8-businesscentral-monitoring"
 version: "1.0"
 description: "IBM Business Central Monitoring 8.0 container image"
 labels:
@@ -8,25 +8,25 @@ labels:
   value: "ibm-bamoe-businesscentral-monitoring"
 - name: "org.jboss.product.version"
   value: "8.0.0"
-- name: "org.jboss.product.rhpam-businesscentral-monitoring.version"
+- name: "org.jboss.product.ibm-bamoe-businesscentral-monitoring.version"
   value: "8.0.0"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-businesscentral-monitoring"
-- name: "RHPAM_BUSINESS_CENTRAL_MONITORING_VERSION"
+- name: "IBM_BAMOE_BUSINESS_CENTRAL_MONITORING_VERSION"
   value: "8.0.0"
 - name: "PRODUCT_VERSION"
   value: "8.0.0"
 - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
-  value: "rhpam_business_central_monitoring_distribution.zip"
+  value: "bamoe_business_central_monitoring_distribution.zip"
 - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_EAP"
   value: "jboss-eap-7.4"
 ports:
 - value: 8001
 artifacts:
-- name: "rhpam_business_central_monitoring_distribution.zip"
-  # rhpam-8.0.0-monitoring-ee7.zip
-  md5: "fb0f7c31643a8bb562498f7688f87d00"
+- name: "bamoe_business_central_monitoring_distribution.zip"
+  # bamoe-8.0.0-monitoring-ee7.zip
+  md5: "b6313b88c99f7217044d9684ee8bd498"
 run:
   user: 185
   cmd:
