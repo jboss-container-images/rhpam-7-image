@@ -1,4 +1,4 @@
-# Red Hat Process Automation Manager Dashbuilder 7 module
+# IBM Business Automation Manager Open Editions Dashbuilder 7 module
 
 # License
 

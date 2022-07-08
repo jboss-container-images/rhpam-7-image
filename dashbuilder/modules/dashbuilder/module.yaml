@@ -1,32 +1,32 @@
 ---
 schema_version: 1
-name: "rhpam-7-dashbuilder"
+name: "ibm-bamoe-8-dashbuilder"
 version: "1.0"
-description: "Red Hat Dashbuilder 7.13 installer"
+description: "IBM Dashbuilder 8.0 installer"
 labels:
 - name: "org.jboss.product"
-  value: "rhpam-dashbuilder"
+  value: "ibm-bamoe-dashbuilder"
 - name: "org.jboss.product.version"
-  value: "7.13.0"
-- name: "org.jboss.product.rhpam-dashbuilder.version"
-  value: "7.13.0"
+  value: "8.0.0"
+- name: "org.jboss.product.ibm-bamoe-dashbuilder.version"
+  value: "8.0.0"
 envs:
 - name: "JBOSS_PRODUCT"
-  value: "rhpam-dashbuilder"
-- name: "RHPAM_DASHBUILDER_VERSION"
-  value: "7.13.0"
+  value: "ibm-bamoe-dashbuilder"
+- name: "IBM_BAMOE_DASHBUILDER_VERSION"
+  value: "8.0.0"
 - name: "PRODUCT_VERSION"
-  value: "7.13.0"
+  value: "8.0.0"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
-  value: "rhpam_add_ons_distribution.zip"
+  value: "bamoe_add_ons_distribution.zip"
 - name: "DASHBUILDER_DISTRIBUTION_ZIP"
-  value: "rhpam-7.13.0-dashbuilder-runtime.zip"
+  value: "bamoe-8.0.0-dashbuilder-runtime.zip"
 ports:
 - value: 8080
 artifacts:
-- name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.13.0-add-ons.zip
-  md5: "dee1126c44954cd9cc618820ed8d8bb7"
+- name: "bamoe_add_ons_distribution.zip"
+  # bamoe-8.0.0-add-ons.zip
+  md5: "ff12ebed0ef24dddec05455595cc3c97"
 run:
   user: 185
   cmd:
