@@ -1,4 +1,4 @@
-# IBM Business Automation Manager Open Editions KIE Server 7.0 module
+# IBM Business Automation Manager Open Editions KIE Server 8 module
 
 # License
 
