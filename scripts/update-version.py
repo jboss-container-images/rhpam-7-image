@@ -128,7 +128,7 @@ if __name__ == "__main__":
     else:
         # validate if the provided version is valid.
         # e.g. 8.0.1
-        pattern = "d.d{21}.d"
+        pattern = "d.d{1}.d"
         if VERSION_REGEX.match(args.t_version):
             print("Modules version will be updated to {0}".format(args.t_version))
             update_version(args.t_version, args.confirm)
