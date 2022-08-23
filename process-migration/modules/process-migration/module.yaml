@@ -1,4 +1,3 @@
----
 schema_version: 1
 name: "rhpam-7-process-migration"
 version: "1.0"
@@ -7,20 +6,20 @@ labels:
 - name: "org.jboss.product"
   value: "rhpam-process-migration"
 - name: "org.jboss.product.version"
-  value: "7.13.0"
+  value: "7.13.1"
 - name: "org.jboss.product.rhpam-process-migration.version"
-  value: "7.13.0"
+  value: "7.13.1"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-process-migration"
 - name: "RHPAM_PROCESS_MIGRATION_VERSION"
-  value: "7.13.0"
+  value: "7.13.1"
 - name: "PRODUCT_VERSION"
-  value: "7.13.0"
+  value: "7.13.1"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "rhpam_add_ons_distribution.zip"
 - name: "KIE_PROCESS_MIGRATION_DISTRIBUTION_ZIP"
-  value: "rhpam-7.13.0-process-migration-service.zip"
+  value: "rhpam-7.13.1-process-migration-service.zip"
 - name: "LAUNCH_DIR"
   value: "/opt/rhpam-process-migration/bin/launch"
 - name: "CONFIG_DIR"
@@ -31,7 +30,7 @@ ports:
 - value: 8080
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.13.0-add-ons.zip
+  # rhpam-7.13.1-add-ons.zip
   md5: "dee1126c44954cd9cc618820ed8d8bb7"
 run:
   user: 185
