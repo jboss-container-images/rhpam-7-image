@@ -2,12 +2,12 @@
 # This script will to help to manage ibm bamoe components modules version, it will update all needed files
 # Example of usage:
 #   # move the current version to the next one or rcX
-#   python3 scripts/update-version.py -v 7.15.1 --confirm
+#   python3 scripts/update-version.py -v 8.0.1 --confirm
 #
 #   # to only see the proposed changes (dry run):
-#   python3 scripts/update-version.py -v 7.15.1
+#   python3 scripts/update-version.py -v 8.0.1
 #
-# Version pattern is: X.YY.Z
+# Version pattern is: X.Y.Z
 # Dependencies:
 #  ruamel.yaml
 
@@ -23,7 +23,7 @@ MODULES = {"businesscentral/modules/businesscentral", "businesscentral-monitorin
           "controller/modules/controller", "dashbuilder/modules/dashbuilder", "kieserver/modules/kieserver",
           "process-migration/modules/process-migration", "smartrouter/modules/smartrouter"}
 
-VERSION_REGEX = re.compile(r'7[.]\d{2}[.]\d{1}\b')
+VERSION_REGEX = re.compile(r'8[.]\d{1}[.]\d{1}\b')
 SHORTENED_VERSION_REGEX = re.compile(r'\b\s\d[.]\d{2}\b')
 
 
@@ -127,8 +127,8 @@ if __name__ == "__main__":
 
     else:
         # validate if the provided version is valid.
-        # e.g. 7.15.0
-        pattern = "d.d{2}.d"
+        # e.g. 8.0.1
+        pattern = "d.d{1}.d"
         if VERSION_REGEX.match(args.t_version):
             print("Modules version will be updated to {0}".format(args.t_version))
             update_version(args.t_version, args.confirm)

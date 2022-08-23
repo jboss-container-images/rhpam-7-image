@@ -1,4 +1,4 @@
-# IBM Business Automation Manager Open Editions Standalone Controller 7 module
+# IBM Business Automation Manager Open Editions Standalone Controller 8 module
 
 # License
 
