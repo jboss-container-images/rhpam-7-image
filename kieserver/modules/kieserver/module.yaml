@@ -6,16 +6,16 @@ labels:
 - name: "org.jboss.product"
   value: "rhpam-kieserver"
 - name: "org.jboss.product.version"
-  value: "7.13.1"
+  value: "7.13.2"
 - name: "org.jboss.product.rhpam-kieserver.version"
-  value: "7.13.1"
+  value: "7.13.2"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-kieserver"
 - name: "RHPAM_KIESERVER_VERSION"
-  value: "7.13.1"
+  value: "7.13.2"
 - name: "PRODUCT_VERSION"
-  value: "7.13.1"
+  value: "7.13.2"
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   value: "rhpam_kie_server_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
@@ -27,17 +27,17 @@ envs:
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "rhpam_kie_server_distribution.zip"
-  # rhpam-7.13.1-kie-server-ee8.zip
+  # rhpam-7.13.2-kie-server-ee8.zip
   md5: "2779f8e59b3d0d79f251a2bea30942a7"
 - name: "rhpam_business_central_distribution.zip"
-  # rhpam-7.13.1-business-central-eap7-deployable.zip
+  # rhpam-7.13.2-business-central-eap7-deployable.zip
   md5: "e14456c952535133617eb8857621df0e"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
-- name: "kie-server-services-jbpm-cluster-7.67.0.Final-redhat-00017.jar"
+- name: "kie-server-services-jbpm-cluster-7.13.2.Final-redhat-00017.jar"
   md5: "ec989c830566219fb910771d10819cf4"
-- name: "jbpm-event-emitters-kafka-7.67.0.Final-redhat-00017.jar"
+- name: "jbpm-event-emitters-kafka-7.13.2.Final-redhat-00017.jar"
   md5: "59f360634bce52e5b62ffa9ebf9e0574"
 run:
   user: 185
