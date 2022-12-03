@@ -6,16 +6,16 @@ labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-businesscentral-monitoring"
 - name: "org.jboss.product.version"
-  value: "8.0.1"
+  value: "8.0.2"
 - name: "org.jboss.product.ibm-bamoe-businesscentral-monitoring.version"
-  value: "8.0.1"
+  value: "8.0.2"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-businesscentral-monitoring"
 - name: "IBM_BAMOE_BUSINESS_CENTRAL_MONITORING_VERSION"
-  value: "8.0.1"
+  value: "8.0.2"
 - name: "PRODUCT_VERSION"
-  value: "8.0.1"
+  value: "8.0.2"
 - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP"
   value: "bamoe_business_central_monitoring_distribution.zip"
 - name: "BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_EAP"
@@ -24,7 +24,7 @@ ports:
 - value: 8001
 artifacts:
 - name: "bamoe_business_central_monitoring_distribution.zip"
-  # bamoe-8.0.1-monitoring-ee7.zip
+  # bamoe-8.0.2-monitoring-ee7.zip
   md5: "33a9a9838aa6d87c86008e251ddaebf2"
 run:
   user: 185
