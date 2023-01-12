@@ -25,7 +25,7 @@ ports:
 artifacts:
 - name: "bamoe_business_central_monitoring_distribution.zip"
   # bamoe-8.0.2-monitoring-ee7.zip
-  md5: "33a9a9838aa6d87c86008e251ddaebf2"
+  md5: "710f6043484223a622cc7a7cab5766a8"
 run:
   user: 185
   cmd:

@@ -31,7 +31,7 @@ ports:
 artifacts:
 - name: "bamoe_add_ons_distribution.zip"
   # bamoe-8.0.2-add-ons.zip
-  md5: "100c519a5b910f79b2f41fa223a812b6"
+  md5: "bbd7964bdc2db6576366a29e8bbaedb7"
 run:
   user: 185
   cmd:
