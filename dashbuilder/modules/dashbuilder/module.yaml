@@ -1,4 +1,3 @@
----
 schema_version: 1
 name: "rhpam-7-dashbuilder"
 version: "1.0"
@@ -7,25 +6,25 @@ labels:
 - name: "org.jboss.product"
   value: "rhpam-dashbuilder"
 - name: "org.jboss.product.version"
-  value: "7.13.2"
+  value: "7.13.3"
 - name: "org.jboss.product.rhpam-dashbuilder.version"
-  value: "7.13.2"
+  value: "7.13.3"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-dashbuilder"
 - name: "RHPAM_DASHBUILDER_VERSION"
-  value: "7.13.2"
+  value: "7.13.3"
 - name: "PRODUCT_VERSION"
-  value: "7.13.2"
+  value: "7.13.3"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "rhpam_add_ons_distribution.zip"
 - name: "DASHBUILDER_DISTRIBUTION_ZIP"
-  value: "rhpam-7.13.2-dashbuilder-runtime.zip"
+  value: "rhpam-7.13.3-dashbuilder-runtime.zip"
 ports:
 - value: 8080
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.13.2-add-ons.zip
+  # rhpam-7.13.3-add-ons.zip
   md5: "3713ec0da0d642d818ec34908e504b4f"
 run:
   user: 185
