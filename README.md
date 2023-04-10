@@ -34,7 +34,7 @@ envs:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   value: "bamoe_business_central_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
-  value: "jboss-eap-7.2"
+  value: "jboss-eap-7.4"
 ports:
 - value: 8001
 artifacts:
@@ -55,27 +55,25 @@ execute:
 ```
 
 In the file above we set the most important configurations to which defines:
-    - the product
-    - the product version
-    - the product zip artifact, which will be deployed on the final OpenShift image.
+* the product
+* the product version
+* the product zip artifact, which will be deployed on the final OpenShift image.
 
 Note the *BUSINESS_CENTRAL_DISTRIBUTION.ZIP* env, its value will be the artifact name that, when the build is completed,
 is placed in the `/<images_source_dir>/rhpam-7-openshift-image/businesscentral/target/image` directory,
 note that it is on the rpam-7-openshift-image repository. The **module.yaml** file above is a example of
 the base module used to configure the product bits into the final OpenShift image. All OpenShift images have a
 similar module descriptor, and these modules (the base modules) are one of the first module listed in the
- *-openshift image’s image.yaml file.
+ *-openshift image’s* image.yaml file.
 
 
 
-This repo is used to build the final OpenShift images, they contain a set of yaml files, below you will find each
-file and its purpose, all the modules have the same files, as described below:
+This repo is used to build the final OpenShift images, it contains the CeKit module that holds the information 
+about the version and the binary that ill be installed in the Container Image, each module contains:
+* _install_: The script that will install the binary in the desired location and configure it properly.
+* _ module.yaml_: The module definition, it holds the version, labels and binary information, this module needs to be \
+updated for every new release.
 
- - **container.yaml**: used by OSBS builds.
- - **content_sets.yaml**: define the yum repositories needed to install dependencies for the image.
- - **branch-overrides.yaml**: overrides file which uses the latest stable version for external dependencies.
- - **tag-overrides.yaml**: Used to override the branchs to use the final tags to rebuild released images, for CVE respins.
- - **image.yaml**: the main image descriptor file, here are all the pieces and configuration needed to build an image. (Deprecated)
 
 
 ### Update versions
