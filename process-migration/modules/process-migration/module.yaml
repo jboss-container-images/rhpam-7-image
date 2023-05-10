@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "ibm-bamoe-8-process-migration"
 version: "1.0"
@@ -31,7 +32,7 @@ ports:
 artifacts:
 - name: "bamoe_add_ons_distribution.zip"
   # bamoe-8.0.3-add-ons.zip
-  md5: "bbd7964bdc2db6576366a29e8bbaedb7"
+  md5: "75b149dc2ccbc8409557af6d044ad640"
 run:
   user: 185
   cmd:
