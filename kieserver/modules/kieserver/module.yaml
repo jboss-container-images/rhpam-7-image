@@ -35,7 +35,7 @@ artifacts:
   md5: "371381a425854b2f5ca840e10b3ca745"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.30.redhat-00005.jar
-  md5: "62cc6eeb72e2738e3acc8957ca95f37b"
+  md5: "44e25fa5b93454bc9cfc005f8cb98b53"
 - name: "kie-server-services-jbpm-cluster-7.67.2.Final-redhat-00005.jar"
   md5: "01ae2e178852f123925569141783f2be"
 - name: "jbpm-event-emitters-kafka-7.67.2.Final-redhat-00005.jar"
