@@ -1,4 +1,3 @@
----
 schema_version: 1
 name: "ibm-bamoe-8-kieserver"
 version: "1.0"
@@ -7,16 +6,16 @@ labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-kieserver"
 - name: "org.jboss.product.version"
-  value: "8.0.3"
+  value: "8.0.4"
 - name: "org.jboss.product.ibm-bamoe-kieserver.version"
-  value: "8.0.3"
+  value: "8.0.4"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-kieserver"
 - name: "IBM_BAMOE_KIESERVER_VERSION"
-  value: "8.0.3"
+  value: "8.0.4"
 - name: "PRODUCT_VERSION"
-  value: "8.0.3"
+  value: "8.0.4"
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   value: "bamoe_kie_server_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
@@ -28,10 +27,10 @@ envs:
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "bamoe_kie_server_distribution.zip"
-  # bamoe-8.0.3-kie-server-ee8.zip
+  # bamoe-8.0.4-kie-server-ee8.zip
   md5: "945063a5ca2a7893e168cbc0403134df"
 - name: "bamoe_business_central_distribution.zip"
-  # bamoe-8.0.3-business-central-eap7-deployable.zip
+  # bamoe-8.0.4-business-central-eap7-deployable.zip
   md5: "6013536c43f019d2d6758e706d47c249"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.30.redhat-00005.jar
