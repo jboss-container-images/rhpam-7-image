@@ -6,16 +6,16 @@ labels:
 - name: "org.jboss.product"
   value: "rhpam-kieserver"
 - name: "org.jboss.product.version"
-  value: "7.13.3"
+  value: "7.13.4"
 - name: "org.jboss.product.rhpam-kieserver.version"
-  value: "7.13.3"
+  value: "7.13.4"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-kieserver"
 - name: "RHPAM_KIESERVER_VERSION"
-  value: "7.13.3"
+  value: "7.13.4"
 - name: "PRODUCT_VERSION"
-  value: "7.13.3"
+  value: "7.13.4"
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   value: "rhpam_kie_server_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
@@ -27,10 +27,10 @@ envs:
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "rhpam_kie_server_distribution.zip"
-  # rhpam-7.13.3-kie-server-ee8.zip
+  # rhpam-7.13.4-kie-server-ee8.zip
   md5: "53ae77ab0cc744e3ef43b3ad39ecd3e6"
 - name: "rhpam_business_central_distribution.zip"
-  # rhpam-7.13.3-business-central-eap7-deployable.zip
+  # rhpam-7.13.4-business-central-eap7-deployable.zip
   md5: "536d175462e0777f0a5386e37a2e4de2"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.30.redhat-00005.jar
