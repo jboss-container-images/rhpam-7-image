@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "rhpam-7-businesscentral"
 version: "1.0"
@@ -25,7 +26,7 @@ ports:
 artifacts:
 - name: "rhpam_business_central_distribution.zip"
   # rhpam-7.13.4-business-central-eap7-deployable.zip
-  md5: "536d175462e0777f0a5386e37a2e4de2"
+  md5: "87c555d71825b88d3576fe6fba3a998c"
 run:
   user: 185
   cmd:
