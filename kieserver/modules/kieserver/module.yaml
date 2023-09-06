@@ -37,7 +37,7 @@ artifacts:
   md5: "44e25fa5b93454bc9cfc005f8cb98b53"
 - name: "kie-server-services-jbpm-cluster-7.67.0.Final-redhat-00024.jar"
   md5: "8385a5ef35efd5f7c3849ce3cfd5ac9a"
-- name: "jbpm-event-emitters-kafka-7.13.5.Final-redhat-00024.jar"
+- name: "jbpm-event-emitters-kafka-7.67.0Final-redhat-00024.jar"
   md5: "8702f1f2802121dd3615a341e3e289bb"
 run:
   user: 185
