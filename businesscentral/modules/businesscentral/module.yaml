@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "ibm-bamoe-8-businesscentral"
 version: "1.0"
@@ -25,7 +26,7 @@ ports:
 artifacts:
 - name: "bamoe_business_central_distribution.zip"
   # bamoe-8.0.4-business-central-eap7-deployable.zip
-  md5: "6013536c43f019d2d6758e706d47c249"
+  md5: "ca2b38e0961d98aa9227598952aa30f4"
 run:
   user: 185
   cmd:
