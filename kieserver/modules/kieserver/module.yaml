@@ -34,7 +34,7 @@ artifacts:
   # bamoe-8.0.4-business-central-eap7-deployable.zip
   md5: "ca2b38e0961d98aa9227598952aa30f4"
 - name: "slf4j-simple.jar"
-  # slf4j-simple-1.7.22.redhat-2.jar
+  # slf4j-simple-1.7.30.redhat-00005.jar
   md5: "44e25fa5b93454bc9cfc005f8cb98b53"
 - name: "kie-server-services-jbpm-cluster-7.67.2.Final-redhat-00006.jar"
   md5: "d5b649c03cedd5496a38eba0ac781ca8"
