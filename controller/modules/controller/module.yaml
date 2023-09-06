@@ -1,3 +1,4 @@
+---
 schema_version: 1
 name: "ibm-bamoe-8-controller"
 version: "1.0"
@@ -23,7 +24,7 @@ envs:
 artifacts:
 - name: "bamoe_add_ons_distribution.zip"
   # bamoe-8.0.4-add-ons.zip
-  md5: "765a9b190713bac84725543c19dc7378"
+  md5: "eb94bfa2086a1514ca12d7c3d6e1aeb8"
 run:
   user: 185
   cmd:
