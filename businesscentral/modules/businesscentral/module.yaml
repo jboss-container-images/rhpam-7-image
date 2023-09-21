@@ -26,7 +26,7 @@ ports:
 artifacts:
 - name: "bamoe_business_central_distribution.zip"
   # bamoe-8.0.4-business-central-eap7-deployable.zip
-  md5: "ca2b38e0961d98aa9227598952aa30f4"
+  md5: "16e9fcdb5477d8a7af8c014db404b330"
 run:
   user: 185
   cmd:
