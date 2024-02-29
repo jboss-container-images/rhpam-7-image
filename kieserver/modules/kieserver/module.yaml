@@ -34,7 +34,7 @@ artifacts:
   # rhpam-7.13.5-business-central-eap7-deployable.zip
   md5: "e11393b2868cf097a79c672a7c5490ac"
 - name: "slf4j-simple.jar"
-  # slf4j-simple-1.7.22.redhat-2.jar
+  # slf4j-simple-1.7.30.redhat-00005.jar
   md5: "44e25fa5b93454bc9cfc005f8cb98b53"
 - name: "kie-server-services-jbpm-cluster-7.67.0.Final-redhat-00029.jar"
   md5: "50f165c1284746f1e8c5808c7e8f7205"
