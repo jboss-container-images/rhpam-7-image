@@ -7,24 +7,24 @@ labels:
 - name: "org.jboss.product"
   value: "rhpam-controller"
 - name: "org.jboss.product.version"
-  value: "7.13.4"
+  value: "7.13.5"
 - name: "org.jboss.product.rhpam-controller.version"
-  value: "7.13.4"
+  value: "7.13.5"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "rhpam-controller"
 - name: "RHPAM_CONTROLLER_VERSION"
-  value: "7.13.4"
+  value: "7.13.5"
 - name: "PRODUCT_VERSION"
-  value: "7.13.4"
+  value: "7.13.5"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "rhpam_add_ons_distribution.zip"
 - name: "CONTROLLER_DISTRIBUTION_ZIP"
-  value: "rhpam-7.13.4-controller-ee7.zip"
+  value: "rhpam-7.13.5-controller-ee7.zip"
 artifacts:
 - name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.13.4-add-ons.zip
-  md5: "0be2b4b192b818f658e151b37c289a1a"
+  # rhpam-7.13.5-add-ons.zip
+  md5: "da2d67bf4dbe8f71be34ed764f5c1d53"
 run:
   user: 185
   cmd:
