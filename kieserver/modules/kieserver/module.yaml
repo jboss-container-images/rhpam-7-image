@@ -24,17 +24,17 @@ envs:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
   value: "jboss-eap-7.4"
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-  value: "jbpm-wb-kie-server-backend-7.67.2.Final-redhat-00014.jar"
+  value: "jbpm-wb-kie-server-backend-7.67.2.Final-redhat-00017.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "bamoe_kie_server_distribution.zip"
-  # bamoe-8.0.4-kie-server-ee8.zip
-  md5: "43364da87c7993eb0d9ba78002d08daa"
+  # bamoe-8.0.5-kie-server-ee8.zip
+  md5: "6aab4575617da41fad1de16b6966459f"
 - name: "bamoe_business_central_distribution.zip"
-  # bamoe-8.0.4-business-central-eap7-deployable.zip
-  md5: "1e48b950ae11dd3fa8c6dbfce1429a5b"
+  # bamoe-8.0.5-business-central-eap7-deployable.zip
+  md5: "a9d12b175dbaa8003fca168dfa36c40a"
 - name: "slf4j-simple.jar"
-  # slf4j-simple-1.7.30.redhat-00005.jar
+  # slf4j-simple-1.7.22.redhat-2.jar
   md5: "44e25fa5b93454bc9cfc005f8cb98b53"
 - name: "kie-server-services-jbpm-cluster-7.67.2.Final-redhat-00014.jar"
   md5: "152c74ea187e7c0241f318d234a12dce"
