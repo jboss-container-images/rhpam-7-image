@@ -1,4 +1,3 @@
----
 schema_version: 1
 name: "ibm-bamoe-8-businesscentral"
 version: "1.0"
@@ -7,16 +6,16 @@ labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-businesscentral"
 - name: "org.jboss.product.version"
-  value: "8.0.4"
+  value: "8.0.5"
 - name: "org.jboss.product.ibm-bamoe-businesscentral.version"
-  value: "8.0.4"
+  value: "8.0.5"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-businesscentral"
 - name: "IBM_BAMOE_BUSINESS_CENTRAL_VERSION"
-  value: "8.0.4"
+  value: "8.0.5"
 - name: "PRODUCT_VERSION"
-  value: "8.0.4"
+  value: "8.0.5"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
   value: "bamoe_business_central_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
