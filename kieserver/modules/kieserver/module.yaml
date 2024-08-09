@@ -28,17 +28,17 @@ envs:
 artifacts:
 - name: "bamoe_kie_server_distribution.zip"
   # bamoe-8.0.6-kie-server-ee8.zip
-  md5: "43364da87c7993eb0d9ba78002d08daa"
+  md5: "626854d9333e4cec792fb188666b3069"
 - name: "bamoe_business_central_distribution.zip"
   # bamoe-8.0.6-business-central-eap7-deployable.zip
-  md5: "1e48b950ae11dd3fa8c6dbfce1429a5b"
+  md5: "ba00917264d3fce0b32debe5dfa72ea0"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.30.redhat-00005.jar
   md5: "44e25fa5b93454bc9cfc005f8cb98b53"
-- name: "kie-server-services-jbpm-cluster-7.67.2.Final-redhat-00014.jar"
-  md5: "152c74ea187e7c0241f318d234a12dce"
-- name: "jbpm-event-emitters-kafka-7.67.2.Final-redhat-00014.jar"
-  md5: "42fe408c6119e38018b602ef1b5ba93c"
+- name: "kie-server-services-jbpm-cluster-7.67.2.Final-redhat-00021.jar"
+  md5: "e3942cb38c296db4f2351b2f0ee26b1e"
+- name: "jbpm-event-emitters-kafka-7.67.2.Final-redhat-00021.jar"
+  md5: "f970e48e7f07ed3f7eabd498a9644a72"
 run:
   user: 185
   cmd:
