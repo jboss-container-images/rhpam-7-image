@@ -23,22 +23,22 @@ envs:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
   value: "jboss-eap-7.4"
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-  value: "jbpm-wb-kie-server-backend-7.67.2.Final-redhat-00034.jar"
+  value: "jbpm-wb-kie-server-backend-7.67.2.Final-redhat-00036.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "bamoe_kie_server_distribution.zip"
   # bamoe-8.0.8-kie-server-ee8.zip
-  md5: "29d95a5635ecf84a04dbf3a91e98ab86"
+  md5: "f45705db7f9538dd371f741c46e6e9d7"
 - name: "bamoe_business_central_distribution.zip"
   # bamoe-8.0.8-business-central-eap7-deployable.zip
-  md5: "8adbce39e18e389a0f8a2b71fa5f8f6f"
+  md5: "c2cdb5d11e11897578ed0fd670570289"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.30.redhat-00005.jar
   md5: "44e25fa5b93454bc9cfc005f8cb98b53"
-- name: "kie-server-services-jbpm-cluster-7.67.2.Final-redhat-00034.jar"
-  md5: "48e7c07e581ce2ea494588d7f715f4a4"
-- name: "jbpm-event-emitters-kafka-7.67.2.Final-redhat-00034.jar"
-  md5: "44ed03a259e51cc802eb37519464bec0"
+- name: "kie-server-services-jbpm-cluster-7.67.2.Final-redhat-00036.jar"
+  md5: "3c34f722e1dadf13a77a24dfc74b0acd"
+- name: "jbpm-event-emitters-kafka-7.67.2.Final-redhat-00036.jar"
+  md5: "478f31dde289878a88a7a5c6a3244b7a"
 run:
   user: 185
   cmd:
