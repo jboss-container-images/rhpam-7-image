@@ -6,24 +6,24 @@ labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-controller"
 - name: "org.jboss.product.version"
-  value: "8.0.7"
+  value: "8.0.8"
 - name: "org.jboss.product.ibm-bamoe-controller.version"
-  value: "8.0.7"
+  value: "8.0.8"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-controller"
 - name: "IBM_BAMOE_CONTROLLER_VERSION"
-  value: "8.0.7"
+  value: "8.0.8"
 - name: "PRODUCT_VERSION"
-  value: "8.0.7"
+  value: "8.0.8"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "bamoe_add_ons_distribution.zip"
 - name: "CONTROLLER_DISTRIBUTION_ZIP"
-  value: "bamoe-8.0.7-controller-ee7.zip"
+  value: "bamoe-8.0.8-controller-ee7.zip"
 artifacts:
 - name: "bamoe_add_ons_distribution.zip"
-  # bamoe-8.0.7-add-ons.zip
-  md5: "ec09ac28e7dd8e3417f771c90075ed2c"
+  # bamoe-8.0.8-add-ons.zip
+  md5: "63bbea55655712b28f1416cb3b53c75b"
 run:
   user: 185
   cmd:
