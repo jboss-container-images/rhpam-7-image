@@ -28,7 +28,7 @@ envs:
 artifacts:
 - name: "bamoe_kie_server_distribution.zip"
   # bamoe-8.0.8-kie-server-ee8.zip
-  md5: "f188ffb38c92bc9578b06b83b58bcfb1F"
+  md5: "f188ffb38c92bc9578b06b83b58bcfb1"
 - name: "bamoe_business_central_distribution.zip"
   # bamoe-8.0.8-business-central-eap7-deployable.zip
   md5: "ca05e7af407506616ea0c198f5e841e1"
