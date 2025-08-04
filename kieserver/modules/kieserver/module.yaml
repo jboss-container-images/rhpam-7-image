@@ -28,10 +28,10 @@ envs:
 artifacts:
 - name: "bamoe_kie_server_distribution.zip"
   # bamoe-8.0.8-kie-server-ee8.zip
-  md5: "8fcbf4676b60e4e56832844fbb332c38"
+  md5: "9f9ccc209d31bf29f01abd4f06909ce4"
 - name: "bamoe_business_central_distribution.zip"
   # bamoe-8.0.8-business-central-eap7-deployable.zip
-  md5: "d6e6ec0060cc0ffa622f532d12947274"
+  md5: "9c55d6a46a188226874e23854afc4bd3"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.30.redhat-00005.jar
   md5: "44e25fa5b93454bc9cfc005f8cb98b53"
