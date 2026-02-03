@@ -6,20 +6,20 @@ labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-process-migration"
 - name: "org.jboss.product.version"
-  value: "8.0.8"
+  value: "8.0.9"
 - name: "org.jboss.product.ibm-bamoe-process-migration.version"
-  value: "8.0.8"
+  value: "8.0.9"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-process-migration"
 - name: "IBM_BAMOE_PROCESS_MIGRATION_VERSION"
-  value: "8.0.8"
+  value: "8.0.9"
 - name: "PRODUCT_VERSION"
-  value: "8.0.8"
+  value: "8.0.9"
 - name: "ADD_ONS_DISTRIBUTION_ZIP"
   value: "bamoe_add_ons_distribution.zip"
 - name: "KIE_PROCESS_MIGRATION_DISTRIBUTION_ZIP"
-  value: "bamoe-8.0.8-process-migration-service.zip"
+  value: "bamoe-8.0.9-process-migration-service.zip"
 - name: "LAUNCH_DIR"
   value: "/opt/ibm-bamoe-process-migration/bin/launch"
 - name: "CONFIG_DIR"
@@ -30,8 +30,8 @@ ports:
 - value: 8080
 artifacts:
 - name: "bamoe_add_ons_distribution.zip"
-  # bamoe-8.0.8-add-ons.zip
-  md5: "feef85f60dd26a341127927a57620ebc"
+  # bamoe-8.0.9-add-ons.zip
+  md5: "8ca5f961beeb5567d7a9c19fa7640e28"
 run:
   user: 185
   cmd:
