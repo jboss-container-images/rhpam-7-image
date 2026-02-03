@@ -6,16 +6,16 @@ labels:
 - name: "org.jboss.product"
   value: "ibm-bamoe-kieserver"
 - name: "org.jboss.product.version"
-  value: "8.0.8"
+  value: "8.0.9"
 - name: "org.jboss.product.ibm-bamoe-kieserver.version"
-  value: "8.0.8"
+  value: "8.0.9"
 envs:
 - name: "JBOSS_PRODUCT"
   value: "ibm-bamoe-kieserver"
 - name: "IBM_BAMOE_KIESERVER_VERSION"
-  value: "8.0.8"
+  value: "8.0.9"
 - name: "PRODUCT_VERSION"
-  value: "8.0.8"
+  value: "8.0.9"
 - name: "KIE_SERVER_DISTRIBUTION_ZIP"
   value: "bamoe_kie_server_distribution.zip"
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_ZIP"
@@ -23,22 +23,22 @@ envs:
 - name: "BUSINESS_CENTRAL_DISTRIBUTION_EAP"
   value: "jboss-eap-7.4"
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
-  value: "jbpm-wb-kie-server-backend-7.67.2.Final-redhat-00041.jar"
+  value: "jbpm-wb-kie-server-backend-7.67.2.Final-redhat-00042.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
 artifacts:
 - name: "bamoe_kie_server_distribution.zip"
-  # bamoe-8.0.8-kie-server-ee8.zip
-  md5: "9f9ccc209d31bf29f01abd4f06909ce4"
+  # bamoe-8.0.9-kie-server-ee8.zip
+  md5: "53a6cd7af596a87c8b6c569dbaa079a7"
 - name: "bamoe_business_central_distribution.zip"
-  # bamoe-8.0.8-business-central-eap7-deployable.zip
-  md5: "9c55d6a46a188226874e23854afc4bd3"
+  # bamoe-8.0.9-business-central-eap7-deployable.zip
+  md5: "a6e1650335203d1bd190cfc017bd3d00"
 - name: "slf4j-simple.jar"
   # slf4j-simple-1.7.30.redhat-00005.jar
   md5: "44e25fa5b93454bc9cfc005f8cb98b53"
-- name: "kie-server-services-jbpm-cluster-7.67.2.Final-redhat-00041.jar"
-  md5: "ef74cb6bdfd1bd920aebb04de1321e62"
-- name: "jbpm-event-emitters-kafka-7.67.2.Final-redhat-00041.jar"
-  md5: "f2ea657106ddb5b33c328fcbff93709e"
+- name: "kie-server-services-jbpm-cluster-7.67.2.Final-redhat-00042.jar"
+  md5: "26ab385c35e936441dcaf5420b8aa1bf"
+- name: "jbpm-event-emitters-kafka-7.67.2.Final-redhat-00042.jar"
+  md5: "6815418d140a6c0cf4d9c2d95dd9c8e7"
 run:
   user: 185
   cmd:
