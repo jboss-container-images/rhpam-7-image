@@ -20,6 +20,9 @@ envs:
   value: "bamoe_add_ons_distribution.zip"
 - name: "CONTROLLER_DISTRIBUTION_ZIP"
   value: "bamoe-8.0.9-controller-ee7.zip"
+packages:
+  install:
+  - python3.12
 artifacts:
 - name: "bamoe_add_ons_distribution.zip"
   # bamoe-8.0.9-add-ons.zip

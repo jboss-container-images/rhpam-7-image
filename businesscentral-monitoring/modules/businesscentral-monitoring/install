@@ -4,6 +4,10 @@ set -e
 
 SOURCES_DIR=/tmp/artifacts
 
+# First install the alternatives, then set it
+alternatives --install /usr/bin/python python /usr/bin/python3 1
+alternatives --set python /usr/bin/python3
+
 unzip -q ${SOURCES_DIR}/${BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
 chmod 0755 ${SOURCES_DIR}/${BUSINESS_CENTRAL_MONITORING_DISTRIBUTION_EAP}
 
