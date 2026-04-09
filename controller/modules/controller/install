@@ -4,6 +4,10 @@ set -e
 
 SOURCES_DIR=/tmp/artifacts
 
+# First install the alternatives, then set it
+alternatives --install /usr/bin/python python /usr/bin/python3 1
+alternatives --set python /usr/bin/python3
+
 unzip -q ${SOURCES_DIR}/${ADD_ONS_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
 
 DISTRIBUTION_ZIP=${CONTROLLER_DISTRIBUTION_ZIP}

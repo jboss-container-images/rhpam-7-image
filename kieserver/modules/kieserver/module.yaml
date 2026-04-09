@@ -25,6 +25,9 @@ envs:
 - name: "JBPM_WB_KIE_SERVER_BACKEND_JAR"
   value: "jbpm-wb-kie-server-backend-7.67.2.Final-redhat-00045.jar"
 # remember to also update "JBPM_WB_KIE_SERVER_BACKEND_JAR" value
+packages:
+  install:
+  - python3.12
 artifacts:
 - name: "bamoe_kie_server_distribution.zip"
   # bamoe-8.0.9-kie-server-ee8.zip
