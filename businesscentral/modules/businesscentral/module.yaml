@@ -22,6 +22,9 @@ envs:
   value: "jboss-eap-7.4"
 ports:
 - value: 8001
+packages:
+  install:
+  - python3.12
 artifacts:
 - name: "bamoe_business_central_distribution.zip"
   # bamoe-8.0.9-business-central-eap7-deployable.zip

@@ -3,6 +3,11 @@
 set -e
 
 SOURCES_DIR=/tmp/artifacts
+
+# First install the alternatives, then set it
+alternatives --install /usr/bin/python python /usr/bin/python3 1
+alternatives --set python /usr/bin/python3
+
 ROUTER_DIR=/opt/${JBOSS_PRODUCT}
 
 unzip -q ${SOURCES_DIR}/${ADD_ONS_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
