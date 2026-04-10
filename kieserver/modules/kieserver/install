@@ -4,6 +4,11 @@ set -e
 
 SOURCES_DIR=/tmp/artifacts
 
+# Set python3 as the default python alternative
+# First install the alternatives, then set it
+alternatives --install /usr/bin/python python /usr/bin/python3 1
+alternatives --set python /usr/bin/python3
+
 DISTRIBUTION_ZIP=${KIE_SERVER_DISTRIBUTION_ZIP}
 DISTRIBUTION_WAR_DIR=kie-server.war
 

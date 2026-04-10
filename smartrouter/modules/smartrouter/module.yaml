@@ -26,6 +26,9 @@ envs:
   value: "/opt/ibm-bamoe-smartrouter"
 ports:
 - value: 9000
+packages:
+  install:
+  - python3.12
 artifacts:
 - name: "bamoe_add_ons_distribution.zip"
   # bamoe-8.0.9-add-ons.zip
