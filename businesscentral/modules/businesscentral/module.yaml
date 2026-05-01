@@ -28,7 +28,7 @@ packages:
 artifacts:
 - name: "bamoe_business_central_distribution.zip"
   # bamoe-8.0.9-business-central-eap7-deployable.zip
-  md5: "36c02d075d080465bfd9a14d8c0f5e29"
+  md5: "2892571722c5075e93c534cb5a53be97"
 run:
   user: 185
   cmd:
