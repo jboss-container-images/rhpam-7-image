@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+chmod 644 /etc/passwd
+
 SOURCES_DIR=/tmp/artifacts
 PROCESS_MIGRATION_DIR=/opt/${JBOSS_PRODUCT}
 

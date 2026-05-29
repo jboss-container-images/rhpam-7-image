@@ -2,6 +2,8 @@
 
 set -e
 
+chmod 644 /etc/passwd
+
 SOURCES_DIR=/tmp/artifacts
 ROUTER_DIR=/opt/${JBOSS_PRODUCT}
 

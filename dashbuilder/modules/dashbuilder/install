@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+chmod 644 /etc/passwd
+
 SOURCES_DIR=/tmp/artifacts
 
 unzip -q ${SOURCES_DIR}/${ADD_ONS_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}

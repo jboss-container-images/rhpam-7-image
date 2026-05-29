@@ -2,6 +2,8 @@
 
 set -e
 
+chmod 644 /etc/passwd
+
 SOURCES_DIR=/tmp/artifacts
 
 DISTRIBUTION_ZIP=${KIE_SERVER_DISTRIBUTION_ZIP}
