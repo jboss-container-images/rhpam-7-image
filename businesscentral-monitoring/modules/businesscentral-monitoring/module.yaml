@@ -28,7 +28,7 @@ packages:
 artifacts:
 - name: "bamoe_business_central_monitoring_distribution.zip"
   # bamoe-8.0.9-monitoring-ee7.zip
-  md5: "fa09637ba69665802b48e1ae689846b1"
+  md5: "b08882c67cbd1d78e20ee778f6d6fb89"
 run:
   user: 185
   cmd:
